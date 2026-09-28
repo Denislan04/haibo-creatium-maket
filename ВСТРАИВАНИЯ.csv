@@ -1,0 +1,264 @@
+﻿block,name,type,initial_text_or_action
+00_header,top_status,Редактируемый текст,Склад в РФ · Отгрузка за 24 ч
+00_header,top_dealer,Редактируемый текст,Официальный дилер HAIBO · ООО «САНМАКС»
+00_header,head_subtitle,Редактируемый текст,Официальный дилер в России
+00_header,head_cta,Редактируемый текст,Подобрать мотор
+01_hero,hero_photo,Загружаемая картинка,Загрузить hero_bg_image.jpg из папки медиа
+01_hero,hero_badge,Редактируемый текст,Линейка HAIBO iPenguin 2025/2026
+01_hero,hero_title,Редактируемый текст,HAIBO iPenguin. Держит точку.
+01_hero,hero_title_accent,Редактируемый текст,Вы ловите.
+01_hero,hero_lead,Редактируемый текст,Лодочный электромотор с электронным GPS-якорем удерживает лодку с точностью до 1 метра. Вы выбираете точку с пульта — мотор берёт управление на себя.
+01_hero,hero_catalog,Редактируемый текст,Смотреть моторы
+01_hero,hero_combo,Редактируемый текст,Собрать комплект
+01_hero,hero_fact_1,Редактируемый текст,Официальный дилер в России
+01_hero,hero_fact_2,Редактируемый текст,Гарантия 2 года
+01_hero,hero_fact_3,Редактируемый текст,Сервисный центр в РФ
+01_hero,hero_video,Контейнер для компонентов,Перетащить штатное видео Creatium или загрузить рекламный ролик
+01_hero,hero_video_title,Редактируемый текст,HAIBO iPenguin в работе
+01_hero,hero_video_meta,Редактируемый текст,"12 / 24 / 36 В · Для лодок до 7,5 м"
+02_comparison,compare_kicker,Редактируемый текст,Решение на воде
+02_comparison,compare_title,Редактируемый текст,От верёвочного якоря — к точному удержанию
+02_comparison,compare_intro,Редактируемый текст,"Сравните, как меняется день на рыбалке с электромотором HAIBO iPenguin."
+02_comparison,compare_old,Редактируемый текст,Обычный якорь
+02_comparison,compare_bad_title_1,Редактируемый текст,Тяжёлый якорь и мокрая верёвка
+02_comparison,compare_bad_text_1,Редактируемый текст,Каждая перестановка точки отнимает время и силы.
+02_comparison,compare_bad_title_2,Редактируемый текст,Снос ветром и течением
+02_comparison,compare_bad_text_2,Редактируемый текст,"Лодка уходит с выбранной позиции, приходится вставать заново."
+02_comparison,compare_bad_title_3,Редактируемый текст,Меньше времени на ловлю
+02_comparison,compare_bad_text_3,Редактируемый текст,Вместо рыбалки приходится контролировать положение лодки.
+02_comparison,compare_new,Редактируемый текст,HAIBO iPenguin
+02_comparison,compare_good_title_1,Редактируемый текст,Удержание с пульта
+02_comparison,compare_good_text_1,Редактируемый текст,Выберите точку — мотор автоматически подруливает.
+02_comparison,compare_good_title_2,Редактируемый текст,Точный контроль
+02_comparison,compare_good_text_2,Редактируемый текст,"GPS, ГЛОНАСС и BeiDou помогают держать позицию."
+02_comparison,compare_good_title_3,Редактируемый текст,Руки свободны
+02_comparison,compare_good_text_3,Редактируемый текст,"Вы сосредоточены на рыбалке, а не на якоре."
+03_technology,tech_title_1,Редактируемый текст,Электронный GPS-якорь
+03_technology,tech_text_1,Редактируемый текст,Удерживает лодку в выбранной точке.
+03_technology,tech_title_2,Редактируемый текст,Беспроводной пульт
+03_technology,tech_text_2,Редактируемый текст,"Скорость, курс и точка удержания под рукой."
+03_technology,tech_title_3,Редактируемый текст,Носовое крепление
+03_technology,tech_text_3,Редактируемый текст,Корма остаётся свободной для основного мотора.
+03_technology,tech_title_4,Редактируемый текст,Три напряжения
+03_technology,tech_text_4,Редактируемый текст,"Модели на 12, 24 и 36 В под разные лодки."
+03_technology,tech_title_5,Редактируемый текст,Штанга и винт
+03_technology,tech_text_5,Редактируемый текст,Подбор длины штанги под высоту носа.
+03_technology,tech_kicker,Редактируемый текст,Технология iPenguin
+03_technology,tech_title,Редактируемый текст,"Пять узлов, которые меняют рыбалку"
+03_technology,tech_intro,Редактируемый текст,"Носовой мотор берёт управление лодкой на себя, пока вы выбираете следующую точку."
+04_catalog,cat_kicker,Редактируемый текст,Каталог HAIBO
+04_catalog,cat_title,Редактируемый текст,Моторы и оригинальное оборудование
+04_catalog,cat_intro,Редактируемый текст,Выберите мотор и совместимое оборудование.
+04_catalog,cat_m_p001_54_image,Загружаемая картинка,Фото M-P001-54; текущее https://img1.creatium.ru/disk2/3e/c6/bc/a811fff1c2b741a73219325578045071ac/haibo.png
+04_catalog,cat_m_p001_54_label,Редактируемый текст,12 В · P001
+04_catalog,cat_m_p001_54_title,Редактируемый текст,HAIBO P001 iPenguin 12V 54″
+04_catalog,cat_m_p001_54_spec_1,Редактируемый текст,12 В
+04_catalog,cat_m_p001_54_spec_2,Редактируемый текст,Штанга 137 см
+04_catalog,cat_m_p001_54_spec_3,Редактируемый текст,Тяга 40 кг
+04_catalog,cat_m_p001_54_spec_4,Редактируемый текст,Лодка до 5 м
+04_catalog,cat_m_p001_54_old_price,Редактируемый текст,139 800 ₽
+04_catalog,cat_m_p001_54_price,Редактируемый текст,132 900 ₽
+04_catalog,cat_m_p001_72_image,Загружаемая картинка,Фото M-P001-72; текущее https://img1.creatium.ru/disk2/e1/e5/c3/cafd3998cc69703de086cf814564e36549/72_noga.png
+04_catalog,cat_m_p001_72_label,Редактируемый текст,12 В · P001
+04_catalog,cat_m_p001_72_title,Редактируемый текст,HAIBO P001 iPenguin 12V 72″
+04_catalog,cat_m_p001_72_spec_1,Редактируемый текст,12 В
+04_catalog,cat_m_p001_72_spec_2,Редактируемый текст,Штанга 183 см
+04_catalog,cat_m_p001_72_spec_3,Редактируемый текст,Тяга 40 кг
+04_catalog,cat_m_p001_72_spec_4,Редактируемый текст,Лодка до 5 м
+04_catalog,cat_m_p001_72_old_price,Редактируемый текст,141 900 ₽
+04_catalog,cat_m_p001_72_price,Редактируемый текст,139 900 ₽
+04_catalog,cat_m_p002_60_image,Загружаемая картинка,Фото M-P002-60; текущее https://img1.creatium.ru/disk2/34/58/4d/9f4cc2b2aba7aa85c1164302866c90e4a7/haibo.png
+04_catalog,cat_m_p002_60_label,Редактируемый текст,24 В · P002
+04_catalog,cat_m_p002_60_title,Редактируемый текст,HAIBO P002 iPenguin 24V 60″
+04_catalog,cat_m_p002_60_spec_1,Редактируемый текст,24 В
+04_catalog,cat_m_p002_60_spec_2,Редактируемый текст,Штанга 60″ / 152 см
+04_catalog,cat_m_p002_60_spec_3,Редактируемый текст,Мощность 1200 Вт
+04_catalog,cat_m_p002_60_spec_4,Редактируемый текст,Лодка до 6 м
+04_catalog,cat_m_p002_60_old_price,Редактируемый текст,149 900 ₽
+04_catalog,cat_m_p002_60_price,Редактируемый текст,144 900 ₽
+04_catalog,cat_m_p002_72_image,Загружаемая картинка,Фото M-P002-72; текущее https://img1.creatium.ru/disk2/fb/1f/8d/ffe6524be049d4cb42582643a770c6cde7/haibo_1.png
+04_catalog,cat_m_p002_72_label,Редактируемый текст,24 В · P002
+04_catalog,cat_m_p002_72_title,Редактируемый текст,HAIBO P002 iPenguin 24V 72″
+04_catalog,cat_m_p002_72_spec_1,Редактируемый текст,24 В
+04_catalog,cat_m_p002_72_spec_2,Редактируемый текст,Штанга 72″ / 183 см
+04_catalog,cat_m_p002_72_spec_3,Редактируемый текст,Мощность 1200 Вт
+04_catalog,cat_m_p002_72_spec_4,Редактируемый текст,Лодка до 6 м
+04_catalog,cat_m_p002_72_old_price,Редактируемый текст,156 000 ₽
+04_catalog,cat_m_p002_72_price,Редактируемый текст,149 900 ₽
+04_catalog,cat_m_p003_72_image,Загружаемая картинка,Фото M-P003-72; текущее https://img1.creatium.ru/disk2/fa/95/c5/7c6a9e4cf96a25fc9dd69154d54a20c8c1/haibo.png
+04_catalog,cat_m_p003_72_label,Редактируемый текст,36 В · P003
+04_catalog,cat_m_p003_72_title,Редактируемый текст,HAIBO P003 iPenguin 36V 72″
+04_catalog,cat_m_p003_72_spec_1,Редактируемый текст,36 В
+04_catalog,cat_m_p003_72_spec_2,Редактируемый текст,Штанга 183 см
+04_catalog,cat_m_p003_72_spec_3,Редактируемый текст,"GPS, ГЛОНАСС, BeiDou"
+04_catalog,cat_m_p003_72_spec_4,Редактируемый текст,"Носовое, пульт"
+04_catalog,cat_m_p003_72_old_price,Редактируемый текст,178 000 ₽
+04_catalog,cat_m_p003_72_price,Редактируемый текст,159 900 ₽
+04_catalog,cat_a_nav_p65_image,Загружаемая картинка,Фото A-NAV-P65; текущее https://img1.creatium.ru/41/df/c5/6e3c42900950a9278a48d590f234fcb0b5/6_photoroom_png_photoroom_min.png
+04_catalog,cat_a_nav_p65_label,Редактируемый текст,Навигация
+04_catalog,cat_a_nav_p65_title,Редактируемый текст,HAIBO NAV SENSOR — компас / курсоуказатель
+04_catalog,cat_a_nav_p65_spec_1,Редактируемый текст,Для HAIBO P65
+04_catalog,cat_a_nav_p65_spec_2,Редактируемый текст,Кабель 5 м
+04_catalog,cat_a_nav_p65_spec_3,Редактируемый текст,"Jog: шаг 1,5 м"
+04_catalog,cat_a_nav_p65_spec_4,Редактируемый текст,Навигация / якорь
+04_catalog,cat_a_nav_p65_price,Редактируемый текст,10 900 ₽
+04_catalog,cat_a_qr_standard_image,Загружаемая картинка,Фото A-QR-STANDARD; текущее https://img1.creatium.ru/33/d0/e6/34265c2d8f4047488a77d24e288301ada1/7.png
+04_catalog,cat_a_qr_standard_label,Редактируемый текст,Крепление и монтаж
+04_catalog,cat_a_qr_standard_title,Редактируемый текст,HAIBO быстросъёмная алюминиевая пластина
+04_catalog,cat_a_qr_standard_spec_1,Редактируемый текст,Алюминий + нерж. сталь
+04_catalog,cat_a_qr_standard_spec_2,Редактируемый текст,HAIBO / MotorGuide
+04_catalog,cat_a_qr_standard_spec_3,Редактируемый текст,Слайдер из 2 частей
+04_catalog,cat_a_qr_standard_spec_4,Редактируемый текст,Возможность замка
+04_catalog,cat_a_qr_standard_price,Редактируемый текст,9 900 ₽
+04_catalog,cat_a_fuse_60a_image,Загружаемая картинка,Фото A-FUSE-60A; текущее https://img1.creatium.ru/a3/0c/5f/c8b2d16e094ae321165f95b9fa8fc4eb2f/8.png
+04_catalog,cat_a_fuse_60a_label,Редактируемый текст,Электрика и защита
+04_catalog,cat_a_fuse_60a_title,Редактируемый текст,Автоматический предохранитель HAIBO 60A
+04_catalog,cat_a_fuse_60a_spec_1,Редактируемый текст,60 А
+04_catalog,cat_a_fuse_60a_spec_2,Редактируемый текст,12 / 24 / 36 В
+04_catalog,cat_a_fuse_60a_spec_3,Редактируемый текст,Автоматический
+04_catalog,cat_a_fuse_60a_spec_4,Редактируемый текст,Защита цепи
+04_catalog,cat_a_fuse_60a_price,Редактируемый текст,2 500 ₽
+04_catalog,cat_a_ram_p65_image,Загружаемая картинка,Фото A-RAM-P65; текущее https://img1.creatium.ru/1d/1f/52/5d1cf10397a466674b0cf8a5dd9ffbd979/10.png
+04_catalog,cat_a_ram_p65_label,Редактируемый текст,Крепление и монтаж
+04_catalog,cat_a_ram_p65_title,Редактируемый текст,RAM-крепление HAIBO
+04_catalog,cat_a_ram_p65_spec_1,Редактируемый текст,Для HAIBO P65
+04_catalog,cat_a_ram_p65_spec_2,Редактируемый текст,Фиксация штанги
+04_catalog,cat_a_ram_p65_spec_3,Редактируемый текст,Регулируемый кронштейн
+04_catalog,cat_a_ram_p65_spec_4,Редактируемый текст,Для жёсткого борта
+04_catalog,cat_a_ram_p65_price,Редактируемый текст,3 900 ₽
+04_catalog,cat_a_bat_24_100_image,Загружаемая картинка,Фото A-BAT-24-100; текущее https://img1.creatium.ru/a4/db/35/27b6b483ea2868bf1b9e30c1e48ac0853a/1.png
+04_catalog,cat_a_bat_24_100_label,Редактируемый текст,Аккумуляторы
+04_catalog,cat_a_bat_24_100_title,Редактируемый текст,HAIBO LiFePO4 24V 100Ah
+04_catalog,cat_a_bat_24_100_spec_1,Редактируемый текст,24 В
+04_catalog,cat_a_bat_24_100_spec_2,Редактируемый текст,100 А·ч
+04_catalog,cat_a_bat_24_100_spec_3,Редактируемый текст,LiFePO4
+04_catalog,cat_a_bat_24_100_spec_4,Редактируемый текст,более 3500 циклов
+04_catalog,cat_a_bat_24_100_price,Редактируемый текст,70 900 ₽
+04_catalog,cat_a_bat_12_100_image,Загружаемая картинка,Фото A-BAT-12-100; текущее https://img1.creatium.ru/disk2/a3/32/75/b7e73dff323f44d59d79ebbc91baede26b/kreativ_bez_nazvaniya_1.png
+04_catalog,cat_a_bat_12_100_label,Редактируемый текст,Аккумуляторы
+04_catalog,cat_a_bat_12_100_title,Редактируемый текст,HAIBO LiFePO4 12V 100Ah
+04_catalog,cat_a_bat_12_100_spec_1,Редактируемый текст,12 В
+04_catalog,cat_a_bat_12_100_spec_2,Редактируемый текст,100 А·ч
+04_catalog,cat_a_bat_12_100_spec_3,Редактируемый текст,LiFePO4
+04_catalog,cat_a_bat_12_100_spec_4,Редактируемый текст,более 3500 циклов
+04_catalog,cat_a_bat_12_100_old_price,Редактируемый текст,41 400 ₽
+04_catalog,cat_a_bat_12_100_price,Редактируемый текст,38 900 ₽
+04_catalog,cat_a_cover_54_image,Загружаемая картинка,Фото A-COVER-54; текущее https://img1.creatium.ru/disk2/e2/81/7b/e4e27f08352e5155d36704df298d39bfc6/img_0862_copy_1_4_11zon.jpg
+04_catalog,cat_a_cover_54_label,Редактируемый текст,Чехлы
+04_catalog,cat_a_cover_54_title,Редактируемый текст,Чехол HAIBO для мотора 54″ / 137 см
+04_catalog,cat_a_cover_54_spec_1,Редактируемый текст,54″ / 137 см
+04_catalog,cat_a_cover_54_spec_2,Редактируемый текст,Oxford 1680D
+04_catalog,cat_a_cover_54_spec_3,Редактируемый текст,Водоотталкивающий
+04_catalog,cat_a_cover_54_spec_4,Редактируемый текст,Усиление ПВХ
+04_catalog,cat_a_cover_54_price,Редактируемый текст,6 900 ₽
+04_catalog,cat_a_cover_72_image,Загружаемая картинка,Фото A-COVER-72; текущее https://img1.creatium.ru/disk2/e2/81/7b/e4e27f08352e5155d36704df298d39bfc6/img_0862_copy_1_4_11zon.jpg
+04_catalog,cat_a_cover_72_label,Редактируемый текст,Чехлы
+04_catalog,cat_a_cover_72_title,Редактируемый текст,Чехол HAIBO для мотора 72″ / 183 см
+04_catalog,cat_a_cover_72_spec_1,Редактируемый текст,72″ / 183 см
+04_catalog,cat_a_cover_72_spec_2,Редактируемый текст,Oxford 1680D
+04_catalog,cat_a_cover_72_spec_3,Редактируемый текст,Водоотталкивающий
+04_catalog,cat_a_cover_72_spec_4,Редактируемый текст,Усиление ПВХ
+04_catalog,cat_a_cover_72_price,Редактируемый текст,7 900 ₽
+04_catalog,cat_a_bow_pvc_image,Загружаемая картинка,Фото A-BOW-PVC; текущее https://img1.creatium.ru/disk2/a9/23/fa/5828a4ed77c7528ab63730e53ee182ce85/img_6304_kopiya_4.jpg
+04_catalog,cat_a_bow_pvc_label,Редактируемый текст,Крепление и монтаж
+04_catalog,cat_a_bow_pvc_title,Редактируемый текст,Носовая площадка HAIBO для ПВХ-лодок
+04_catalog,cat_a_bow_pvc_spec_1,Редактируемый текст,Алюминий 5 мм
+04_catalog,cat_a_bow_pvc_spec_2,Редактируемый текст,51 × 72/30 × 8 см
+04_catalog,cat_a_bow_pvc_spec_3,Редактируемый текст,"4 опоры Ø8,5 см"
+04_catalog,cat_a_bow_pvc_spec_4,Редактируемый текст,Быстрый демонтаж
+04_catalog,cat_a_bow_pvc_price,Редактируемый текст,7 500 ₽
+04_catalog,cat_a_connector_50a_image,Загружаемая картинка,Фото A-CONNECTOR-50A; текущее https://img1.creatium.ru/disk2/be/ae/98/348f2b3702334b36488e48195cb0f39167/photo_2023_11_07_14_15_05.jpg
+04_catalog,cat_a_connector_50a_label,Редактируемый текст,Электрика и защита
+04_catalog,cat_a_connector_50a_title,Редактируемый текст,Вилка-розетка HAIBO 50A
+04_catalog,cat_a_connector_50a_spec_1,Редактируемый текст,50 А
+04_catalog,cat_a_connector_50a_spec_2,Редактируемый текст,Разъём Anderson
+04_catalog,cat_a_connector_50a_spec_3,Редактируемый текст,Силовое подключение
+04_catalog,cat_a_connector_50a_spec_4,Редактируемый текст,Подбор по току
+04_catalog,cat_a_connector_50a_price,Редактируемый текст,1 900 ₽
+04_catalog,cat_a_ram_pvc_p65_image,Загружаемая картинка,Фото A-RAM-PVC-P65; текущее https://img1.creatium.ru/disk2/02/95/f1/cf20ff2fef458142e23b110574c150a757/remove_bg_ai_1689089003855.png
+04_catalog,cat_a_ram_pvc_p65_label,Редактируемый текст,Крепление и монтаж
+04_catalog,cat_a_ram_pvc_p65_title,Редактируемый текст,RAM-крепление HAIBO для ПВХ-лодок
+04_catalog,cat_a_ram_pvc_p65_spec_1,Редактируемый текст,Для ПВХ-лодок
+04_catalog,cat_a_ram_pvc_p65_spec_2,Редактируемый текст,Для HAIBO P65
+04_catalog,cat_a_ram_pvc_p65_spec_3,Редактируемый текст,Фиксация штанги
+04_catalog,cat_a_ram_pvc_p65_spec_4,Редактируемый текст,Опорная площадка
+04_catalog,cat_a_ram_pvc_p65_price,Редактируемый текст,4 500 ₽
+04_catalog,cat_a_qr_hd_p002_p003_image,Загружаемая картинка,Фото A-QR-HD-P002-P003; текущее https://img1.creatium.ru/disk2/51/93/8d/7a20a4d464ad7db0155110699e97f62d1a/photo_2025_05_26_13_59_32.jpg
+04_catalog,cat_a_qr_hd_p002_p003_label,Редактируемый текст,Крепление и монтаж
+04_catalog,cat_a_qr_hd_p002_p003_title,Редактируемый текст,Усиленная быстросъёмная площадка HAIBO
+04_catalog,cat_a_qr_hd_p002_p003_spec_1,Редактируемый текст,P002 / P003
+04_catalog,cat_a_qr_hd_p002_p003_spec_2,Редактируемый текст,"Вес 3,5 кг"
+04_catalog,cat_a_qr_hd_p002_p003_spec_3,Редактируемый текст,Усиленная конструкция
+04_catalog,cat_a_qr_hd_p002_p003_spec_4,Редактируемый текст,Повышенная нагрузка
+04_catalog,cat_a_qr_hd_p002_p003_price,Редактируемый текст,16 000 ₽
+04_catalog,cat_form,Контейнер для компонентов,Штатная кнопка или форма Creatium для подбора
+05_gps,gps_kicker,Редактируемый текст,GPS-якорь на воде
+05_gps,gps_title,Редактируемый текст,Лодка остаётся в выбранной точке
+05_gps,gps_intro,Редактируемый текст,"Мотор считывает сигналы спутников и подруливает винтом, компенсируя ветер и течение."
+05_gps,gps_feature_1,Редактируемый текст,Удержание позиции
+05_gps,gps_feature_text_1,Редактируемый текст,Точка задаётся с беспроводного пульта.
+05_gps,gps_feature_2,Редактируемый текст,Контроль курса
+05_gps,gps_feature_text_2,Редактируемый текст,Встроенный компас помогает держать направление.
+05_gps,gps_feature_3,Редактируемый текст,Смещение Jog
+05_gps,gps_feature_text_3,Редактируемый текст,Переход на соседнюю точку без подъёма якоря.
+05_gps,gps_video,Контейнер для компонентов,Перетащить штатное видео Creatium с демонстрацией GPS-якоря
+05_gps,gps_caption,Редактируемый текст,Полевые испытания HAIBO на воде
+06_installation,install_kicker,Редактируемый текст,Установка
+06_installation,install_title,Редактируемый текст,Для ПВХ-лодок и жёстких катеров
+06_installation,install_intro,Редактируемый текст,Подберите площадку и длину штанги под высоту носа вашего судна.
+06_installation,install_pvc_image,Загружаемая картинка,Загрузить install_image_1.jpg
+06_installation,install_pvc_title,Редактируемый текст,Монтаж на ПВХ-лодку
+06_installation,install_pvc_text,Редактируемый текст,Носовая площадка формирует прочное основание для установки мотора.
+06_installation,install_boat_image,Загружаемая картинка,Загрузить install_image_2.jpg
+06_installation,install_boat_title,Редактируемый текст,Монтаж на катер
+06_installation,install_boat_text,Редактируемый текст,Быстросъёмная площадка помогает снять мотор после выхода на воду.
+07_combo,combo_kicker,Редактируемый текст,Подбор комплекта
+07_combo,combo_title,Редактируемый текст,Соберите комплект под свою лодку
+07_combo,combo_intro,Редактируемый текст,"Мотор, аккумулятор и монтаж из текущего каталога. Калькулятор покажет сумму и отсеет несовместимые позиции."
+07_combo,combo_form,Контейнер для компонентов,Штатная кнопка Creatium с формой заказа комплекта
+08_steps,step_title_1,Редактируемый текст,Длина и масса лодки
+08_steps,step_text_1,Редактируемый текст,Проверьте предельную длину судна в карточке конкретной модели.
+08_steps,step_title_2,Редактируемый текст,Напряжение питания
+08_steps,step_text_2,Редактируемый текст,"P-001 — 12 В, P-002 — 24 В, P-003 — 36 В."
+08_steps,step_title_3,Редактируемый текст,Высота носа
+08_steps,step_text_3,Редактируемый текст,"Выберите штангу 54, 60 или 72 дюйма под посадку мотора."
+08_steps,steps_kicker,Редактируемый текст,Простой выбор
+08_steps,steps_title,Редактируемый текст,Как выбрать мотор за три шага
+09_warranty,war_kicker,Редактируемый текст,Официальный дилер
+09_warranty,war_title,Редактируемый текст,Гарантия 2 года и сервис в России
+09_warranty,war_intro,Редактируемый текст,"ООО «САНМАКС» помогает подобрать мотор, организует поставку и сервисное обслуживание."
+09_warranty,war_phone,Редактируемый текст,8 800 505-39-95
+09_warranty,war_fact_1,Редактируемый текст,2 года
+09_warranty,war_text_1,Редактируемый текст,Гарантия со дня продажи
+09_warranty,war_fact_2,Редактируемый текст,Россия
+09_warranty,war_text_2,Редактируемый текст,Сервис и поддержка дилера
+09_warranty,war_fact_3,Редактируемый текст,HAIBO
+09_warranty,war_text_3,Редактируемый текст,Оригинальное оборудование
+10_faq,faq_q_1,Редактируемый текст,"Чем отличаются 12, 24 и 36 В?"
+10_faq,faq_a_1,Редактируемый текст,"Это серии P-001, P-002 и P-003. Аккумулятор должен соответствовать напряжению мотора."
+10_faq,faq_q_2,Редактируемый текст,Что такое электронный якорь?
+10_faq,faq_a_2,Редактируемый текст,"Мотор удерживает лодку в выбранной точке с помощью GPS, ГЛОНАСС и BeiDou."
+10_faq,faq_q_3,Редактируемый текст,Подойдёт ли мотор для ПВХ?
+10_faq,faq_a_3,Редактируемый текст,"Да, для ПВХ-лодок есть носовая площадка. Совместимость конкретного крепежа проверяйте по карточке."
+10_faq,faq_q_4,Редактируемый текст,Какой нужен аккумулятор?
+10_faq,faq_a_4,Редактируемый текст,"Для P-001 нужен 12 В, для P-002 — 24 В. В текущем каталоге нет 36-вольтового аккумулятора для P-003."
+10_faq,faq_q_5,Редактируемый текст,Что входит в комплект?
+10_faq,faq_a_5,Редактируемый текст,Состав различается по модели. Точный перечень смотрите в карточке товара.
+10_faq,faq_q_6,Редактируемый текст,Какая гарантия?
+10_faq,faq_a_6,Редактируемый текст,На моторы заявлена гарантия 2 года со дня продажи при личном использовании.
+10_faq,faq_kicker,Редактируемый текст,Вопросы
+10_faq,faq_title,Редактируемый текст,Коротко и по делу
+11_cta,cta_photo,Загружаемая картинка,Загрузить cta_bg_image.jpg
+11_cta,cta_kicker,Редактируемый текст,Поможем выбрать
+11_cta,cta_title,Редактируемый текст,Расскажите о лодке — подберём мотор
+11_cta,cta_intro,Редактируемый текст,"Напишите длину лодки и высоту носа. Подскажем модель, штангу, аккумулятор и крепёж."
+11_cta,cta_phone,Редактируемый текст,8 800 505-39-95
+11_cta,cta_form_title,Редактируемый текст,Заявка на подбор
+11_cta,cta_form_text,Редактируемый текст,Оставьте номер телефона — специалист свяжется с вами.
+11_cta,cta_form,Контейнер для компонентов,"Перетащить штатную форму Creatium, поля: имя, телефон, лодка"
+12_footer,foot_about,Редактируемый текст,Официальный дилер лодочных электромоторов в России.
+12_footer,foot_nav_title,Редактируемый текст,Разделы
+12_footer,foot_contact_title,Редактируемый текст,Связаться
+12_footer,foot_phone,Редактируемый текст,8 800 505-39-95
+12_footer,foot_company,Редактируемый текст,ООО «САНМАКС»
+12_footer,foot_note,Редактируемый текст,© HAIBO. Официальный дилер в России.

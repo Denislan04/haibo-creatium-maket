@@ -1,0 +1,34 @@
+/* 08_steps — вставить только в CSS-вкладку этого HTML-компонента. Правила ограничены #hb-steps. */
+#hb-steps.hb-page{--hb-pine:#0b201b;--hb-pine2:#173c2f;--hb-lime:#b7df69;--hb-cream:#f6f6f0;--hb-text:#182c24;--hb-muted:#52675b;--hb-line:#dfe5d7;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--hb-text);line-height:1.5;-webkit-font-smoothing:antialiased}
+#hb-steps.hb-page *,#hb-steps.hb-page *:before,#hb-steps.hb-page *:after{box-sizing:border-box}
+#hb-steps.hb-page h1,#hb-steps.hb-page h2,#hb-steps.hb-page h3,#hb-steps.hb-page p,#hb-steps.hb-page ul{margin:0}
+#hb-steps.hb-page a{color:inherit}
+#hb-steps.hb-page button,#hb-steps.hb-page select{font:inherit}
+#hb-steps .hb-wrap{width:min(1240px,calc(100% - 64px));margin-inline:auto}
+#hb-steps.hb-page :is(a,button,select,summary):focus-visible{outline:3px solid #c8eb86;outline-offset:3px}
+#hb-steps .hb-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:750;white-space:nowrap;transition:transform .22s ease,background .22s ease,border-color .22s ease}
+#hb-steps .hb-button:hover{transform:translateY(-2px)}
+#hb-steps .hb-button--lime{background:var(--hb-lime);color:#17301c!important}
+#hb-steps .hb-button--lime:hover{background:#c9ec88}
+#hb-steps .hb-button--outline{border:1px solid rgba(255,255,255,.48);background:rgba(255,255,255,.07);color:#fff!important}
+#hb-steps .hb-button--outline:hover{background:rgba(255,255,255,.17)}
+#hb-steps .hb-eyebrow{display:inline-block;margin-bottom:16px;color:#356c3c;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#hb-steps .hb-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:#4c8b44;vertical-align:2px}
+#hb-steps .hb-eyebrow--light{color:#d0eba9}
+#hb-steps .hb-eyebrow--light:before{background:var(--hb-lime)}
+#hb-steps.hb-section{padding:90px 0}
+#hb-steps.hb-section--warm{background:var(--hb-cream)}
+#hb-steps .hb-section--white{background:#fff}
+#hb-steps .hb-section--pine{background:var(--hb-pine);color:#fff}
+#hb-steps.hb-section h2{max-width:850px;margin-bottom:17px;font-size:clamp(34px,4vw,50px);font-weight:850;letter-spacing:-.04em;line-height:1.1}
+#hb-steps .hb-intro{max-width:680px;margin-bottom:36px;color:var(--hb-muted);font-size:17px;line-height:1.6}
+#hb-steps .hb-section--pine .hb-intro,#hb-steps .hb-section--cta .hb-intro{color:#d4e1d7}
+#hb-steps .hb-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:35px}
+#hb-steps .hb-steps article{padding:25px;border:1px solid #dfe5d7;border-radius:16px;background:#fff}
+#hb-steps .hb-steps article>span{display:block;margin-bottom:18px;color:#3e7942;font-size:29px;font-weight:850}
+#hb-steps .hb-steps h3{margin-bottom:9px;font-size:19px}
+#hb-steps .hb-steps p{color:#53685a;font-size:14px}
+.screen-sm #hb-steps .hb-steps,.screen-xs #hb-steps .hb-steps{grid-template-columns:1fr}
+.screen-xs #hb-steps .hb-wrap{width:calc(100% - 36px)}
+.screen-xs #hb-steps.hb-section{padding:68px 0}
+.screen-xs #hb-steps.hb-section h2{font-size:34px}

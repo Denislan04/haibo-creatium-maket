@@ -1,0 +1,69 @@
+/* 00_header — вставить только в CSS-вкладку этого HTML-компонента. Правила ограничены #hb-top. */
+#hb-top.hb-page{--hb-pine:#0b201b;--hb-pine2:#173c2f;--hb-lime:#b7df69;--hb-cream:#f6f6f0;--hb-text:#182c24;--hb-muted:#52675b;--hb-line:#dfe5d7;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--hb-text);line-height:1.5;-webkit-font-smoothing:antialiased}
+#hb-top.hb-page *,#hb-top.hb-page *:before,#hb-top.hb-page *:after{box-sizing:border-box}
+#hb-top.hb-page h1,#hb-top.hb-page h2,#hb-top.hb-page h3,#hb-top.hb-page p,#hb-top.hb-page ul{margin:0}
+#hb-top.hb-page a{color:inherit}
+#hb-top.hb-page button,#hb-top.hb-page select{font:inherit}
+#hb-top .hb-wrap{width:min(1240px,calc(100% - 64px));margin-inline:auto}
+#hb-top.hb-page :is(a,button,select,summary):focus-visible{outline:3px solid #c8eb86;outline-offset:3px}
+#hb-top .hb-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:750;white-space:nowrap;transition:transform .22s ease,background .22s ease,border-color .22s ease}
+#hb-top .hb-button:hover{transform:translateY(-2px)}
+#hb-top .hb-button--lime{background:var(--hb-lime);color:#17301c!important}
+#hb-top .hb-button--lime:hover{background:#c9ec88}
+#hb-top .hb-button--outline{border:1px solid rgba(255,255,255,.48);background:rgba(255,255,255,.07);color:#fff!important}
+#hb-top .hb-button--outline:hover{background:rgba(255,255,255,.17)}
+#hb-top .hb-eyebrow{display:inline-block;margin-bottom:16px;color:#356c3c;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#hb-top .hb-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:#4c8b44;vertical-align:2px}
+#hb-top .hb-eyebrow--light{color:#d0eba9}
+#hb-top .hb-eyebrow--light:before{background:var(--hb-lime)}
+#hb-top .hb-section{padding:90px 0}
+#hb-top .hb-section--warm{background:var(--hb-cream)}
+#hb-top .hb-section--white{background:#fff}
+#hb-top .hb-section--pine{background:var(--hb-pine);color:#fff}
+#hb-top .hb-section h2{max-width:850px;margin-bottom:17px;font-size:clamp(34px,4vw,50px);font-weight:850;letter-spacing:-.04em;line-height:1.1}
+#hb-top .hb-intro{max-width:680px;margin-bottom:36px;color:var(--hb-muted);font-size:17px;line-height:1.6}
+#hb-top .hb-section--pine .hb-intro,#hb-top .hb-section--cta .hb-intro{color:#d4e1d7}
+#hb-top.hb-head{background:var(--hb-pine);color:#fff}
+#hb-top .hb-topline{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08);color:#cfddd2;font-size:12px}
+#hb-top .hb-topline .hb-wrap{display:flex;gap:18px;align-items:center}
+#hb-top .hb-stock{color:#d9efb2}
+#hb-top .hb-header{background:#10291f;border-bottom:1px solid rgba(255,255,255,.12)}
+#hb-top .hb-header__inner{display:flex;min-height:76px;align-items:center;gap:28px}
+#hb-top .hb-logo{color:#fff!important;text-decoration:none;font-size:25px;font-weight:900;letter-spacing:.11em;line-height:1}
+#hb-top .hb-logo span{color:var(--hb-lime)}
+#hb-top .hb-logo small{display:block;margin-top:5px;color:#b7c9bb;font-size:10px;font-weight:600;letter-spacing:.05em}
+#hb-top .hb-nav{display:flex;gap:27px;margin-left:auto}
+#hb-top .hb-nav a{color:#e0e9e1;text-decoration:none;font-size:14px;font-weight:650;white-space:nowrap}
+#hb-top .hb-nav a:hover{color:var(--hb-lime)}
+#hb-top .hb-header__cta{font-size:13px;min-height:42px;padding:0 18px}
+#hb-top .hb-menu{display:none;position:relative;margin-left:auto;z-index:30}
+#hb-top .hb-menu summary{padding:8px 10px;list-style:none;color:#fff;font-size:13px;font-weight:700;cursor:pointer}
+#hb-top .hb-menu summary::-webkit-details-marker{display:none}
+#hb-top .hb-menu nav{position:absolute;top:100%;right:0;display:grid;gap:3px;width:260px;padding:12px;background:#10291f;border:1px solid #446052;border-radius:12px;box-shadow:0 18px 40px #0005}
+#hb-top .hb-menu nav a{padding:8px;color:#fff;text-decoration:none;font-size:14px}
+#hb-top .hb-menu nav a:hover{background:#b7df6920}
+#hb-top .hb-compare{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+#hb-top .hb-compare>div{padding:32px;border-radius:18px}
+#hb-top .hb-compare h3{padding-bottom:18px;border-bottom:1px solid currentColor;font-size:21px}
+#hb-top .hb-compare ul{display:grid;gap:19px;margin-top:22px;padding:0;list-style:none}
+#hb-top .hb-compare li{display:grid;gap:2px}
+#hb-top .hb-compare li b{font-size:15px}
+#hb-top .hb-compare li span{font-size:14px;color:#52665a}
+#hb-top .hb-faq{max-width:900px;display:grid;gap:9px}
+#hb-top .hb-faq details{border:1px solid #dfe5d7;border-radius:12px;background:#fbfcf8}
+#hb-top .hb-faq details[open]{border-color:#89ad7a;background:#fff}
+#hb-top .hb-faq summary{padding:19px 22px;list-style:none;cursor:pointer;font-size:17px;font-weight:750}
+#hb-top .hb-faq summary::-webkit-details-marker{display:none}
+#hb-top .hb-faq summary:after{content:"+";float:right;color:#39763e;font-size:22px;line-height:1}
+#hb-top .hb-faq details[open] summary:after{content:"−"}
+#hb-top .hb-faq details p{padding:0 22px 21px;color:#52675b;font-size:15px}
+.screen-md #hb-top .hb-nav,.screen-sm #hb-top .hb-nav,.screen-xs #hb-top .hb-nav{display:none}
+.screen-md #hb-top .hb-menu,.screen-sm #hb-top .hb-menu,.screen-xs #hb-top .hb-menu{display:block}
+.screen-sm #hb-top .hb-compare,.screen-xs #hb-top .hb-compare{grid-template-columns:1fr}
+.screen-xs #hb-top .hb-wrap{width:calc(100% - 36px)}
+.screen-xs #hb-top .hb-header__inner{min-height:65px;gap:8px}
+.screen-xs #hb-top .hb-header__cta{display:none}
+.screen-xs #hb-top .hb-logo{font-size:21px}
+.screen-xs #hb-top .hb-logo small{font-size:9px}
+.screen-xs #hb-top .hb-topline .hb-wrap>span:last-child{display:none}
+.screen-xs #hb-top .hb-button{white-space:normal;text-align:center}

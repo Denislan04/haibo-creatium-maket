@@ -1,0 +1,44 @@
+#hb-tech-story{--hb-green:#b7df69;--hb-dark:#0b201b;--hb-text:#eef6ef;position:relative;height:500vh;background:var(--hb-dark);color:var(--hb-text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;box-sizing:border-box}
+#hb-tech-story *,#hb-tech-story *::before,#hb-tech-story *::after{box-sizing:border-box}
+#hb-tech-story h2,#hb-tech-story h3,#hb-tech-story p{margin:0}
+#hb-tech-story .hb-tech-scroll__sticky{position:sticky;top:0;height:100vh;height:100dvh;overflow:hidden;display:flex;align-items:center;justify-content:center}
+#hb-tech-story .hb-tech-scroll__layout{display:grid;grid-template-columns:minmax(220px,1fr) minmax(320px,1.65fr) minmax(240px,1fr);grid-template-rows:1fr auto;align-items:center;gap:24px;width:min(1440px,100%);height:100%;padding:clamp(20px,3vw,48px)}
+#hb-tech-story .hb-tech-scroll__intro{grid-column:1;grid-row:1;z-index:2}
+#hb-tech-story .hb-tech-scroll__eyebrow{margin-bottom:14px;color:var(--hb-green);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#hb-tech-story h2{max-width:350px;font-size:clamp(32px,3.5vw,52px);line-height:1.08;letter-spacing:-.04em}
+#hb-tech-story .hb-tech-scroll__lead{max-width:360px;margin-top:18px;color:#c9d9cc;font-size:16px;line-height:1.55}
+#hb-tech-story .hb-tech-scroll__model{display:inline-block;margin-top:22px;padding:7px 12px;border:1px solid #b7df6955;border-radius:999px;color:#dcecc8;font-size:12px}
+#hb-tech-story .hb-tech-scroll__visual{position:relative;grid-column:2;grid-row:1;display:grid;place-items:center;min-width:0;aspect-ratio:1.1;border:1px solid #ffffff26;border-radius:22px;background:#e7e9eb;overflow:hidden;box-shadow:0 28px 60px #0004}
+#hb-tech-story video{display:block;width:100%;height:100%;object-fit:contain}
+#hb-tech-story .hb-tech-scroll__video-error{position:absolute;inset:auto 15px 15px;padding:12px;border-radius:10px;background:#0b201be0;color:#fff;font-size:13px}
+#hb-tech-story [hidden]{display:none!important}
+#hb-tech-story .hb-tech-scroll__details{grid-column:3;grid-row:1;align-self:center;z-index:2}
+#hb-tech-story .hb-tech-scroll__details article{min-height:218px;padding:28px;border:1px solid #ffffff30;border-radius:20px;background:#173c2fe8;box-shadow:0 20px 45px #0004}
+#hb-tech-story .hb-tech-scroll__number{display:block;margin-bottom:18px;color:var(--hb-green);font-size:12px;font-weight:800;letter-spacing:.12em}
+#hb-tech-story h3{font-size:clamp(21px,2vw,28px);line-height:1.2;letter-spacing:-.025em}
+#hb-tech-story .hb-tech-scroll__details p{margin-top:15px;color:#d2e2d5;font-size:14px;line-height:1.55}
+#hb-tech-story .hb-tech-scroll__nav{grid-column:1/-1;grid-row:2;display:flex;align-items:center;justify-self:center;gap:18px;padding:11px 18px;border:1px solid #ffffff2e;border-radius:999px;background:#173c2ff0;white-space:nowrap;font-size:12px}
+#hb-tech-story .hb-tech-scroll__track{width:80px;height:3px;overflow:hidden;border-radius:99px;background:#ffffff33}
+#hb-tech-story .hb-tech-scroll__track i{display:block;width:20%;height:100%;background:var(--hb-green);transition:width .2s}
+#hb-tech-story .hb-tech-scroll__buttons{display:flex;gap:4px}
+#hb-tech-story .hb-tech-scroll__buttons button{width:36px;height:36px;border:0;border-radius:50%;background:transparent;color:#c8d9ce;font:inherit;font-weight:800;cursor:pointer}
+#hb-tech-story .hb-tech-scroll__buttons button[aria-current="step"],#hb-tech-story .hb-tech-scroll__buttons button:hover{background:var(--hb-green);color:#17301c}
+#hb-tech-story .hb-tech-scroll__buttons button:focus-visible{outline:3px solid #fff;outline-offset:2px}
+@media(max-width:1050px){#hb-tech-story .hb-tech-scroll__layout{grid-template-columns:minmax(180px,.75fr) minmax(260px,1.3fr);grid-template-rows:1fr auto auto;gap:14px}#hb-tech-story .hb-tech-scroll__intro{grid-column:1;grid-row:1}#hb-tech-story .hb-tech-scroll__visual{grid-column:2;grid-row:1/3;max-height:68vh}#hb-tech-story .hb-tech-scroll__details{grid-column:1;grid-row:2}#hb-tech-story .hb-tech-scroll__nav{grid-row:3}}
+@media(max-width:700px){#hb-tech-story .hb-tech-scroll__layout{display:grid;grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr) auto auto;width:100%;padding:12px 14px;gap:10px}#hb-tech-story .hb-tech-scroll__intro{grid-column:1;grid-row:1}#hb-tech-story h2{font-size:28px}#hb-tech-story .hb-tech-scroll__eyebrow{margin-bottom:5px;font-size:10px}#hb-tech-story .hb-tech-scroll__lead,#hb-tech-story .hb-tech-scroll__model{display:none}#hb-tech-story .hb-tech-scroll__visual{grid-column:1;grid-row:2;width:100%;height:100%;max-height:none;aspect-ratio:auto;border-radius:12px}#hb-tech-story .hb-tech-scroll__details{grid-column:1;grid-row:3}#hb-tech-story .hb-tech-scroll__details article{min-height:0;padding:13px 16px;border-radius:12px}#hb-tech-story .hb-tech-scroll__number{margin-bottom:5px;font-size:10px}#hb-tech-story h3{font-size:17px}#hb-tech-story .hb-tech-scroll__details p{margin-top:6px;font-size:12px;line-height:1.4}#hb-tech-story .hb-tech-scroll__nav{grid-column:1;grid-row:4;width:100%;justify-content:space-between;gap:7px;padding:7px 10px;font-size:10px}#hb-tech-story .hb-tech-scroll__track{width:35px}#hb-tech-story .hb-tech-scroll__buttons button{width:27px;height:27px;font-size:10px}}
+/* Классы экранов Creatium работают и когда редактор открыт в широком окне. */
+.screen-md #hb-tech-story .hb-tech-scroll__layout{grid-template-columns:minmax(180px,.75fr) minmax(260px,1.3fr);grid-template-rows:1fr auto auto;gap:14px}
+.screen-md #hb-tech-story .hb-tech-scroll__visual{grid-column:2;grid-row:1/3;max-height:68vh}
+.screen-md #hb-tech-story .hb-tech-scroll__details{grid-column:1;grid-row:2}
+.screen-md #hb-tech-story .hb-tech-scroll__nav{grid-row:3}
+.screen-sm #hb-tech-story .hb-tech-scroll__layout,.screen-xs #hb-tech-story .hb-tech-scroll__layout{grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr) auto auto;padding:12px 14px;gap:10px}
+.screen-sm #hb-tech-story .hb-tech-scroll__intro,.screen-xs #hb-tech-story .hb-tech-scroll__intro{grid-column:1;grid-row:1}
+.screen-sm #hb-tech-story .hb-tech-scroll__lead,.screen-xs #hb-tech-story .hb-tech-scroll__lead,.screen-sm #hb-tech-story .hb-tech-scroll__model,.screen-xs #hb-tech-story .hb-tech-scroll__model{display:none}
+.screen-sm #hb-tech-story .hb-tech-scroll__visual,.screen-xs #hb-tech-story .hb-tech-scroll__visual{grid-column:1;grid-row:2;width:100%;height:100%;max-height:none;aspect-ratio:auto}
+.screen-sm #hb-tech-story .hb-tech-scroll__details,.screen-xs #hb-tech-story .hb-tech-scroll__details{grid-column:1;grid-row:3}
+.screen-sm #hb-tech-story .hb-tech-scroll__nav,.screen-xs #hb-tech-story .hb-tech-scroll__nav{grid-column:1;grid-row:4;width:100%;justify-content:space-between}
+.screen-xs #hb-tech-story h2{font-size:28px}
+.screen-xs #hb-tech-story .hb-tech-scroll__details article{min-height:0;padding:13px 16px}
+.screen-xs #hb-tech-story h3{font-size:17px}
+.screen-xs #hb-tech-story .hb-tech-scroll__details p{font-size:12px}
+.screen-xs #hb-tech-story .hb-tech-scroll__track{width:35px}

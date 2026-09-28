@@ -1,0 +1,56 @@
+/* 01_hero — вставить только в CSS-вкладку этого HTML-компонента. Правила ограничены #hb-hero. */
+#hb-hero.hb-page{--hb-pine:#0b201b;--hb-pine2:#173c2f;--hb-lime:#b7df69;--hb-cream:#f6f6f0;--hb-text:#182c24;--hb-muted:#52675b;--hb-line:#dfe5d7;box-sizing:border-box}
+#hb-hero.hb-page *,#hb-hero.hb-page *:before,#hb-hero.hb-page *:after{box-sizing:border-box}
+#hb-hero.hb-page h1,#hb-hero.hb-page h2,#hb-hero.hb-page h3,#hb-hero.hb-page p,#hb-hero.hb-page ul{margin:0}
+#hb-hero.hb-page a{color:inherit}
+#hb-hero.hb-page button,#hb-hero.hb-page select{font:inherit}
+#hb-hero .hb-wrap{width:min(1240px,calc(100% - 64px));margin-inline:auto}
+#hb-hero.hb-page :is(a,button,select,summary):focus-visible{outline:3px solid #c8eb86;outline-offset:3px}
+#hb-hero .hb-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:750;white-space:nowrap;transition:transform .22s ease,background .22s ease,border-color .22s ease}
+#hb-hero .hb-button:hover{transform:translateY(-2px)}
+#hb-hero .hb-button--lime{background:var(--hb-lime);color:#17301c!important}
+#hb-hero .hb-button--lime:hover{background:#c9ec88}
+#hb-hero .hb-button--outline{border:1px solid rgba(255,255,255,.48);background:rgba(255,255,255,.07);color:#fff!important}
+#hb-hero .hb-button--outline:hover{background:rgba(255,255,255,.17)}
+#hb-hero .hb-eyebrow{display:inline-block;margin-bottom:10px;color:#356c3c;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#hb-hero .hb-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:#4c8b44;vertical-align:2px}
+#hb-hero .hb-eyebrow--light{color:#d0eba9}
+#hb-hero .hb-eyebrow--light:before{background:var(--hb-lime)}
+#hb-hero .hb-section{padding:90px 0}
+#hb-hero .hb-section--warm{background:var(--hb-cream)}
+#hb-hero .hb-section--white{background:#fff}
+#hb-hero .hb-section--pine{background:var(--hb-pine);color:#fff}
+#hb-hero .hb-section h2{max-width:850px;margin-bottom:17px;font-size:clamp(34px,4vw,50px);font-weight:850;letter-spacing:-.04em;line-height:1.1}
+#hb-hero .hb-intro{max-width:680px;margin-bottom:36px;color:var(--hb-muted);font-size:17px;line-height:1.6}
+#hb-hero .hb-section--pine .hb-intro,#hb-hero .hb-section--cta .hb-intro{color:#d4e1d7}
+#hb-hero.hb-hero{position:relative;background:var(--hb-pine)}
+#hb-hero .hb-hero__photo,#hb-hero .hb-hero__shade{position:absolute;inset:0}
+#hb-hero .hb-hero__photo{z-index:0}
+#hb-hero .hb-hero__photo>cr-embed{display:block;width:100%;height:100%;background-position:center 54%;background-size:cover}
+#hb-hero .hb-hero__shade{z-index:0;pointer-events:none;background:linear-gradient(90deg,rgba(7,25,19,.95),rgba(7,25,19,.82) 42%,rgba(7,25,19,.45) 100%),linear-gradient(0deg,rgba(7,25,19,.55),transparent 55%)}
+#hb-hero .hb-hero__inner{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;padding:46px 0 50px}
+#hb-hero .hb-hero__copy{color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+#hb-hero.hb-hero h1{display:flex;flex-direction:column;gap:4px;max-width:690px;margin-bottom:16px;font-size:clamp(34px,3.1vw,48px);font-weight:800;line-height:1.08;letter-spacing:-.035em;text-wrap:balance}
+#hb-hero.hb-hero h1 *{margin:0!important;padding:0!important;font-size:inherit!important;font-weight:inherit!important;line-height:inherit!important;letter-spacing:inherit!important}
+#hb-hero.hb-hero h1 em{display:block;color:var(--hb-lime);font-style:normal}
+#hb-hero .hb-lead{max-width:590px;color:#e0e9df;font-size:18px;line-height:1.6}
+#hb-hero .hb-actions{display:flex;flex-wrap:wrap;gap:13px;margin:24px 0 22px}
+#hb-hero .hb-hero__facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:16px 0 0;border-top:1px solid #ffffff45;list-style:none;font-size:12px;line-height:1.4;color:#dce8df}
+#hb-hero .hb-hero__facts li{display:flex;align-items:flex-start;gap:7px;min-width:0}
+#hb-hero .hb-hero__facts li:before{content:"✓";flex:none;color:var(--hb-lime);font-weight:900}
+#hb-hero .hb-hero__media{min-width:0}
+#hb-hero .hb-media-slot{min-height:300px;aspect-ratio:16/9;border:1px solid #ffffff55;border-radius:18px;background:#071711;box-shadow:0 22px 60px #0006}
+#hb-hero .hb-media-slot>cr-embed{display:block;width:100%;min-height:300px}
+#hb-hero .hb-media-caption{display:grid;gap:2px;margin-top:14px;padding:12px 16px;border:1px solid #ffffff35;border-radius:12px;background:#0a2019;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+#hb-hero .hb-media-caption strong{font-size:14px}
+#hb-hero .hb-media-caption span{color:#c8ddcf;font-size:11px}
+.screen-md #hb-hero .hb-hero__inner,.screen-sm #hb-hero .hb-hero__inner,.screen-xs #hb-hero .hb-hero__inner{grid-template-columns:1fr;min-height:0}
+.screen-md #hb-hero .hb-hero__media,.screen-sm #hb-hero .hb-hero__media,.screen-xs #hb-hero .hb-hero__media{max-width:700px}
+.screen-xs #hb-hero .hb-wrap{width:calc(100% - 36px)}
+.screen-xs #hb-hero .hb-hero__inner{gap:26px;padding:38px 0 44px}
+.screen-xs #hb-hero .hb-media-slot,.screen-xs #hb-hero .hb-media-slot>cr-embed{min-height:190px}
+.screen-xs #hb-hero.hb-hero h1{font-size:clamp(32px,9vw,42px)}
+.screen-xs #hb-hero .hb-lead{font-size:16px}
+.screen-xs #hb-hero .hb-actions{display:grid}
+.screen-xs #hb-hero .hb-hero__facts{grid-template-columns:1fr;gap:8px}
+.screen-xs #hb-hero .hb-button{white-space:normal;text-align:center}

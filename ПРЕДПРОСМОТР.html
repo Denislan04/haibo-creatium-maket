@@ -1,0 +1,1010 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HAIBO iPenguin — макет для Creatium</title><style>/* 00_header — вставить только в CSS-вкладку этого HTML-компонента. Правила ограничены #hb-top. */
+#hb-top.hb-page{--hb-pine:#0b201b;--hb-pine2:#173c2f;--hb-lime:#b7df69;--hb-cream:#f6f6f0;--hb-text:#182c24;--hb-muted:#52675b;--hb-line:#dfe5d7;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--hb-text);line-height:1.5;-webkit-font-smoothing:antialiased}
+#hb-top.hb-page *,#hb-top.hb-page *:before,#hb-top.hb-page *:after{box-sizing:border-box}
+#hb-top.hb-page h1,#hb-top.hb-page h2,#hb-top.hb-page h3,#hb-top.hb-page p,#hb-top.hb-page ul{margin:0}
+#hb-top.hb-page a{color:inherit}
+#hb-top.hb-page button,#hb-top.hb-page select{font:inherit}
+#hb-top .hb-wrap{width:min(1240px,calc(100% - 64px));margin-inline:auto}
+#hb-top.hb-page :is(a,button,select,summary):focus-visible{outline:3px solid #c8eb86;outline-offset:3px}
+#hb-top .hb-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:750;white-space:nowrap;transition:transform .22s ease,background .22s ease,border-color .22s ease}
+#hb-top .hb-button:hover{transform:translateY(-2px)}
+#hb-top .hb-button--lime{background:var(--hb-lime);color:#17301c!important}
+#hb-top .hb-button--lime:hover{background:#c9ec88}
+#hb-top .hb-button--outline{border:1px solid rgba(255,255,255,.48);background:rgba(255,255,255,.07);color:#fff!important}
+#hb-top .hb-button--outline:hover{background:rgba(255,255,255,.17)}
+#hb-top .hb-eyebrow{display:inline-block;margin-bottom:16px;color:#356c3c;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#hb-top .hb-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:#4c8b44;vertical-align:2px}
+#hb-top .hb-eyebrow--light{color:#d0eba9}
+#hb-top .hb-eyebrow--light:before{background:var(--hb-lime)}
+#hb-top .hb-section{padding:90px 0}
+#hb-top .hb-section--warm{background:var(--hb-cream)}
+#hb-top .hb-section--white{background:#fff}
+#hb-top .hb-section--pine{background:var(--hb-pine);color:#fff}
+#hb-top .hb-section h2{max-width:850px;margin-bottom:17px;font-size:clamp(34px,4vw,50px);font-weight:850;letter-spacing:-.04em;line-height:1.1}
+#hb-top .hb-intro{max-width:680px;margin-bottom:36px;color:var(--hb-muted);font-size:17px;line-height:1.6}
+#hb-top .hb-section--pine .hb-intro,#hb-top .hb-section--cta .hb-intro{color:#d4e1d7}
+#hb-top.hb-head{background:var(--hb-pine);color:#fff}
+#hb-top .hb-topline{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08);color:#cfddd2;font-size:12px}
+#hb-top .hb-topline .hb-wrap{display:flex;gap:18px;align-items:center}
+#hb-top .hb-stock{color:#d9efb2}
+#hb-top .hb-header{background:#10291f;border-bottom:1px solid rgba(255,255,255,.12)}
+#hb-top .hb-header__inner{display:flex;min-height:76px;align-items:center;gap:28px}
+#hb-top .hb-logo{color:#fff!important;text-decoration:none;font-size:25px;font-weight:900;letter-spacing:.11em;line-height:1}
+#hb-top .hb-logo span{color:var(--hb-lime)}
+#hb-top .hb-logo small{display:block;margin-top:5px;color:#b7c9bb;font-size:10px;font-weight:600;letter-spacing:.05em}
+#hb-top .hb-nav{display:flex;gap:27px;margin-left:auto}
+#hb-top .hb-nav a{color:#e0e9e1;text-decoration:none;font-size:14px;font-weight:650;white-space:nowrap}
+#hb-top .hb-nav a:hover{color:var(--hb-lime)}
+#hb-top .hb-header__cta{font-size:13px;min-height:42px;padding:0 18px}
+#hb-top .hb-menu{display:none;position:relative;margin-left:auto;z-index:30}
+#hb-top .hb-menu summary{padding:8px 10px;list-style:none;color:#fff;font-size:13px;font-weight:700;cursor:pointer}
+#hb-top .hb-menu summary::-webkit-details-marker{display:none}
+#hb-top .hb-menu nav{position:absolute;top:100%;right:0;display:grid;gap:3px;width:260px;padding:12px;background:#10291f;border:1px solid #446052;border-radius:12px;box-shadow:0 18px 40px #0005}
+#hb-top .hb-menu nav a{padding:8px;color:#fff;text-decoration:none;font-size:14px}
+#hb-top .hb-menu nav a:hover{background:#b7df6920}
+#hb-top .hb-compare{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+#hb-top .hb-compare>div{padding:32px;border-radius:18px}
+#hb-top .hb-compare h3{padding-bottom:18px;border-bottom:1px solid currentColor;font-size:21px}
+#hb-top .hb-compare ul{display:grid;gap:19px;margin-top:22px;padding:0;list-style:none}
+#hb-top .hb-compare li{display:grid;gap:2px}
+#hb-top .hb-compare li b{font-size:15px}
+#hb-top .hb-compare li span{font-size:14px;color:#52665a}
+#hb-top .hb-faq{max-width:900px;display:grid;gap:9px}
+#hb-top .hb-faq details{border:1px solid #dfe5d7;border-radius:12px;background:#fbfcf8}
+#hb-top .hb-faq details[open]{border-color:#89ad7a;background:#fff}
+#hb-top .hb-faq summary{padding:19px 22px;list-style:none;cursor:pointer;font-size:17px;font-weight:750}
+#hb-top .hb-faq summary::-webkit-details-marker{display:none}
+#hb-top .hb-faq summary:after{content:"+";float:right;color:#39763e;font-size:22px;line-height:1}
+#hb-top .hb-faq details[open] summary:after{content:"−"}
+#hb-top .hb-faq details p{padding:0 22px 21px;color:#52675b;font-size:15px}
+.screen-md #hb-top .hb-nav,.screen-sm #hb-top .hb-nav,.screen-xs #hb-top .hb-nav{display:none}
+.screen-md #hb-top .hb-menu,.screen-sm #hb-top .hb-menu,.screen-xs #hb-top .hb-menu{display:block}
+.screen-sm #hb-top .hb-compare,.screen-xs #hb-top .hb-compare{grid-template-columns:1fr}
+.screen-xs #hb-top .hb-wrap{width:calc(100% - 36px)}
+.screen-xs #hb-top .hb-header__inner{min-height:65px;gap:8px}
+.screen-xs #hb-top .hb-header__cta{display:none}
+.screen-xs #hb-top .hb-logo{font-size:21px}
+.screen-xs #hb-top .hb-logo small{font-size:9px}
+.screen-xs #hb-top .hb-topline .hb-wrap>span:last-child{display:none}
+.screen-xs #hb-top .hb-button{white-space:normal;text-align:center}
+
+/* 01_hero — вставить только в CSS-вкладку этого HTML-компонента. Правила ограничены #hb-hero. */
+#hb-hero.hb-page{--hb-pine:#0b201b;--hb-pine2:#173c2f;--hb-lime:#b7df69;--hb-cream:#f6f6f0;--hb-text:#182c24;--hb-muted:#52675b;--hb-line:#dfe5d7;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--hb-text);line-height:1.5;-webkit-font-smoothing:antialiased}
+#hb-hero.hb-page *,#hb-hero.hb-page *:before,#hb-hero.hb-page *:after{box-sizing:border-box}
+#hb-hero.hb-page h1,#hb-hero.hb-page h2,#hb-hero.hb-page h3,#hb-hero.hb-page p,#hb-hero.hb-page ul{margin:0}
+#hb-hero.hb-page a{color:inherit}
+#hb-hero.hb-page button,#hb-hero.hb-page select{font:inherit}
+#hb-hero .hb-wrap{width:min(1240px,calc(100% - 64px));margin-inline:auto}
+#hb-hero.hb-page :is(a,button,select,summary):focus-visible{outline:3px solid #c8eb86;outline-offset:3px}
+#hb-hero .hb-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:750;white-space:nowrap;transition:transform .22s ease,background .22s ease,border-color .22s ease}
+#hb-hero .hb-button:hover{transform:translateY(-2px)}
+#hb-hero .hb-button--lime{background:var(--hb-lime);color:#17301c!important}
+#hb-hero .hb-button--lime:hover{background:#c9ec88}
+#hb-hero .hb-button--outline{border:1px solid rgba(255,255,255,.48);background:rgba(255,255,255,.07);color:#fff!important}
+#hb-hero .hb-button--outline:hover{background:rgba(255,255,255,.17)}
+#hb-hero .hb-eyebrow{display:inline-block;margin-bottom:16px;color:#356c3c;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#hb-hero .hb-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:#4c8b44;vertical-align:2px}
+#hb-hero .hb-eyebrow--light{color:#d0eba9}
+#hb-hero .hb-eyebrow--light:before{background:var(--hb-lime)}
+#hb-hero .hb-section{padding:90px 0}
+#hb-hero .hb-section--warm{background:var(--hb-cream)}
+#hb-hero .hb-section--white{background:#fff}
+#hb-hero .hb-section--pine{background:var(--hb-pine);color:#fff}
+#hb-hero .hb-section h2{max-width:850px;margin-bottom:17px;font-size:clamp(34px,4vw,50px);font-weight:850;letter-spacing:-.04em;line-height:1.1}
+#hb-hero .hb-intro{max-width:680px;margin-bottom:36px;color:var(--hb-muted);font-size:17px;line-height:1.6}
+#hb-hero .hb-section--pine .hb-intro,#hb-hero .hb-section--cta .hb-intro{color:#d4e1d7}
+#hb-hero.hb-hero{position:relative;isolation:isolate;overflow:hidden;background:var(--hb-pine);color:#fff}
+#hb-hero .hb-hero__photo,#hb-hero .hb-hero__shade{position:absolute;inset:0}
+#hb-hero .hb-hero__photo{z-index:-2}
+#hb-hero .hb-hero__photo>cr-embed{display:block;width:100%;height:100%;background-position:center 54%;background-size:cover}
+#hb-hero .hb-hero__shade{z-index:-1;background:linear-gradient(90deg,rgba(7,25,19,.95),rgba(7,25,19,.82) 42%,rgba(7,25,19,.45) 100%),linear-gradient(0deg,rgba(7,25,19,.55),transparent 55%)}
+#hb-hero .hb-hero__inner{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:65px;min-height:645px;padding:72px 0}
+#hb-hero.hb-hero h1{max-width:690px;margin-bottom:23px;font-size:clamp(48px,5vw,70px);font-weight:850;line-height:1.04;letter-spacing:-.045em;text-wrap:balance}
+#hb-hero.hb-hero h1 em{color:var(--hb-lime);font-style:normal}
+#hb-hero .hb-lead{max-width:590px;color:#e0e9df;font-size:18px;line-height:1.6}
+#hb-hero .hb-actions{display:flex;flex-wrap:wrap;gap:13px;margin:30px 0 32px}
+#hb-hero .hb-hero__facts{display:flex;flex-wrap:wrap;gap:12px 26px;padding:20px 0 0;border-top:1px solid #ffffff45;list-style:none;font-size:13px;color:#dce8df}
+#hb-hero .hb-hero__facts li:before{content:"✓";margin-right:7px;color:var(--hb-lime);font-weight:900}
+#hb-hero .hb-hero__media{position:relative;min-width:0;aspect-ratio:16/10;border:1px solid #ffffff55;border-radius:18px;background:#071711;box-shadow:0 22px 60px #0006;overflow:hidden}
+#hb-hero .hb-media-slot{height:100%}
+#hb-hero .hb-media-slot>cr-embed{display:block;width:100%;height:100%}
+#hb-hero .hb-media-caption{position:absolute;bottom:14px;left:14px;right:14px;display:grid;gap:2px;padding:12px 16px;border:1px solid #ffffff35;border-radius:12px;background:#0a2019dd;color:#fff;backdrop-filter:blur(10px);pointer-events:none}
+#hb-hero .hb-media-caption strong{font-size:14px}
+#hb-hero .hb-media-caption span{color:#c8ddcf;font-size:11px}
+.screen-md #hb-hero .hb-hero__inner,.screen-sm #hb-hero .hb-hero__inner,.screen-xs #hb-hero .hb-hero__inner{grid-template-columns:1fr;min-height:0}
+.screen-md #hb-hero .hb-hero__media,.screen-sm #hb-hero .hb-hero__media,.screen-xs #hb-hero .hb-hero__media{max-width:700px}
+.screen-xs #hb-hero .hb-wrap{width:calc(100% - 36px)}
+.screen-xs #hb-hero .hb-hero__inner{gap:29px;padding:48px 0 58px}
+.screen-xs #hb-hero.hb-hero h1{font-size:clamp(39px,10vw,55px)}
+.screen-xs #hb-hero .hb-lead{font-size:16px}
+.screen-xs #hb-hero .hb-actions{display:grid}
+.screen-xs #hb-hero .hb-button{white-space:normal;text-align:center}
+
+/* 02_comparison — вставить только в CSS-вкладку этого HTML-компонента. Правила ограничены #hb-compare. */
+#hb-compare.hb-page{--hb-pine:#0b201b;--hb-pine2:#173c2f;--hb-lime:#b7df69;--hb-cream:#f6f6f0;--hb-text:#182c24;--hb-muted:#52675b;--hb-line:#dfe5d7;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--hb-text);line-height:1.5;-webkit-font-smoothing:antialiased}
+#hb-compare.hb-page *,#hb-compare.hb-page *:before,#hb-compare.hb-page *:after{box-sizing:border-box}
+#hb-compare.hb-page h1,#hb-compare.hb-page h2,#hb-compare.hb-page h3,#hb-compare.hb-page p,#hb-compare.hb-page ul{margin:0}
+#hb-compare.hb-page a{color:inherit}
+#hb-compare.hb-page button,#hb-compare.hb-page select{font:inherit}
+#hb-compare .hb-wrap{width:min(1240px,calc(100% - 64px));margin-inline:auto}
+#hb-compare.hb-page :is(a,button,select,summary):focus-visible{outline:3px solid #c8eb86;outline-offset:3px}
+#hb-compare .hb-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:750;white-space:nowrap;transition:transform .22s ease,background .22s ease,border-color .22s ease}
+#hb-compare .hb-button:hover{transform:translateY(-2px)}
+#hb-compare .hb-button--lime{background:var(--hb-lime);color:#17301c!important}
+#hb-compare .hb-button--lime:hover{background:#c9ec88}
+#hb-compare .hb-button--outline{border:1px solid rgba(255,255,255,.48);background:rgba(255,255,255,.07);color:#fff!important}
+#hb-compare .hb-button--outline:hover{background:rgba(255,255,255,.17)}
+#hb-compare .hb-eyebrow{display:inline-block;margin-bottom:16px;color:#356c3c;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#hb-compare .hb-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:#4c8b44;vertical-align:2px}
+#hb-compare .hb-eyebrow--light{color:#d0eba9}
+#hb-compare .hb-eyebrow--light:before{background:var(--hb-lime)}
+#hb-compare.hb-section{padding:90px 0}
+#hb-compare.hb-section--warm{background:var(--hb-cream)}
+#hb-compare .hb-section--white{background:#fff}
+#hb-compare .hb-section--pine{background:var(--hb-pine);color:#fff}
+#hb-compare.hb-section h2{max-width:850px;margin-bottom:17px;font-size:clamp(34px,4vw,50px);font-weight:850;letter-spacing:-.04em;line-height:1.1}
+#hb-compare .hb-intro{max-width:680px;margin-bottom:36px;color:var(--hb-muted);font-size:17px;line-height:1.6}
+#hb-compare .hb-section--pine .hb-intro,#hb-compare .hb-section--cta .hb-intro{color:#d4e1d7}
+#hb-compare .hb-compare{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+#hb-compare .hb-compare>div{padding:32px;border-radius:18px}
+#hb-compare .hb-compare__old{background:#fff;border:1px solid #dde3dc}
+#hb-compare .hb-compare__new{background:var(--hb-pine2);color:#fff;border:1px solid #7daa6a}
+#hb-compare .hb-compare h3{padding-bottom:18px;border-bottom:1px solid currentColor;font-size:21px}
+#hb-compare .hb-compare ul{display:grid;gap:19px;margin-top:22px;padding:0;list-style:none}
+#hb-compare .hb-compare li{display:grid;gap:2px}
+#hb-compare .hb-compare li b{font-size:15px}
+#hb-compare .hb-compare li span{font-size:14px;color:#52665a}
+#hb-compare .hb-compare__new li span{color:#d0e3d4}
+.screen-sm #hb-compare .hb-compare,.screen-xs #hb-compare .hb-compare{grid-template-columns:1fr}
+.screen-xs #hb-compare .hb-wrap{width:calc(100% - 36px)}
+.screen-xs #hb-compare.hb-section{padding:68px 0}
+.screen-xs #hb-compare.hb-section h2{font-size:34px}
+
+/* 03_technology — вставить только в CSS-вкладку этого HTML-компонента. Правила ограничены #hb-tech. */
+#hb-tech.hb-page{--hb-pine:#0b201b;--hb-pine2:#173c2f;--hb-lime:#b7df69;--hb-cream:#f6f6f0;--hb-text:#182c24;--hb-muted:#52675b;--hb-line:#dfe5d7;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--hb-text);line-height:1.5;-webkit-font-smoothing:antialiased}
+#hb-tech.hb-page *,#hb-tech.hb-page *:before,#hb-tech.hb-page *:after{box-sizing:border-box}
+#hb-tech.hb-page h1,#hb-tech.hb-page h2,#hb-tech.hb-page h3,#hb-tech.hb-page p,#hb-tech.hb-page ul{margin:0}
+#hb-tech.hb-page a{color:inherit}
+#hb-tech.hb-page button,#hb-tech.hb-page select{font:inherit}
+#hb-tech .hb-wrap{width:min(1240px,calc(100% - 64px));margin-inline:auto}
+#hb-tech.hb-page :is(a,button,select,summary):focus-visible{outline:3px solid #c8eb86;outline-offset:3px}
+#hb-tech .hb-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:750;white-space:nowrap;transition:transform .22s ease,background .22s ease,border-color .22s ease}
+#hb-tech .hb-button:hover{transform:translateY(-2px)}
+#hb-tech .hb-button--lime{background:var(--hb-lime);color:#17301c!important}
+#hb-tech .hb-button--lime:hover{background:#c9ec88}
+#hb-tech .hb-button--outline{border:1px solid rgba(255,255,255,.48);background:rgba(255,255,255,.07);color:#fff!important}
+#hb-tech .hb-button--outline:hover{background:rgba(255,255,255,.17)}
+#hb-tech .hb-eyebrow{display:inline-block;margin-bottom:16px;color:#356c3c;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#hb-tech .hb-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:#4c8b44;vertical-align:2px}
+#hb-tech .hb-eyebrow--light{color:#d0eba9}
+#hb-tech .hb-eyebrow--light:before{background:var(--hb-lime)}
+#hb-tech.hb-section{padding:90px 0}
+#hb-tech .hb-section--warm{background:var(--hb-cream)}
+#hb-tech.hb-section--white{background:#fff}
+#hb-tech .hb-section--pine{background:var(--hb-pine);color:#fff}
+#hb-tech.hb-section h2{max-width:850px;margin-bottom:17px;font-size:clamp(34px,4vw,50px);font-weight:850;letter-spacing:-.04em;line-height:1.1}
+#hb-tech .hb-intro{max-width:680px;margin-bottom:36px;color:var(--hb-muted);font-size:17px;line-height:1.6}
+#hb-tech .hb-section--pine .hb-intro,#hb-tech .hb-section--cta .hb-intro{color:#d4e1d7}
+#hb-tech .hb-tech-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}
+#hb-tech .hb-tech-card{display:flex;flex-direction:column;min-height:210px;padding:24px 21px;border:1px solid #e1e7dc;border-top:3px solid #8eb86d;border-radius:15px;background:#f8f9f4}
+#hb-tech .hb-tech-card>span{margin-bottom:18px;color:#3e7942;font-size:28px;font-weight:850}
+#hb-tech .hb-tech-card h3{margin-bottom:10px;font-size:17px;line-height:1.25}
+#hb-tech .hb-tech-card p{margin-top:auto;color:#53685a;font-size:13px}
+.screen-md #hb-tech .hb-tech-grid{grid-template-columns:repeat(3,1fr)}
+.screen-sm #hb-tech .hb-tech-grid,.screen-xs #hb-tech .hb-tech-grid{grid-template-columns:repeat(2,1fr)}
+.screen-xs #hb-tech .hb-wrap{width:calc(100% - 36px)}
+.screen-xs #hb-tech.hb-section{padding:68px 0}
+.screen-xs #hb-tech.hb-section h2{font-size:34px}
+.screen-xs #hb-tech .hb-tech-grid{gap:9px}
+.screen-xs #hb-tech .hb-tech-card{padding:17px 14px;min-height:190px}
+.screen-xs #hb-tech .hb-tech-card h3{font-size:15px}
+
+/* 04_catalog — вставить только в CSS-вкладку этого HTML-компонента. Правила ограничены #hb-catalog. */
+#hb-catalog.hb-page{--hb-pine:#0b201b;--hb-pine2:#173c2f;--hb-lime:#b7df69;--hb-cream:#f6f6f0;--hb-text:#182c24;--hb-muted:#52675b;--hb-line:#dfe5d7;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--hb-text);line-height:1.5;-webkit-font-smoothing:antialiased}
+#hb-catalog.hb-page *,#hb-catalog.hb-page *:before,#hb-catalog.hb-page *:after{box-sizing:border-box}
+#hb-catalog.hb-page h1,#hb-catalog.hb-page h2,#hb-catalog.hb-page h3,#hb-catalog.hb-page p,#hb-catalog.hb-page ul{margin:0}
+#hb-catalog.hb-page a{color:inherit}
+#hb-catalog.hb-page button,#hb-catalog.hb-page select{font:inherit}
+#hb-catalog .hb-wrap{width:min(1240px,calc(100% - 64px));margin-inline:auto}
+#hb-catalog.hb-page :is(a,button,select,summary):focus-visible{outline:3px solid #c8eb86;outline-offset:3px}
+#hb-catalog .hb-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:750;white-space:nowrap;transition:transform .22s ease,background .22s ease,border-color .22s ease}
+#hb-catalog .hb-button:hover{transform:translateY(-2px)}
+#hb-catalog .hb-button--lime{background:var(--hb-lime);color:#17301c!important}
+#hb-catalog .hb-button--lime:hover{background:#c9ec88}
+#hb-catalog .hb-button--outline{border:1px solid rgba(255,255,255,.48);background:rgba(255,255,255,.07);color:#fff!important}
+#hb-catalog .hb-button--outline:hover{background:rgba(255,255,255,.17)}
+#hb-catalog .hb-eyebrow{display:inline-block;margin-bottom:16px;color:#356c3c;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#hb-catalog .hb-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:#4c8b44;vertical-align:2px}
+#hb-catalog .hb-eyebrow--light{color:#d0eba9}
+#hb-catalog .hb-eyebrow--light:before{background:var(--hb-lime)}
+#hb-catalog.hb-section{padding:90px 0}
+#hb-catalog .hb-section--warm{background:var(--hb-cream)}
+#hb-catalog.hb-section--white{background:#fff}
+#hb-catalog .hb-section--pine{background:var(--hb-pine);color:#fff}
+#hb-catalog.hb-section h2{max-width:850px;margin-bottom:17px;font-size:clamp(34px,4vw,50px);font-weight:850;letter-spacing:-.04em;line-height:1.1}
+#hb-catalog .hb-intro{max-width:680px;margin-bottom:36px;color:var(--hb-muted);font-size:17px;line-height:1.6}
+#hb-catalog .hb-section--pine .hb-intro,#hb-catalog .hb-section--cta .hb-intro{color:#d4e1d7}
+#hb-catalog .hb-tabs{display:flex;flex-wrap:wrap;gap:9px;margin:31px 0}
+#hb-catalog .hb-tabs button{padding:9px 17px;border:1px solid #dfe6d8;border-radius:999px;background:#f3f5ed;color:#32493a;font-size:13px;font-weight:700;cursor:pointer}
+#hb-catalog .hb-tabs button:hover{background:#e9efdd}
+#hb-catalog .hb-tabs button.is-active{background:var(--hb-pine2);border-color:var(--hb-pine2);color:#fff}
+#hb-catalog .hb-catalog__status{min-height:24px;margin-bottom:15px;color:#59715f;font-size:13px}
+#hb-catalog .hb-products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+#hb-catalog .hb-product[hidden]{display:none!important}
+#hb-catalog .hb-product{display:flex;flex-direction:column;min-width:0;padding:22px;border:1px solid #e0e7dd;border-radius:18px;background:#fff;box-shadow:0 4px 18px #152b1f0b;transition:transform .2s,box-shadow .2s}
+#hb-catalog .hb-product:hover{transform:translateY(-4px);box-shadow:0 14px 34px #152b1f19}
+#hb-catalog .hb-product__image{position:relative;display:block;height:215px;min-height:215px;margin-bottom:15px;overflow:hidden}
+#hb-catalog .hb-product__image img{display:block;width:100%;height:100%;object-fit:contain}
+#hb-catalog .hb-product__image-edit{position:absolute;inset:0;z-index:1}
+#hb-catalog .hb-product__image-edit>cr-embed{display:block;width:100%;height:100%;background-position:center;background-repeat:no-repeat;background-size:contain}
+#hb-catalog .hb-product__label{display:inline-block;align-self:flex-start;margin-bottom:11px;padding:4px 10px;border-radius:999px;background:#eef4e7;color:#315d35;font-size:11px;font-weight:800}
+#hb-catalog .hb-product h3{font-size:18px;line-height:1.3}
+#hb-catalog .hb-product__specs{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 20px}
+#hb-catalog .hb-product__specs span{padding:5px 9px;border:1px solid #d8e8cc;border-radius:999px;background:#f4f8ef;color:#32513a;font-size:11px}
+#hb-catalog .hb-product__bottom{display:flex;align-items:end;justify-content:space-between;gap:8px;margin-top:auto;padding-top:16px;border-top:1px solid #e7ece5}
+#hb-catalog .hb-product__price{font-size:21px;font-weight:850;white-space:nowrap}
+#hb-catalog .hb-product__price small{display:block;color:#65786d;font-size:11px;font-weight:500;text-decoration:line-through}
+#hb-catalog .hb-product__link{padding:9px 15px;border-radius:999px;background:var(--hb-lime);color:#17301c!important;text-decoration:none;font-size:12px;font-weight:800}
+#hb-catalog .hb-catalog__form{margin-top:24px}
+.screen-md #hb-catalog .hb-products{grid-template-columns:repeat(2,1fr)}
+.screen-sm #hb-catalog .hb-products,.screen-xs #hb-catalog .hb-products{grid-template-columns:1fr}
+.screen-xs #hb-catalog .hb-wrap{width:calc(100% - 36px)}
+.screen-xs #hb-catalog.hb-section{padding:68px 0}
+.screen-xs #hb-catalog.hb-section h2{font-size:34px}
+@media(max-width:1180px){#hb-catalog .hb-products{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){#hb-catalog .hb-products{grid-template-columns:minmax(0,1fr)}#hb-catalog .hb-wrap{width:calc(100% - 36px)}#hb-catalog.hb-section{padding:68px 0}#hb-catalog.hb-section h2{font-size:34px;overflow-wrap:anywhere}#hb-catalog .hb-product__bottom{flex-wrap:wrap}}
+
+/* 05_gps — вставить только в CSS-вкладку этого HTML-компонента. Правила ограничены #hb-gps. */
+#hb-gps.hb-page{--hb-pine:#0b201b;--hb-pine2:#173c2f;--hb-lime:#b7df69;--hb-cream:#f6f6f0;--hb-text:#182c24;--hb-muted:#52675b;--hb-line:#dfe5d7;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--hb-text);line-height:1.5;-webkit-font-smoothing:antialiased}
+#hb-gps.hb-page *,#hb-gps.hb-page *:before,#hb-gps.hb-page *:after{box-sizing:border-box}
+#hb-gps.hb-page h1,#hb-gps.hb-page h2,#hb-gps.hb-page h3,#hb-gps.hb-page p,#hb-gps.hb-page ul{margin:0}
+#hb-gps.hb-page a{color:inherit}
+#hb-gps.hb-page button,#hb-gps.hb-page select{font:inherit}
+#hb-gps .hb-wrap{width:min(1240px,calc(100% - 64px));margin-inline:auto}
+#hb-gps.hb-page :is(a,button,select,summary):focus-visible{outline:3px solid #c8eb86;outline-offset:3px}
+#hb-gps .hb-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:750;white-space:nowrap;transition:transform .22s ease,background .22s ease,border-color .22s ease}
+#hb-gps .hb-button:hover{transform:translateY(-2px)}
+#hb-gps .hb-button--lime{background:var(--hb-lime);color:#17301c!important}
+#hb-gps .hb-button--lime:hover{background:#c9ec88}
+#hb-gps .hb-button--outline{border:1px solid rgba(255,255,255,.48);background:rgba(255,255,255,.07);color:#fff!important}
+#hb-gps .hb-button--outline:hover{background:rgba(255,255,255,.17)}
+#hb-gps .hb-eyebrow{display:inline-block;margin-bottom:16px;color:#356c3c;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#hb-gps .hb-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:#4c8b44;vertical-align:2px}
+#hb-gps .hb-eyebrow--light{color:#d0eba9}
+#hb-gps .hb-eyebrow--light:before{background:var(--hb-lime)}
+#hb-gps.hb-section{padding:90px 0}
+#hb-gps .hb-section--warm{background:var(--hb-cream)}
+#hb-gps .hb-section--white{background:#fff}
+#hb-gps.hb-section--pine{background:var(--hb-pine);color:#fff}
+#hb-gps.hb-section h2{max-width:850px;margin-bottom:17px;font-size:clamp(34px,4vw,50px);font-weight:850;letter-spacing:-.04em;line-height:1.1}
+#hb-gps .hb-intro{max-width:680px;margin-bottom:36px;color:var(--hb-muted);font-size:17px;line-height:1.6}
+#hb-gps.hb-section--pine .hb-intro,#hb-gps .hb-section--cta .hb-intro{color:#d4e1d7}
+#hb-gps .hb-split{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:64px}
+#hb-gps .hb-feature-list{display:grid;gap:20px;padding:0;list-style:none}
+#hb-gps .hb-feature-list li{display:grid;gap:3px;padding-left:22px;border-left:2px solid var(--hb-lime)}
+#hb-gps .hb-feature-list strong{font-size:16px}
+#hb-gps .hb-feature-list span{color:#bfd3c5;font-size:14px}
+#hb-gps .hb-video-slot{aspect-ratio:16/9;border:1px solid #b7df6960;border-radius:18px;background:#020b07;box-shadow:0 22px 50px #0005;overflow:hidden}
+#hb-gps .hb-video-slot>cr-embed{display:block;width:100%;height:100%}
+#hb-gps .hb-video-note{margin-top:11px;color:#bad1c0;font-size:13px}
+.screen-sm #hb-gps .hb-split,.screen-xs #hb-gps .hb-split{grid-template-columns:1fr}
+.screen-xs #hb-gps .hb-wrap{width:calc(100% - 36px)}
+.screen-xs #hb-gps.hb-section{padding:68px 0}
+.screen-xs #hb-gps.hb-section h2{font-size:34px}
+
+/* 06_installation — вставить только в CSS-вкладку этого HTML-компонента. Правила ограничены #hb-install. */
+#hb-install.hb-page{--hb-pine:#0b201b;--hb-pine2:#173c2f;--hb-lime:#b7df69;--hb-cream:#f6f6f0;--hb-text:#182c24;--hb-muted:#52675b;--hb-line:#dfe5d7;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--hb-text);line-height:1.5;-webkit-font-smoothing:antialiased}
+#hb-install.hb-page *,#hb-install.hb-page *:before,#hb-install.hb-page *:after{box-sizing:border-box}
+#hb-install.hb-page h1,#hb-install.hb-page h2,#hb-install.hb-page h3,#hb-install.hb-page p,#hb-install.hb-page ul{margin:0}
+#hb-install.hb-page a{color:inherit}
+#hb-install.hb-page button,#hb-install.hb-page select{font:inherit}
+#hb-install .hb-wrap{width:min(1240px,calc(100% - 64px));margin-inline:auto}
+#hb-install.hb-page :is(a,button,select,summary):focus-visible{outline:3px solid #c8eb86;outline-offset:3px}
+#hb-install .hb-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:750;white-space:nowrap;transition:transform .22s ease,background .22s ease,border-color .22s ease}
+#hb-install .hb-button:hover{transform:translateY(-2px)}
+#hb-install .hb-button--lime{background:var(--hb-lime);color:#17301c!important}
+#hb-install .hb-button--lime:hover{background:#c9ec88}
+#hb-install .hb-button--outline{border:1px solid rgba(255,255,255,.48);background:rgba(255,255,255,.07);color:#fff!important}
+#hb-install .hb-button--outline:hover{background:rgba(255,255,255,.17)}
+#hb-install .hb-eyebrow{display:inline-block;margin-bottom:16px;color:#356c3c;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#hb-install .hb-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:#4c8b44;vertical-align:2px}
+#hb-install .hb-eyebrow--light{color:#d0eba9}
+#hb-install .hb-eyebrow--light:before{background:var(--hb-lime)}
+#hb-install.hb-section{padding:90px 0}
+#hb-install.hb-section--warm{background:var(--hb-cream)}
+#hb-install .hb-section--white{background:#fff}
+#hb-install .hb-section--pine{background:var(--hb-pine);color:#fff}
+#hb-install.hb-section h2{max-width:850px;margin-bottom:17px;font-size:clamp(34px,4vw,50px);font-weight:850;letter-spacing:-.04em;line-height:1.1}
+#hb-install .hb-intro{max-width:680px;margin-bottom:36px;color:var(--hb-muted);font-size:17px;line-height:1.6}
+#hb-install .hb-section--pine .hb-intro,#hb-install .hb-section--cta .hb-intro{color:#d4e1d7}
+#hb-install .hb-install-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+#hb-install .hb-install-grid article{overflow:hidden;border:1px solid #dfe5d7;border-radius:17px;background:#fff}
+#hb-install .hb-install-image{height:300px;background:#d9e3d6}
+#hb-install .hb-install-image>cr-embed{display:block;width:100%;height:100%;background-position:center;background-size:cover}
+#hb-install .hb-install-grid h3{margin:22px 23px 7px;font-size:21px}
+#hb-install .hb-install-grid p{margin:0 23px 24px;color:#516457;font-size:15px}
+.screen-sm #hb-install .hb-install-grid,.screen-xs #hb-install .hb-install-grid{grid-template-columns:1fr}
+.screen-xs #hb-install .hb-wrap{width:calc(100% - 36px)}
+.screen-xs #hb-install.hb-section{padding:68px 0}
+.screen-xs #hb-install.hb-section h2{font-size:34px}
+
+/* 07_combo — вставить только в CSS-вкладку этого HTML-компонента. Правила ограничены #hb-combo. */
+#hb-combo.hb-page{--hb-pine:#0b201b;--hb-pine2:#173c2f;--hb-lime:#b7df69;--hb-cream:#f6f6f0;--hb-text:#182c24;--hb-muted:#52675b;--hb-line:#dfe5d7;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--hb-text);line-height:1.5;-webkit-font-smoothing:antialiased}
+#hb-combo.hb-page *,#hb-combo.hb-page *:before,#hb-combo.hb-page *:after{box-sizing:border-box}
+#hb-combo.hb-page h1,#hb-combo.hb-page h2,#hb-combo.hb-page h3,#hb-combo.hb-page p,#hb-combo.hb-page ul{margin:0}
+#hb-combo.hb-page a{color:inherit}
+#hb-combo.hb-page button,#hb-combo.hb-page select{font:inherit}
+#hb-combo .hb-wrap{width:min(1240px,calc(100% - 64px));margin-inline:auto}
+#hb-combo.hb-page :is(a,button,select,summary):focus-visible{outline:3px solid #c8eb86;outline-offset:3px}
+#hb-combo .hb-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:750;white-space:nowrap;transition:transform .22s ease,background .22s ease,border-color .22s ease}
+#hb-combo .hb-button:hover{transform:translateY(-2px)}
+#hb-combo .hb-button--lime{background:var(--hb-lime);color:#17301c!important}
+#hb-combo .hb-button--lime:hover{background:#c9ec88}
+#hb-combo .hb-button--outline{border:1px solid rgba(255,255,255,.48);background:rgba(255,255,255,.07);color:#fff!important}
+#hb-combo .hb-button--outline:hover{background:rgba(255,255,255,.17)}
+#hb-combo .hb-eyebrow{display:inline-block;margin-bottom:16px;color:#356c3c;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#hb-combo .hb-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:#4c8b44;vertical-align:2px}
+#hb-combo .hb-eyebrow--light{color:#d0eba9}
+#hb-combo .hb-eyebrow--light:before{background:var(--hb-lime)}
+#hb-combo.hb-section{padding:90px 0}
+#hb-combo .hb-section--warm{background:var(--hb-cream)}
+#hb-combo.hb-section--white{background:#fff}
+#hb-combo .hb-section--pine{background:var(--hb-pine);color:#fff}
+#hb-combo.hb-section h2{max-width:850px;margin-bottom:17px;font-size:clamp(34px,4vw,50px);font-weight:850;letter-spacing:-.04em;line-height:1.1}
+#hb-combo .hb-intro{max-width:680px;margin-bottom:36px;color:var(--hb-muted);font-size:17px;line-height:1.6}
+#hb-combo .hb-section--pine .hb-intro,#hb-combo .hb-section--cta .hb-intro{color:#d4e1d7}
+#hb-combo .hb-combo-panel{padding:38px;border-radius:22px;background:var(--hb-pine2);color:#fff;box-shadow:0 20px 45px #0a211529}
+#hb-combo .hb-combo-fields{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+#hb-combo .hb-combo-fields label{display:grid;gap:9px;color:#d6e8d9;font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+#hb-combo .hb-combo-fields select{width:100%;min-height:54px;padding:0 12px;border:1px solid #ffffff50;border-radius:12px;background:#264a3b;color:#fff;font-size:14px;font-weight:600;text-transform:none;letter-spacing:normal}
+#hb-combo .hb-combo-fields select option{background:#173c2f}
+#hb-combo .hb-combo-result{display:flex;align-items:center;justify-content:space-between;gap:25px;margin-top:29px;padding-top:24px;border-top:1px solid #ffffff40}
+#hb-combo .hb-combo-result span{display:block;color:#c4d7c8;font-size:12px;text-transform:uppercase}
+#hb-combo .hb-combo-result strong{display:block;margin:5px 0;color:#fff;font-size:34px;line-height:1.1}
+#hb-combo .hb-combo-result p{max-width:620px;color:#c9e0d0;font-size:13px}
+#hb-combo .hb-combo-form{min-width:190px}
+.screen-sm #hb-combo .hb-combo-fields,.screen-xs #hb-combo .hb-combo-fields{grid-template-columns:1fr}
+.screen-xs #hb-combo .hb-wrap{width:calc(100% - 36px)}
+.screen-xs #hb-combo.hb-section{padding:68px 0}
+.screen-xs #hb-combo.hb-section h2{font-size:34px}
+.screen-xs #hb-combo .hb-combo-panel{padding:23px}
+.screen-xs #hb-combo .hb-combo-result{align-items:stretch;flex-direction:column}
+
+/* 08_steps — вставить только в CSS-вкладку этого HTML-компонента. Правила ограничены #hb-steps. */
+#hb-steps.hb-page{--hb-pine:#0b201b;--hb-pine2:#173c2f;--hb-lime:#b7df69;--hb-cream:#f6f6f0;--hb-text:#182c24;--hb-muted:#52675b;--hb-line:#dfe5d7;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--hb-text);line-height:1.5;-webkit-font-smoothing:antialiased}
+#hb-steps.hb-page *,#hb-steps.hb-page *:before,#hb-steps.hb-page *:after{box-sizing:border-box}
+#hb-steps.hb-page h1,#hb-steps.hb-page h2,#hb-steps.hb-page h3,#hb-steps.hb-page p,#hb-steps.hb-page ul{margin:0}
+#hb-steps.hb-page a{color:inherit}
+#hb-steps.hb-page button,#hb-steps.hb-page select{font:inherit}
+#hb-steps .hb-wrap{width:min(1240px,calc(100% - 64px));margin-inline:auto}
+#hb-steps.hb-page :is(a,button,select,summary):focus-visible{outline:3px solid #c8eb86;outline-offset:3px}
+#hb-steps .hb-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:750;white-space:nowrap;transition:transform .22s ease,background .22s ease,border-color .22s ease}
+#hb-steps .hb-button:hover{transform:translateY(-2px)}
+#hb-steps .hb-button--lime{background:var(--hb-lime);color:#17301c!important}
+#hb-steps .hb-button--lime:hover{background:#c9ec88}
+#hb-steps .hb-button--outline{border:1px solid rgba(255,255,255,.48);background:rgba(255,255,255,.07);color:#fff!important}
+#hb-steps .hb-button--outline:hover{background:rgba(255,255,255,.17)}
+#hb-steps .hb-eyebrow{display:inline-block;margin-bottom:16px;color:#356c3c;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#hb-steps .hb-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:#4c8b44;vertical-align:2px}
+#hb-steps .hb-eyebrow--light{color:#d0eba9}
+#hb-steps .hb-eyebrow--light:before{background:var(--hb-lime)}
+#hb-steps.hb-section{padding:90px 0}
+#hb-steps.hb-section--warm{background:var(--hb-cream)}
+#hb-steps .hb-section--white{background:#fff}
+#hb-steps .hb-section--pine{background:var(--hb-pine);color:#fff}
+#hb-steps.hb-section h2{max-width:850px;margin-bottom:17px;font-size:clamp(34px,4vw,50px);font-weight:850;letter-spacing:-.04em;line-height:1.1}
+#hb-steps .hb-intro{max-width:680px;margin-bottom:36px;color:var(--hb-muted);font-size:17px;line-height:1.6}
+#hb-steps .hb-section--pine .hb-intro,#hb-steps .hb-section--cta .hb-intro{color:#d4e1d7}
+#hb-steps .hb-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:35px}
+#hb-steps .hb-steps article{padding:25px;border:1px solid #dfe5d7;border-radius:16px;background:#fff}
+#hb-steps .hb-steps article>span{display:block;margin-bottom:18px;color:#3e7942;font-size:29px;font-weight:850}
+#hb-steps .hb-steps h3{margin-bottom:9px;font-size:19px}
+#hb-steps .hb-steps p{color:#53685a;font-size:14px}
+.screen-sm #hb-steps .hb-steps,.screen-xs #hb-steps .hb-steps{grid-template-columns:1fr}
+.screen-xs #hb-steps .hb-wrap{width:calc(100% - 36px)}
+.screen-xs #hb-steps.hb-section{padding:68px 0}
+.screen-xs #hb-steps.hb-section h2{font-size:34px}
+
+/* 09_warranty — вставить только в CSS-вкладку этого HTML-компонента. Правила ограничены #hb-warranty. */
+#hb-warranty.hb-page{--hb-pine:#0b201b;--hb-pine2:#173c2f;--hb-lime:#b7df69;--hb-cream:#f6f6f0;--hb-text:#182c24;--hb-muted:#52675b;--hb-line:#dfe5d7;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--hb-text);line-height:1.5;-webkit-font-smoothing:antialiased}
+#hb-warranty.hb-page *,#hb-warranty.hb-page *:before,#hb-warranty.hb-page *:after{box-sizing:border-box}
+#hb-warranty.hb-page h1,#hb-warranty.hb-page h2,#hb-warranty.hb-page h3,#hb-warranty.hb-page p,#hb-warranty.hb-page ul{margin:0}
+#hb-warranty.hb-page a{color:inherit}
+#hb-warranty.hb-page button,#hb-warranty.hb-page select{font:inherit}
+#hb-warranty .hb-wrap{width:min(1240px,calc(100% - 64px));margin-inline:auto}
+#hb-warranty.hb-page :is(a,button,select,summary):focus-visible{outline:3px solid #c8eb86;outline-offset:3px}
+#hb-warranty .hb-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:750;white-space:nowrap;transition:transform .22s ease,background .22s ease,border-color .22s ease}
+#hb-warranty .hb-button:hover{transform:translateY(-2px)}
+#hb-warranty .hb-button--lime{background:var(--hb-lime);color:#17301c!important}
+#hb-warranty .hb-button--lime:hover{background:#c9ec88}
+#hb-warranty .hb-button--outline{border:1px solid rgba(255,255,255,.48);background:rgba(255,255,255,.07);color:#fff!important}
+#hb-warranty .hb-button--outline:hover{background:rgba(255,255,255,.17)}
+#hb-warranty .hb-eyebrow{display:inline-block;margin-bottom:16px;color:#356c3c;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#hb-warranty .hb-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:#4c8b44;vertical-align:2px}
+#hb-warranty .hb-eyebrow--light{color:#d0eba9}
+#hb-warranty .hb-eyebrow--light:before{background:var(--hb-lime)}
+#hb-warranty.hb-section{padding:90px 0}
+#hb-warranty .hb-section--warm{background:var(--hb-cream)}
+#hb-warranty .hb-section--white{background:#fff}
+#hb-warranty.hb-section--pine{background:var(--hb-pine);color:#fff}
+#hb-warranty.hb-section h2{max-width:850px;margin-bottom:17px;font-size:clamp(34px,4vw,50px);font-weight:850;letter-spacing:-.04em;line-height:1.1}
+#hb-warranty .hb-intro{max-width:680px;margin-bottom:36px;color:var(--hb-muted);font-size:17px;line-height:1.6}
+#hb-warranty.hb-section--pine .hb-intro,#hb-warranty .hb-section--cta .hb-intro{color:#d4e1d7}
+#hb-warranty .hb-split{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:64px}
+#hb-warranty .hb-warranty-info{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+#hb-warranty .hb-warranty-info>div{display:grid;align-content:center;min-height:160px;padding:17px;border:1px solid #ffffff2b;border-radius:14px;background:#ffffff0d}
+#hb-warranty .hb-warranty-info strong{font-size:24px;color:var(--hb-lime)}
+#hb-warranty .hb-warranty-info span{color:#cadbce;font-size:12px}
+.screen-sm #hb-warranty .hb-split,.screen-xs #hb-warranty .hb-split{grid-template-columns:1fr}
+.screen-sm #hb-warranty .hb-warranty-info,.screen-xs #hb-warranty .hb-warranty-info{grid-template-columns:repeat(3,1fr)}
+.screen-xs #hb-warranty .hb-wrap{width:calc(100% - 36px)}
+.screen-xs #hb-warranty .hb-button{white-space:normal;text-align:center}
+.screen-xs #hb-warranty.hb-section{padding:68px 0}
+.screen-xs #hb-warranty.hb-section h2{font-size:34px}
+.screen-xs #hb-warranty .hb-warranty-info{grid-template-columns:1fr}
+.screen-xs #hb-warranty .hb-warranty-info>div{min-height:90px}
+
+/* 10_faq — вставить только в CSS-вкладку этого HTML-компонента. Правила ограничены #hb-faq. */
+#hb-faq.hb-page{--hb-pine:#0b201b;--hb-pine2:#173c2f;--hb-lime:#b7df69;--hb-cream:#f6f6f0;--hb-text:#182c24;--hb-muted:#52675b;--hb-line:#dfe5d7;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--hb-text);line-height:1.5;-webkit-font-smoothing:antialiased}
+#hb-faq.hb-page *,#hb-faq.hb-page *:before,#hb-faq.hb-page *:after{box-sizing:border-box}
+#hb-faq.hb-page h1,#hb-faq.hb-page h2,#hb-faq.hb-page h3,#hb-faq.hb-page p,#hb-faq.hb-page ul{margin:0}
+#hb-faq.hb-page a{color:inherit}
+#hb-faq.hb-page button,#hb-faq.hb-page select{font:inherit}
+#hb-faq .hb-wrap{width:min(1240px,calc(100% - 64px));margin-inline:auto}
+#hb-faq.hb-page :is(a,button,select,summary):focus-visible{outline:3px solid #c8eb86;outline-offset:3px}
+#hb-faq .hb-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:750;white-space:nowrap;transition:transform .22s ease,background .22s ease,border-color .22s ease}
+#hb-faq .hb-button:hover{transform:translateY(-2px)}
+#hb-faq .hb-button--lime{background:var(--hb-lime);color:#17301c!important}
+#hb-faq .hb-button--lime:hover{background:#c9ec88}
+#hb-faq .hb-button--outline{border:1px solid rgba(255,255,255,.48);background:rgba(255,255,255,.07);color:#fff!important}
+#hb-faq .hb-button--outline:hover{background:rgba(255,255,255,.17)}
+#hb-faq .hb-eyebrow{display:inline-block;margin-bottom:16px;color:#356c3c;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#hb-faq .hb-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:#4c8b44;vertical-align:2px}
+#hb-faq .hb-eyebrow--light{color:#d0eba9}
+#hb-faq .hb-eyebrow--light:before{background:var(--hb-lime)}
+#hb-faq.hb-section{padding:90px 0}
+#hb-faq .hb-section--warm{background:var(--hb-cream)}
+#hb-faq.hb-section--white{background:#fff}
+#hb-faq .hb-section--pine{background:var(--hb-pine);color:#fff}
+#hb-faq.hb-section h2{max-width:850px;margin-bottom:17px;font-size:clamp(34px,4vw,50px);font-weight:850;letter-spacing:-.04em;line-height:1.1}
+#hb-faq .hb-intro{max-width:680px;margin-bottom:36px;color:var(--hb-muted);font-size:17px;line-height:1.6}
+#hb-faq .hb-section--pine .hb-intro,#hb-faq .hb-section--cta .hb-intro{color:#d4e1d7}
+#hb-faq .hb-faq{max-width:900px;display:grid;gap:9px}
+#hb-faq .hb-faq details{border:1px solid #dfe5d7;border-radius:12px;background:#fbfcf8}
+#hb-faq .hb-faq details[open]{border-color:#89ad7a;background:#fff}
+#hb-faq .hb-faq summary{padding:19px 22px;list-style:none;cursor:pointer;font-size:17px;font-weight:750}
+#hb-faq .hb-faq summary::-webkit-details-marker{display:none}
+#hb-faq .hb-faq summary:after{content:"+";float:right;color:#39763e;font-size:22px;line-height:1}
+#hb-faq .hb-faq details[open] summary:after{content:"−"}
+#hb-faq .hb-faq details p{padding:0 22px 21px;color:#52675b;font-size:15px}
+.screen-xs #hb-faq .hb-wrap{width:calc(100% - 36px)}
+.screen-xs #hb-faq.hb-section{padding:68px 0}
+.screen-xs #hb-faq.hb-section h2{font-size:34px}
+
+/* 11_cta — вставить только в CSS-вкладку этого HTML-компонента. Правила ограничены #hb-contacts. */
+#hb-contacts.hb-page{--hb-pine:#0b201b;--hb-pine2:#173c2f;--hb-lime:#b7df69;--hb-cream:#f6f6f0;--hb-text:#182c24;--hb-muted:#52675b;--hb-line:#dfe5d7;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--hb-text);line-height:1.5;-webkit-font-smoothing:antialiased}
+#hb-contacts.hb-page *,#hb-contacts.hb-page *:before,#hb-contacts.hb-page *:after{box-sizing:border-box}
+#hb-contacts.hb-page h1,#hb-contacts.hb-page h2,#hb-contacts.hb-page h3,#hb-contacts.hb-page p,#hb-contacts.hb-page ul{margin:0}
+#hb-contacts.hb-page a{color:inherit}
+#hb-contacts.hb-page button,#hb-contacts.hb-page select{font:inherit}
+#hb-contacts .hb-wrap{width:min(1240px,calc(100% - 64px));margin-inline:auto}
+#hb-contacts.hb-page :is(a,button,select,summary):focus-visible{outline:3px solid #c8eb86;outline-offset:3px}
+#hb-contacts .hb-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:750;white-space:nowrap;transition:transform .22s ease,background .22s ease,border-color .22s ease}
+#hb-contacts .hb-button:hover{transform:translateY(-2px)}
+#hb-contacts .hb-button--lime{background:var(--hb-lime);color:#17301c!important}
+#hb-contacts .hb-button--lime:hover{background:#c9ec88}
+#hb-contacts .hb-button--outline{border:1px solid rgba(255,255,255,.48);background:rgba(255,255,255,.07);color:#fff!important}
+#hb-contacts .hb-button--outline:hover{background:rgba(255,255,255,.17)}
+#hb-contacts .hb-eyebrow{display:inline-block;margin-bottom:16px;color:#356c3c;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#hb-contacts .hb-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:#4c8b44;vertical-align:2px}
+#hb-contacts .hb-eyebrow--light{color:#d0eba9}
+#hb-contacts .hb-eyebrow--light:before{background:var(--hb-lime)}
+#hb-contacts.hb-section{padding:90px 0}
+#hb-contacts .hb-section--warm{background:var(--hb-cream)}
+#hb-contacts .hb-section--white{background:#fff}
+#hb-contacts .hb-section--pine{background:var(--hb-pine);color:#fff}
+#hb-contacts.hb-section h2{max-width:850px;margin-bottom:17px;font-size:clamp(34px,4vw,50px);font-weight:850;letter-spacing:-.04em;line-height:1.1}
+#hb-contacts .hb-intro{max-width:680px;margin-bottom:36px;color:var(--hb-muted);font-size:17px;line-height:1.6}
+#hb-contacts .hb-section--pine .hb-intro,#hb-contacts.hb-section--cta .hb-intro{color:#d4e1d7}
+#hb-contacts .hb-split{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:64px}
+#hb-contacts.hb-section--cta{position:relative;isolation:isolate;overflow:hidden;padding:95px 0;background:var(--hb-pine);color:#fff}
+#hb-contacts .hb-cta-photo{position:absolute;inset:0;z-index:-2}
+#hb-contacts .hb-cta-photo>cr-embed{display:block;width:100%;height:100%;background-size:cover;background-position:center}
+#hb-contacts.hb-section--cta:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#0b201bef,#0b201bc9 65%,#0b201ba1)}
+#hb-contacts .hb-cta-phone{color:#fff!important;text-decoration:none;font-size:26px;font-weight:850}
+#hb-contacts .hb-cta-card{padding:33px;border:1px solid #ffffff38;border-radius:20px;background:#0a2119ee;box-shadow:0 22px 50px #0005}
+#hb-contacts .hb-cta-card h3{margin-bottom:8px;font-size:23px}
+#hb-contacts .hb-cta-card p{margin-bottom:21px;color:#bed2c4;font-size:14px}
+.screen-sm #hb-contacts .hb-split,.screen-xs #hb-contacts .hb-split{grid-template-columns:1fr}
+.screen-xs #hb-contacts .hb-wrap{width:calc(100% - 36px)}
+.screen-xs #hb-contacts.hb-section,.screen-xs #hb-contacts.hb-section--cta{padding:68px 0}
+.screen-xs #hb-contacts.hb-section h2{font-size:34px}
+
+/* 12_footer — вставить только в CSS-вкладку этого HTML-компонента. Правила ограничены #hb-footer. */
+#hb-footer.hb-page{--hb-pine:#0b201b;--hb-pine2:#173c2f;--hb-lime:#b7df69;--hb-cream:#f6f6f0;--hb-text:#182c24;--hb-muted:#52675b;--hb-line:#dfe5d7;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--hb-text);line-height:1.5;-webkit-font-smoothing:antialiased}
+#hb-footer.hb-page *,#hb-footer.hb-page *:before,#hb-footer.hb-page *:after{box-sizing:border-box}
+#hb-footer.hb-page h1,#hb-footer.hb-page h2,#hb-footer.hb-page h3,#hb-footer.hb-page p,#hb-footer.hb-page ul{margin:0}
+#hb-footer.hb-page a{color:inherit}
+#hb-footer.hb-page button,#hb-footer.hb-page select{font:inherit}
+#hb-footer .hb-wrap{width:min(1240px,calc(100% - 64px));margin-inline:auto}
+#hb-footer.hb-page :is(a,button,select,summary):focus-visible{outline:3px solid #c8eb86;outline-offset:3px}
+#hb-footer .hb-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:750;white-space:nowrap;transition:transform .22s ease,background .22s ease,border-color .22s ease}
+#hb-footer .hb-button:hover{transform:translateY(-2px)}
+#hb-footer .hb-button--lime{background:var(--hb-lime);color:#17301c!important}
+#hb-footer .hb-button--lime:hover{background:#c9ec88}
+#hb-footer .hb-button--outline{border:1px solid rgba(255,255,255,.48);background:rgba(255,255,255,.07);color:#fff!important}
+#hb-footer .hb-button--outline:hover{background:rgba(255,255,255,.17)}
+#hb-footer .hb-eyebrow{display:inline-block;margin-bottom:16px;color:#356c3c;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#hb-footer .hb-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:#4c8b44;vertical-align:2px}
+#hb-footer .hb-eyebrow--light{color:#d0eba9}
+#hb-footer .hb-eyebrow--light:before{background:var(--hb-lime)}
+#hb-footer .hb-section{padding:90px 0}
+#hb-footer .hb-section--warm{background:var(--hb-cream)}
+#hb-footer .hb-section--white{background:#fff}
+#hb-footer .hb-section--pine{background:var(--hb-pine);color:#fff}
+#hb-footer .hb-section h2{max-width:850px;margin-bottom:17px;font-size:clamp(34px,4vw,50px);font-weight:850;letter-spacing:-.04em;line-height:1.1}
+#hb-footer .hb-intro{max-width:680px;margin-bottom:36px;color:var(--hb-muted);font-size:17px;line-height:1.6}
+#hb-footer .hb-section--pine .hb-intro,#hb-footer .hb-section--cta .hb-intro{color:#d4e1d7}
+#hb-footer .hb-logo{color:#fff!important;text-decoration:none;font-size:25px;font-weight:900;letter-spacing:.11em;line-height:1}
+#hb-footer .hb-logo span{color:var(--hb-lime)}
+#hb-footer .hb-logo small{display:block;margin-top:5px;color:#b7c9bb;font-size:10px;font-weight:600;letter-spacing:.05em}
+#hb-footer .hb-faq{max-width:900px;display:grid;gap:9px}
+#hb-footer .hb-faq details{border:1px solid #dfe5d7;border-radius:12px;background:#fbfcf8}
+#hb-footer .hb-faq details[open]{border-color:#89ad7a;background:#fff}
+#hb-footer .hb-faq summary{padding:19px 22px;list-style:none;cursor:pointer;font-size:17px;font-weight:750}
+#hb-footer .hb-faq summary::-webkit-details-marker{display:none}
+#hb-footer .hb-faq summary:after{content:"+";float:right;color:#39763e;font-size:22px;line-height:1}
+#hb-footer .hb-faq details[open] summary:after{content:"−"}
+#hb-footer .hb-faq details p{padding:0 22px 21px;color:#52675b;font-size:15px}
+#hb-footer.hb-footer{padding:70px 0 25px;background:#091e17;color:#fff}
+#hb-footer .hb-footer__grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px}
+#hb-footer.hb-footer p{max-width:300px;margin-top:17px;color:#bdcfc1;font-size:14px}
+#hb-footer.hb-footer h3{margin-bottom:16px;font-size:15px}
+#hb-footer .hb-footer__grid>div:not(:first-child) a{display:block;margin:9px 0;color:#dae9de;text-decoration:none;font-size:14px}
+#hb-footer .hb-footer__grid a:hover{color:var(--hb-lime)}
+#hb-footer .hb-footer__bottom{margin-top:55px;padding-top:20px;border-top:1px solid #ffffff26;color:#a8bdb0;font-size:12px}
+.screen-sm #hb-footer .hb-footer__grid,.screen-xs #hb-footer .hb-footer__grid{grid-template-columns:1fr 1fr}
+.screen-xs #hb-footer .hb-wrap{width:calc(100% - 36px)}
+.screen-xs #hb-footer .hb-logo{font-size:21px}
+.screen-xs #hb-footer .hb-logo small{font-size:9px}
+.screen-xs #hb-footer .hb-footer__grid{grid-template-columns:1fr}
+</style></head><body style="margin:0"><div class="hb-page hb-head" id="hb-top">
+<div class="hb-topline"><div class="hb-wrap"><span class="hb-stock"><cr-embed name="top_status">Склад в РФ · Отгрузка за 24 ч</cr-embed></span><span><cr-embed name="top_dealer">Официальный дилер HAIBO · ООО «САНМАКС»</cr-embed></span></div></div>
+<header class="hb-header"><div class="hb-wrap hb-header__inner">
+<a class="hb-logo" href="#hb-top">HAIBO<span>.</span><small><cr-embed name="head_subtitle">Официальный дилер в России</cr-embed></small></a>
+<nav aria-label="Основная навигация" class="hb-nav"><a href="#hb-compare">Преимущества</a><a href="#hb-tech">Технология</a><a href="#hb-catalog">Каталог</a><a href="#hb-install">Установка</a><a href="#hb-warranty">Гарантия</a></nav>
+<details class="hb-menu"><summary>Меню ☰</summary><nav aria-label="Мобильная навигация"><a href="#hb-compare">Преимущества</a><a href="#hb-tech">Технология</a><a href="#hb-catalog">Каталог</a><a href="#hb-gps">GPS-якорь</a><a href="#hb-install">Установка</a><a href="#hb-combo">Комплект</a><a href="#hb-warranty">Гарантия</a><a href="#hb-faq">Вопросы</a></nav></details>
+<a class="hb-button hb-button--lime hb-header__cta" href="#hb-contacts"><cr-embed name="head_cta">Подобрать мотор</cr-embed></a>
+</div></header>
+</div>
+<section class="hb-page hb-hero" id="hb-hero">
+<div class="hb-hero__photo"><cr-embed name="hero_photo" style='background-image:url("медиа/hero_bg_image.jpg")'></cr-embed></div><div class="hb-hero__shade"></div>
+<div class="hb-wrap hb-hero__inner"><div class="hb-hero__copy">
+<div class="hb-eyebrow hb-eyebrow--light"><cr-embed name="hero_badge">Линейка HAIBO iPenguin 2025/2026</cr-embed></div>
+<h1><cr-embed name="hero_title">HAIBO iPenguin. Держит точку.</cr-embed><br/><em><cr-embed name="hero_title_accent">Вы ловите.</cr-embed></em></h1>
+<p class="hb-lead"><cr-embed name="hero_lead">Лодочный электромотор с электронным GPS-якорем удерживает лодку с точностью до 1 метра. Вы выбираете точку с пульта — мотор берёт управление на себя.</cr-embed></p>
+<div class="hb-actions"><a class="hb-button hb-button--lime" href="#hb-catalog"><cr-embed name="hero_catalog">Смотреть моторы</cr-embed></a><a class="hb-button hb-button--outline" href="#hb-combo"><cr-embed name="hero_combo">Собрать комплект</cr-embed></a></div>
+<ul class="hb-hero__facts"><li><cr-embed name="hero_fact_1">Официальный дилер в России</cr-embed></li><li><cr-embed name="hero_fact_2">Гарантия 2 года</cr-embed></li><li><cr-embed name="hero_fact_3">Сервисный центр в РФ</cr-embed></li></ul>
+</div><div class="hb-hero__media"><div class="hb-media-slot"><cr-embed colorside="dark" name="hero_video"><video autoplay="" controls="" loop="" muted="" playsinline="" poster="" src="медиа/ad.mp4" style="width:100%;height:100%;object-fit:cover;display:block"></video></cr-embed></div><div class="hb-media-caption"><strong><cr-embed name="hero_video_title">HAIBO iPenguin в работе</cr-embed></strong><span><cr-embed name="hero_video_meta">12 / 24 / 36 В · Для лодок до 7,5 м</cr-embed></span></div></div></div>
+</section>
+<section class="hb-page hb-section hb-section--warm" id="hb-compare"><div class="hb-wrap">
+<div class="hb-eyebrow"><cr-embed name="compare_kicker">Решение на воде</cr-embed></div><h2><cr-embed name="compare_title">От верёвочного якоря — к точному удержанию</cr-embed></h2><p class="hb-intro"><cr-embed name="compare_intro">Сравните, как меняется день на рыбалке с электромотором HAIBO iPenguin.</cr-embed></p>
+<div class="hb-compare"><div class="hb-compare__old"><h3><cr-embed name="compare_old">Обычный якорь</cr-embed></h3><ul><li><b><cr-embed name="compare_bad_title_1">Тяжёлый якорь и мокрая верёвка</cr-embed></b><span><cr-embed name="compare_bad_text_1">Каждая перестановка точки отнимает время и силы.</cr-embed></span></li><li><b><cr-embed name="compare_bad_title_2">Снос ветром и течением</cr-embed></b><span><cr-embed name="compare_bad_text_2">Лодка уходит с выбранной позиции, приходится вставать заново.</cr-embed></span></li><li><b><cr-embed name="compare_bad_title_3">Меньше времени на ловлю</cr-embed></b><span><cr-embed name="compare_bad_text_3">Вместо рыбалки приходится контролировать положение лодки.</cr-embed></span></li></ul></div><div class="hb-compare__new"><h3><cr-embed name="compare_new">HAIBO iPenguin</cr-embed></h3><ul><li><b><cr-embed name="compare_good_title_1">Удержание с пульта</cr-embed></b><span><cr-embed name="compare_good_text_1">Выберите точку — мотор автоматически подруливает.</cr-embed></span></li><li><b><cr-embed name="compare_good_title_2">Точный контроль</cr-embed></b><span><cr-embed name="compare_good_text_2">GPS, ГЛОНАСС и BeiDou помогают держать позицию.</cr-embed></span></li><li><b><cr-embed name="compare_good_title_3">Руки свободны</cr-embed></b><span><cr-embed name="compare_good_text_3">Вы сосредоточены на рыбалке, а не на якоре.</cr-embed></span></li></ul></div></div>
+</div></section>
+<section class="hb-page hb-section hb-section--white" id="hb-tech"><div class="hb-wrap"><div class="hb-eyebrow"><cr-embed name="tech_kicker">Технология iPenguin</cr-embed></div><h2><cr-embed name="tech_title">Пять узлов, которые меняют рыбалку</cr-embed></h2><p class="hb-intro"><cr-embed name="tech_intro">Носовой мотор берёт управление лодкой на себя, пока вы выбираете следующую точку.</cr-embed></p><div class="hb-tech-grid"><article class="hb-tech-card"><span>01</span><h3><cr-embed name="tech_title_1">Электронный GPS-якорь</cr-embed></h3><p><cr-embed name="tech_text_1">Удерживает лодку в выбранной точке.</cr-embed></p></article><article class="hb-tech-card"><span>02</span><h3><cr-embed name="tech_title_2">Беспроводной пульт</cr-embed></h3><p><cr-embed name="tech_text_2">Скорость, курс и точка удержания под рукой.</cr-embed></p></article><article class="hb-tech-card"><span>03</span><h3><cr-embed name="tech_title_3">Носовое крепление</cr-embed></h3><p><cr-embed name="tech_text_3">Корма остаётся свободной для основного мотора.</cr-embed></p></article><article class="hb-tech-card"><span>04</span><h3><cr-embed name="tech_title_4">Три напряжения</cr-embed></h3><p><cr-embed name="tech_text_4">Модели на 12, 24 и 36 В под разные лодки.</cr-embed></p></article><article class="hb-tech-card"><span>05</span><h3><cr-embed name="tech_title_5">Штанга и винт</cr-embed></h3><p><cr-embed name="tech_text_5">Подбор длины штанги под высоту носа.</cr-embed></p></article></div></div></section>
+<section class="hb-page hb-section hb-section--white hb-catalog" id="hb-catalog">
+<div class="hb-wrap">
+<div class="hb-eyebrow"><cr-embed name="cat_kicker">Каталог HAIBO</cr-embed></div>
+<h2><cr-embed name="cat_title">Моторы и оригинальное оборудование</cr-embed></h2>
+<p class="hb-intro"><cr-embed name="cat_intro">Выберите мотор и совместимое оборудование.</cr-embed></p>
+<div aria-label="Фильтр товаров" class="hb-tabs">
+<button aria-pressed="true" class="is-active" data-filter="all" type="button">Все товары</button>
+<button aria-pressed="false" data-filter="motor" type="button">Моторы</button>
+<button aria-pressed="false" data-filter="12" type="button">12 В</button>
+<button aria-pressed="false" data-filter="24" type="button">24 В</button>
+<button aria-pressed="false" data-filter="36" type="button">36 В</button>
+<button aria-pressed="false" data-filter="accessory" type="button">Аксессуары</button>
+</div>
+<p aria-live="polite" class="hb-catalog__status">Показано 17 из 17 товаров</p>
+<div class="hb-products">
+<article class="hb-product" data-compatibility="P001" data-compatible-voltage="12" data-id="M-P001-54" data-type="motor" data-voltage="12">
+<div class="hb-product__image"><img alt="HAIBO P001 iPenguin 12V 54″" loading="lazy" src="медиа/моторы-карточки/M-P001-54.png"/><div class="hb-product__image-edit"><cr-embed name="cat_m_p001_54_image" style='background-image:url("медиа/моторы-карточки/M-P001-54.png")'></cr-embed></div></div>
+<span class="hb-product__label"><cr-embed name="cat_m_p001_54_label">12 В · P001</cr-embed></span>
+<h3><cr-embed name="cat_m_p001_54_title">HAIBO P001 iPenguin 12V 54″</cr-embed></h3>
+<div class="hb-product__specs">
+<span><cr-embed name="cat_m_p001_54_spec_1">12 В</cr-embed></span>
+<span><cr-embed name="cat_m_p001_54_spec_2">Штанга 137 см</cr-embed></span>
+<span><cr-embed name="cat_m_p001_54_spec_3">Тяга 40 кг</cr-embed></span>
+<span><cr-embed name="cat_m_p001_54_spec_4">Лодка до 5 м</cr-embed></span>
+</div>
+<div class="hb-product__bottom">
+<div class="hb-product__price">
+<small><cr-embed name="cat_m_p001_54_old_price">139 800 ₽</cr-embed></small>
+<cr-embed name="cat_m_p001_54_price">132 900 ₽</cr-embed>
+</div>
+<a class="hb-product__link" href="https://haibo-official.ru/1000">Подробнее</a>
+</div>
+</article>
+<article class="hb-product" data-compatibility="P001" data-compatible-voltage="12" data-id="M-P001-72" data-type="motor" data-voltage="12">
+<div class="hb-product__image"><img alt="HAIBO P001 iPenguin 12V 72″" loading="lazy" src="медиа/моторы-карточки/M-P001-72.png"/><div class="hb-product__image-edit"><cr-embed name="cat_m_p001_72_image" style='background-image:url("медиа/моторы-карточки/M-P001-72.png")'></cr-embed></div></div>
+<span class="hb-product__label"><cr-embed name="cat_m_p001_72_label">12 В · P001</cr-embed></span>
+<h3><cr-embed name="cat_m_p001_72_title">HAIBO P001 iPenguin 12V 72″</cr-embed></h3>
+<div class="hb-product__specs">
+<span><cr-embed name="cat_m_p001_72_spec_1">12 В</cr-embed></span>
+<span><cr-embed name="cat_m_p001_72_spec_2">Штанга 183 см</cr-embed></span>
+<span><cr-embed name="cat_m_p001_72_spec_3">Тяга 40 кг</cr-embed></span>
+<span><cr-embed name="cat_m_p001_72_spec_4">Лодка до 5 м</cr-embed></span>
+</div>
+<div class="hb-product__bottom">
+<div class="hb-product__price">
+<small><cr-embed name="cat_m_p001_72_old_price">141 900 ₽</cr-embed></small>
+<cr-embed name="cat_m_p001_72_price">139 900 ₽</cr-embed>
+</div>
+<a class="hb-product__link" href="https://haibo-official.ru/1001">Подробнее</a>
+</div>
+</article>
+<article class="hb-product" data-compatibility="P002" data-compatible-voltage="24" data-id="M-P002-60" data-type="motor" data-voltage="24">
+<div class="hb-product__image"><img alt="HAIBO P002 iPenguin 24V 60″" loading="lazy" src="медиа/моторы-карточки/M-P002-60.png"/><div class="hb-product__image-edit"><cr-embed name="cat_m_p002_60_image" style='background-image:url("медиа/моторы-карточки/M-P002-60.png")'></cr-embed></div></div>
+<span class="hb-product__label"><cr-embed name="cat_m_p002_60_label">24 В · P002</cr-embed></span>
+<h3><cr-embed name="cat_m_p002_60_title">HAIBO P002 iPenguin 24V 60″</cr-embed></h3>
+<div class="hb-product__specs">
+<span><cr-embed name="cat_m_p002_60_spec_1">24 В</cr-embed></span>
+<span><cr-embed name="cat_m_p002_60_spec_2">Штанга 60″ / 152 см</cr-embed></span>
+<span><cr-embed name="cat_m_p002_60_spec_3">Мощность 1200 Вт</cr-embed></span>
+<span><cr-embed name="cat_m_p002_60_spec_4">Лодка до 6 м</cr-embed></span>
+</div>
+<div class="hb-product__bottom">
+<div class="hb-product__price">
+<small><cr-embed name="cat_m_p002_60_old_price">149 900 ₽</cr-embed></small>
+<cr-embed name="cat_m_p002_60_price">144 900 ₽</cr-embed>
+</div>
+<a class="hb-product__link" href="https://haibo-official.ru/1002">Подробнее</a>
+</div>
+</article>
+<article class="hb-product" data-compatibility="P002" data-compatible-voltage="24" data-id="M-P002-72" data-type="motor" data-voltage="24">
+<div class="hb-product__image"><img alt="HAIBO P002 iPenguin 24V 72″" loading="lazy" src="медиа/моторы-карточки/M-P002-72.png"/><div class="hb-product__image-edit"><cr-embed name="cat_m_p002_72_image" style='background-image:url("медиа/моторы-карточки/M-P002-72.png")'></cr-embed></div></div>
+<span class="hb-product__label"><cr-embed name="cat_m_p002_72_label">24 В · P002</cr-embed></span>
+<h3><cr-embed name="cat_m_p002_72_title">HAIBO P002 iPenguin 24V 72″</cr-embed></h3>
+<div class="hb-product__specs">
+<span><cr-embed name="cat_m_p002_72_spec_1">24 В</cr-embed></span>
+<span><cr-embed name="cat_m_p002_72_spec_2">Штанга 72″ / 183 см</cr-embed></span>
+<span><cr-embed name="cat_m_p002_72_spec_3">Мощность 1200 Вт</cr-embed></span>
+<span><cr-embed name="cat_m_p002_72_spec_4">Лодка до 6 м</cr-embed></span>
+</div>
+<div class="hb-product__bottom">
+<div class="hb-product__price">
+<small><cr-embed name="cat_m_p002_72_old_price">156 000 ₽</cr-embed></small>
+<cr-embed name="cat_m_p002_72_price">149 900 ₽</cr-embed>
+</div>
+<a class="hb-product__link" href="https://haibo-official.ru/1003">Подробнее</a>
+</div>
+</article>
+<article class="hb-product" data-compatibility="P003" data-compatible-voltage="36" data-id="M-P003-72" data-type="motor" data-voltage="36">
+<div class="hb-product__image"><img alt="HAIBO P003 iPenguin 36V 72″" loading="lazy" src="медиа/моторы-карточки/M-P003-72.png"/><div class="hb-product__image-edit"><cr-embed name="cat_m_p003_72_image" style='background-image:url("медиа/моторы-карточки/M-P003-72.png")'></cr-embed></div></div>
+<span class="hb-product__label"><cr-embed name="cat_m_p003_72_label">36 В · P003</cr-embed></span>
+<h3><cr-embed name="cat_m_p003_72_title">HAIBO P003 iPenguin 36V 72″</cr-embed></h3>
+<div class="hb-product__specs">
+<span><cr-embed name="cat_m_p003_72_spec_1">36 В</cr-embed></span>
+<span><cr-embed name="cat_m_p003_72_spec_2">Штанга 183 см</cr-embed></span>
+<span><cr-embed name="cat_m_p003_72_spec_3">GPS, ГЛОНАСС, BeiDou</cr-embed></span>
+<span><cr-embed name="cat_m_p003_72_spec_4">Носовое, пульт</cr-embed></span>
+</div>
+<div class="hb-product__bottom">
+<div class="hb-product__price">
+<small><cr-embed name="cat_m_p003_72_old_price">178 000 ₽</cr-embed></small>
+<cr-embed name="cat_m_p003_72_price">159 900 ₽</cr-embed>
+</div>
+<a class="hb-product__link" href="https://haibo-official.ru/1004">Подробнее</a>
+</div>
+</article>
+<article class="hb-product" data-compatibility="P65" data-compatible-voltage="" data-id="A-NAV-P65" data-type="accessory" data-voltage="">
+<div class="hb-product__image"><img alt="HAIBO NAV SENSOR — компас / курсоуказатель" loading="lazy" src="https://img1.creatium.ru/41/df/c5/6e3c42900950a9278a48d590f234fcb0b5/6_photoroom_png_photoroom_min.png"/><div class="hb-product__image-edit"><cr-embed name="cat_a_nav_p65_image" style='background-image:url("https://img1.creatium.ru/41/df/c5/6e3c42900950a9278a48d590f234fcb0b5/6_photoroom_png_photoroom_min.png")'></cr-embed></div></div>
+<span class="hb-product__label"><cr-embed name="cat_a_nav_p65_label">Навигация</cr-embed></span>
+<h3><cr-embed name="cat_a_nav_p65_title">HAIBO NAV SENSOR — компас / курсоуказатель</cr-embed></h3>
+<div class="hb-product__specs">
+<span><cr-embed name="cat_a_nav_p65_spec_1">Для HAIBO P65</cr-embed></span>
+<span><cr-embed name="cat_a_nav_p65_spec_2">Кабель 5 м</cr-embed></span>
+<span><cr-embed name="cat_a_nav_p65_spec_3">Jog: шаг 1,5 м</cr-embed></span>
+<span><cr-embed name="cat_a_nav_p65_spec_4">Навигация / якорь</cr-embed></span>
+</div>
+<div class="hb-product__bottom">
+<div class="hb-product__price">
+<cr-embed name="cat_a_nav_p65_price">10 900 ₽</cr-embed>
+</div>
+<a class="hb-product__link" href="https://haibo-official.ru/1">Подробнее</a>
+</div>
+</article>
+<article class="hb-product" data-compatibility="HAIBO|Universal" data-compatible-voltage="" data-id="A-QR-STANDARD" data-type="accessory" data-voltage="">
+<div class="hb-product__image"><img alt="HAIBO быстросъёмная алюминиевая пластина" loading="lazy" src="https://img1.creatium.ru/33/d0/e6/34265c2d8f4047488a77d24e288301ada1/7.png"/><div class="hb-product__image-edit"><cr-embed name="cat_a_qr_standard_image" style='background-image:url("https://img1.creatium.ru/33/d0/e6/34265c2d8f4047488a77d24e288301ada1/7.png")'></cr-embed></div></div>
+<span class="hb-product__label"><cr-embed name="cat_a_qr_standard_label">Крепление и монтаж</cr-embed></span>
+<h3><cr-embed name="cat_a_qr_standard_title">HAIBO быстросъёмная алюминиевая пластина</cr-embed></h3>
+<div class="hb-product__specs">
+<span><cr-embed name="cat_a_qr_standard_spec_1">Алюминий + нерж. сталь</cr-embed></span>
+<span><cr-embed name="cat_a_qr_standard_spec_2">HAIBO / MotorGuide</cr-embed></span>
+<span><cr-embed name="cat_a_qr_standard_spec_3">Слайдер из 2 частей</cr-embed></span>
+<span><cr-embed name="cat_a_qr_standard_spec_4">Возможность замка</cr-embed></span>
+</div>
+<div class="hb-product__bottom">
+<div class="hb-product__price">
+<cr-embed name="cat_a_qr_standard_price">9 900 ₽</cr-embed>
+</div>
+<a class="hb-product__link" href="https://haibo-official.ru/2">Подробнее</a>
+</div>
+</article>
+<article class="hb-product" data-compatibility="P001|P002|P003|Universal" data-compatible-voltage="12|24|36" data-id="A-FUSE-60A" data-type="accessory" data-voltage="">
+<div class="hb-product__image"><img alt="Автоматический предохранитель HAIBO 60A" loading="lazy" src="https://img1.creatium.ru/a3/0c/5f/c8b2d16e094ae321165f95b9fa8fc4eb2f/8.png"/><div class="hb-product__image-edit"><cr-embed name="cat_a_fuse_60a_image" style='background-image:url("https://img1.creatium.ru/a3/0c/5f/c8b2d16e094ae321165f95b9fa8fc4eb2f/8.png")'></cr-embed></div></div>
+<span class="hb-product__label"><cr-embed name="cat_a_fuse_60a_label">Электрика и защита</cr-embed></span>
+<h3><cr-embed name="cat_a_fuse_60a_title">Автоматический предохранитель HAIBO 60A</cr-embed></h3>
+<div class="hb-product__specs">
+<span><cr-embed name="cat_a_fuse_60a_spec_1">60 А</cr-embed></span>
+<span><cr-embed name="cat_a_fuse_60a_spec_2">12 / 24 / 36 В</cr-embed></span>
+<span><cr-embed name="cat_a_fuse_60a_spec_3">Автоматический</cr-embed></span>
+<span><cr-embed name="cat_a_fuse_60a_spec_4">Защита цепи</cr-embed></span>
+</div>
+<div class="hb-product__bottom">
+<div class="hb-product__price">
+<cr-embed name="cat_a_fuse_60a_price">2 500 ₽</cr-embed>
+</div>
+<a class="hb-product__link" href="https://haibo-official.ru/3">Подробнее</a>
+</div>
+</article>
+<article class="hb-product" data-compatibility="P65" data-compatible-voltage="" data-id="A-RAM-P65" data-type="accessory" data-voltage="">
+<div class="hb-product__image"><img alt="RAM-крепление HAIBO" loading="lazy" src="https://img1.creatium.ru/1d/1f/52/5d1cf10397a466674b0cf8a5dd9ffbd979/10.png"/><div class="hb-product__image-edit"><cr-embed name="cat_a_ram_p65_image" style='background-image:url("https://img1.creatium.ru/1d/1f/52/5d1cf10397a466674b0cf8a5dd9ffbd979/10.png")'></cr-embed></div></div>
+<span class="hb-product__label"><cr-embed name="cat_a_ram_p65_label">Крепление и монтаж</cr-embed></span>
+<h3><cr-embed name="cat_a_ram_p65_title">RAM-крепление HAIBO</cr-embed></h3>
+<div class="hb-product__specs">
+<span><cr-embed name="cat_a_ram_p65_spec_1">Для HAIBO P65</cr-embed></span>
+<span><cr-embed name="cat_a_ram_p65_spec_2">Фиксация штанги</cr-embed></span>
+<span><cr-embed name="cat_a_ram_p65_spec_3">Регулируемый кронштейн</cr-embed></span>
+<span><cr-embed name="cat_a_ram_p65_spec_4">Для жёсткого борта</cr-embed></span>
+</div>
+<div class="hb-product__bottom">
+<div class="hb-product__price">
+<cr-embed name="cat_a_ram_p65_price">3 900 ₽</cr-embed>
+</div>
+<a class="hb-product__link" href="https://haibo-official.ru/4">Подробнее</a>
+</div>
+</article>
+<article class="hb-product" data-compatibility="P002" data-compatible-voltage="24" data-id="A-BAT-24-100" data-type="accessory" data-voltage="24">
+<div class="hb-product__image"><img alt="HAIBO LiFePO4 24V 100Ah" loading="lazy" src="https://img1.creatium.ru/a4/db/35/27b6b483ea2868bf1b9e30c1e48ac0853a/1.png"/><div class="hb-product__image-edit"><cr-embed name="cat_a_bat_24_100_image" style='background-image:url("https://img1.creatium.ru/a4/db/35/27b6b483ea2868bf1b9e30c1e48ac0853a/1.png")'></cr-embed></div></div>
+<span class="hb-product__label"><cr-embed name="cat_a_bat_24_100_label">Аккумуляторы</cr-embed></span>
+<h3><cr-embed name="cat_a_bat_24_100_title">HAIBO LiFePO4 24V 100Ah</cr-embed></h3>
+<div class="hb-product__specs">
+<span><cr-embed name="cat_a_bat_24_100_spec_1">24 В</cr-embed></span>
+<span><cr-embed name="cat_a_bat_24_100_spec_2">100 А·ч</cr-embed></span>
+<span><cr-embed name="cat_a_bat_24_100_spec_3">LiFePO4</cr-embed></span>
+<span><cr-embed name="cat_a_bat_24_100_spec_4">более 3500 циклов</cr-embed></span>
+</div>
+<div class="hb-product__bottom">
+<div class="hb-product__price">
+<cr-embed name="cat_a_bat_24_100_price">70 900 ₽</cr-embed>
+</div>
+<a class="hb-product__link" href="https://haibo-official.ru/5">Подробнее</a>
+</div>
+</article>
+<article class="hb-product" data-compatibility="P001" data-compatible-voltage="12" data-id="A-BAT-12-100" data-type="accessory" data-voltage="12">
+<div class="hb-product__image"><img alt="HAIBO LiFePO4 12V 100Ah" loading="lazy" src="https://img1.creatium.ru/disk2/a3/32/75/b7e73dff323f44d59d79ebbc91baede26b/kreativ_bez_nazvaniya_1.png"/><div class="hb-product__image-edit"><cr-embed name="cat_a_bat_12_100_image" style='background-image:url("https://img1.creatium.ru/disk2/a3/32/75/b7e73dff323f44d59d79ebbc91baede26b/kreativ_bez_nazvaniya_1.png")'></cr-embed></div></div>
+<span class="hb-product__label"><cr-embed name="cat_a_bat_12_100_label">Аккумуляторы</cr-embed></span>
+<h3><cr-embed name="cat_a_bat_12_100_title">HAIBO LiFePO4 12V 100Ah</cr-embed></h3>
+<div class="hb-product__specs">
+<span><cr-embed name="cat_a_bat_12_100_spec_1">12 В</cr-embed></span>
+<span><cr-embed name="cat_a_bat_12_100_spec_2">100 А·ч</cr-embed></span>
+<span><cr-embed name="cat_a_bat_12_100_spec_3">LiFePO4</cr-embed></span>
+<span><cr-embed name="cat_a_bat_12_100_spec_4">более 3500 циклов</cr-embed></span>
+</div>
+<div class="hb-product__bottom">
+<div class="hb-product__price">
+<small><cr-embed name="cat_a_bat_12_100_old_price">41 400 ₽</cr-embed></small>
+<cr-embed name="cat_a_bat_12_100_price">38 900 ₽</cr-embed>
+</div>
+<a class="hb-product__link" href="https://haibo-official.ru/6">Подробнее</a>
+</div>
+</article>
+<article class="hb-product" data-compatibility="P001|P65" data-compatible-voltage="" data-id="A-COVER-54" data-type="accessory" data-voltage="">
+<div class="hb-product__image"><img alt="Чехол HAIBO для мотора 54″ / 137 см" loading="lazy" src="https://img1.creatium.ru/disk2/e2/81/7b/e4e27f08352e5155d36704df298d39bfc6/img_0862_copy_1_4_11zon.jpg"/><div class="hb-product__image-edit"><cr-embed name="cat_a_cover_54_image" style='background-image:url("https://img1.creatium.ru/disk2/e2/81/7b/e4e27f08352e5155d36704df298d39bfc6/img_0862_copy_1_4_11zon.jpg")'></cr-embed></div></div>
+<span class="hb-product__label"><cr-embed name="cat_a_cover_54_label">Чехлы</cr-embed></span>
+<h3><cr-embed name="cat_a_cover_54_title">Чехол HAIBO для мотора 54″ / 137 см</cr-embed></h3>
+<div class="hb-product__specs">
+<span><cr-embed name="cat_a_cover_54_spec_1">54″ / 137 см</cr-embed></span>
+<span><cr-embed name="cat_a_cover_54_spec_2">Oxford 1680D</cr-embed></span>
+<span><cr-embed name="cat_a_cover_54_spec_3">Водоотталкивающий</cr-embed></span>
+<span><cr-embed name="cat_a_cover_54_spec_4">Усиление ПВХ</cr-embed></span>
+</div>
+<div class="hb-product__bottom">
+<div class="hb-product__price">
+<cr-embed name="cat_a_cover_54_price">6 900 ₽</cr-embed>
+</div>
+<a class="hb-product__link" href="https://haibo-official.ru/7">Подробнее</a>
+</div>
+</article>
+<article class="hb-product" data-compatibility="P001|P002|P003|P65" data-compatible-voltage="" data-id="A-COVER-72" data-type="accessory" data-voltage="">
+<div class="hb-product__image"><img alt="Чехол HAIBO для мотора 72″ / 183 см" loading="lazy" src="https://img1.creatium.ru/disk2/e2/81/7b/e4e27f08352e5155d36704df298d39bfc6/img_0862_copy_1_4_11zon.jpg"/><div class="hb-product__image-edit"><cr-embed name="cat_a_cover_72_image" style='background-image:url("https://img1.creatium.ru/disk2/e2/81/7b/e4e27f08352e5155d36704df298d39bfc6/img_0862_copy_1_4_11zon.jpg")'></cr-embed></div></div>
+<span class="hb-product__label"><cr-embed name="cat_a_cover_72_label">Чехлы</cr-embed></span>
+<h3><cr-embed name="cat_a_cover_72_title">Чехол HAIBO для мотора 72″ / 183 см</cr-embed></h3>
+<div class="hb-product__specs">
+<span><cr-embed name="cat_a_cover_72_spec_1">72″ / 183 см</cr-embed></span>
+<span><cr-embed name="cat_a_cover_72_spec_2">Oxford 1680D</cr-embed></span>
+<span><cr-embed name="cat_a_cover_72_spec_3">Водоотталкивающий</cr-embed></span>
+<span><cr-embed name="cat_a_cover_72_spec_4">Усиление ПВХ</cr-embed></span>
+</div>
+<div class="hb-product__bottom">
+<div class="hb-product__price">
+<cr-embed name="cat_a_cover_72_price">7 900 ₽</cr-embed>
+</div>
+<a class="hb-product__link" href="https://haibo-official.ru/7">Подробнее</a>
+</div>
+</article>
+<article class="hb-product" data-compatibility="Universal" data-compatible-voltage="" data-id="A-BOW-PVC" data-type="accessory" data-voltage="">
+<div class="hb-product__image"><img alt="Носовая площадка HAIBO для ПВХ-лодок" loading="lazy" src="https://img1.creatium.ru/disk2/a9/23/fa/5828a4ed77c7528ab63730e53ee182ce85/img_6304_kopiya_4.jpg"/><div class="hb-product__image-edit"><cr-embed name="cat_a_bow_pvc_image" style='background-image:url("https://img1.creatium.ru/disk2/a9/23/fa/5828a4ed77c7528ab63730e53ee182ce85/img_6304_kopiya_4.jpg")'></cr-embed></div></div>
+<span class="hb-product__label"><cr-embed name="cat_a_bow_pvc_label">Крепление и монтаж</cr-embed></span>
+<h3><cr-embed name="cat_a_bow_pvc_title">Носовая площадка HAIBO для ПВХ-лодок</cr-embed></h3>
+<div class="hb-product__specs">
+<span><cr-embed name="cat_a_bow_pvc_spec_1">Алюминий 5 мм</cr-embed></span>
+<span><cr-embed name="cat_a_bow_pvc_spec_2">51 × 72/30 × 8 см</cr-embed></span>
+<span><cr-embed name="cat_a_bow_pvc_spec_3">4 опоры Ø8,5 см</cr-embed></span>
+<span><cr-embed name="cat_a_bow_pvc_spec_4">Быстрый демонтаж</cr-embed></span>
+</div>
+<div class="hb-product__bottom">
+<div class="hb-product__price">
+<cr-embed name="cat_a_bow_pvc_price">7 500 ₽</cr-embed>
+</div>
+<a class="hb-product__link" href="https://haibo-official.ru/8">Подробнее</a>
+</div>
+</article>
+<article class="hb-product" data-compatibility="Universal" data-compatible-voltage="" data-id="A-CONNECTOR-50A" data-type="accessory" data-voltage="">
+<div class="hb-product__image"><img alt="Вилка-розетка HAIBO 50A" loading="lazy" src="https://img1.creatium.ru/disk2/be/ae/98/348f2b3702334b36488e48195cb0f39167/photo_2023_11_07_14_15_05.jpg"/><div class="hb-product__image-edit"><cr-embed name="cat_a_connector_50a_image" style='background-image:url("https://img1.creatium.ru/disk2/be/ae/98/348f2b3702334b36488e48195cb0f39167/photo_2023_11_07_14_15_05.jpg")'></cr-embed></div></div>
+<span class="hb-product__label"><cr-embed name="cat_a_connector_50a_label">Электрика и защита</cr-embed></span>
+<h3><cr-embed name="cat_a_connector_50a_title">Вилка-розетка HAIBO 50A</cr-embed></h3>
+<div class="hb-product__specs">
+<span><cr-embed name="cat_a_connector_50a_spec_1">50 А</cr-embed></span>
+<span><cr-embed name="cat_a_connector_50a_spec_2">Разъём Anderson</cr-embed></span>
+<span><cr-embed name="cat_a_connector_50a_spec_3">Силовое подключение</cr-embed></span>
+<span><cr-embed name="cat_a_connector_50a_spec_4">Подбор по току</cr-embed></span>
+</div>
+<div class="hb-product__bottom">
+<div class="hb-product__price">
+<cr-embed name="cat_a_connector_50a_price">1 900 ₽</cr-embed>
+</div>
+<a class="hb-product__link" href="https://haibo-official.ru/9">Подробнее</a>
+</div>
+</article>
+<article class="hb-product" data-compatibility="P65" data-compatible-voltage="" data-id="A-RAM-PVC-P65" data-type="accessory" data-voltage="">
+<div class="hb-product__image"><img alt="RAM-крепление HAIBO для ПВХ-лодок" loading="lazy" src="https://img1.creatium.ru/disk2/02/95/f1/cf20ff2fef458142e23b110574c150a757/remove_bg_ai_1689089003855.png"/><div class="hb-product__image-edit"><cr-embed name="cat_a_ram_pvc_p65_image" style='background-image:url("https://img1.creatium.ru/disk2/02/95/f1/cf20ff2fef458142e23b110574c150a757/remove_bg_ai_1689089003855.png")'></cr-embed></div></div>
+<span class="hb-product__label"><cr-embed name="cat_a_ram_pvc_p65_label">Крепление и монтаж</cr-embed></span>
+<h3><cr-embed name="cat_a_ram_pvc_p65_title">RAM-крепление HAIBO для ПВХ-лодок</cr-embed></h3>
+<div class="hb-product__specs">
+<span><cr-embed name="cat_a_ram_pvc_p65_spec_1">Для ПВХ-лодок</cr-embed></span>
+<span><cr-embed name="cat_a_ram_pvc_p65_spec_2">Для HAIBO P65</cr-embed></span>
+<span><cr-embed name="cat_a_ram_pvc_p65_spec_3">Фиксация штанги</cr-embed></span>
+<span><cr-embed name="cat_a_ram_pvc_p65_spec_4">Опорная площадка</cr-embed></span>
+</div>
+<div class="hb-product__bottom">
+<div class="hb-product__price">
+<cr-embed name="cat_a_ram_pvc_p65_price">4 500 ₽</cr-embed>
+</div>
+<a class="hb-product__link" href="https://haibo-official.ru/10">Подробнее</a>
+</div>
+</article>
+<article class="hb-product" data-compatibility="P002|P003" data-compatible-voltage="24|36" data-id="A-QR-HD-P002-P003" data-type="accessory" data-voltage="">
+<div class="hb-product__image"><img alt="Усиленная быстросъёмная площадка HAIBO" loading="lazy" src="https://img1.creatium.ru/disk2/51/93/8d/7a20a4d464ad7db0155110699e97f62d1a/photo_2025_05_26_13_59_32.jpg"/><div class="hb-product__image-edit"><cr-embed name="cat_a_qr_hd_p002_p003_image" style='background-image:url("https://img1.creatium.ru/disk2/51/93/8d/7a20a4d464ad7db0155110699e97f62d1a/photo_2025_05_26_13_59_32.jpg")'></cr-embed></div></div>
+<span class="hb-product__label"><cr-embed name="cat_a_qr_hd_p002_p003_label">Крепление и монтаж</cr-embed></span>
+<h3><cr-embed name="cat_a_qr_hd_p002_p003_title">Усиленная быстросъёмная площадка HAIBO</cr-embed></h3>
+<div class="hb-product__specs">
+<span><cr-embed name="cat_a_qr_hd_p002_p003_spec_1">P002 / P003</cr-embed></span>
+<span><cr-embed name="cat_a_qr_hd_p002_p003_spec_2">Вес 3,5 кг</cr-embed></span>
+<span><cr-embed name="cat_a_qr_hd_p002_p003_spec_3">Усиленная конструкция</cr-embed></span>
+<span><cr-embed name="cat_a_qr_hd_p002_p003_spec_4">Повышенная нагрузка</cr-embed></span>
+</div>
+<div class="hb-product__bottom">
+<div class="hb-product__price">
+<cr-embed name="cat_a_qr_hd_p002_p003_price">16 000 ₽</cr-embed>
+</div>
+<a class="hb-product__link" href="https://haibo-official.ru/11">Подробнее</a>
+</div>
+</article>
+</div>
+<div class="hb-catalog__form"><cr-embed name="cat_form"><a class="hb-button hb-button--lime" href="tel:88005053995">Связаться с дилером</a></cr-embed></div>
+</div>
+</section>
+<section class="hb-page hb-section hb-section--pine" id="hb-gps"><div class="hb-wrap hb-split"><div><div class="hb-eyebrow hb-eyebrow--light"><cr-embed name="gps_kicker">GPS-якорь на воде</cr-embed></div><h2><cr-embed name="gps_title">Лодка остаётся в выбранной точке</cr-embed></h2><p class="hb-intro"><cr-embed name="gps_intro">Мотор считывает сигналы спутников и подруливает винтом, компенсируя ветер и течение.</cr-embed></p><ul class="hb-feature-list"><li><strong><cr-embed name="gps_feature_1">Удержание позиции</cr-embed></strong><span><cr-embed name="gps_feature_text_1">Точка задаётся с беспроводного пульта.</cr-embed></span></li><li><strong><cr-embed name="gps_feature_2">Контроль курса</cr-embed></strong><span><cr-embed name="gps_feature_text_2">Встроенный компас помогает держать направление.</cr-embed></span></li><li><strong><cr-embed name="gps_feature_3">Смещение Jog</cr-embed></strong><span><cr-embed name="gps_feature_text_3">Переход на соседнюю точку без подъёма якоря.</cr-embed></span></li></ul></div><div><div class="hb-video-slot"><cr-embed colorside="dark" name="gps_video"><video autoplay="" controls="" loop="" muted="" playsinline="" poster src="медиа/gps.mp4" style="width:100%;height:100%;object-fit:cover;display:block"></video></cr-embed></div><p class="hb-video-note"><cr-embed name="gps_caption">Полевые испытания HAIBO на воде</cr-embed></p></div></div></section>
+<section class="hb-page hb-section hb-section--warm" id="hb-install"><div class="hb-wrap"><div class="hb-eyebrow"><cr-embed name="install_kicker">Установка</cr-embed></div><h2><cr-embed name="install_title">Для ПВХ-лодок и жёстких катеров</cr-embed></h2><p class="hb-intro"><cr-embed name="install_intro">Подберите площадку и длину штанги под высоту носа вашего судна.</cr-embed></p><div class="hb-install-grid"><article><div class="hb-install-image"><cr-embed name="install_pvc_image" style='background-image:url("медиа/install_image_1.jpg")'></cr-embed></div><h3><cr-embed name="install_pvc_title">Монтаж на ПВХ-лодку</cr-embed></h3><p><cr-embed name="install_pvc_text">Носовая площадка формирует прочное основание для установки мотора.</cr-embed></p></article><article><div class="hb-install-image"><cr-embed name="install_boat_image" style='background-image:url("медиа/install_image_2.jpg")'></cr-embed></div><h3><cr-embed name="install_boat_title">Монтаж на катер</cr-embed></h3><p><cr-embed name="install_boat_text">Быстросъёмная площадка помогает снять мотор после выхода на воду.</cr-embed></p></article></div></div></section>
+<section class="hb-page hb-section hb-section--white" id="hb-combo"><div class="hb-wrap"><div class="hb-eyebrow"><cr-embed name="combo_kicker">Подбор комплекта</cr-embed></div><h2><cr-embed name="combo_title">Соберите комплект под свою лодку</cr-embed></h2><p class="hb-intro"><cr-embed name="combo_intro">Мотор, аккумулятор и монтаж из текущего каталога. Калькулятор покажет сумму и отсеет несовместимые позиции.</cr-embed></p><div class="hb-combo-panel"><div class="hb-combo-fields"><label>1. Электромотор<select data-combo="motor"></select></label><label>2. Аккумулятор<select data-combo="battery"></select></label><label>3. Монтаж и защита<select data-combo="accessory"></select></label></div><div class="hb-combo-result"><div><span>Стоимость комплекта</span><strong data-combo="total">—</strong><p data-combo="note"></p></div><div class="hb-combo-form"><cr-embed colorside="dark" name="combo_form"><a class="hb-button hb-button--lime" href="tel:88005053995">Связаться с дилером</a></cr-embed></div></div></div></div></section>
+<section class="hb-page hb-section hb-section--warm" id="hb-steps"><div class="hb-wrap"><div class="hb-eyebrow"><cr-embed name="steps_kicker">Простой выбор</cr-embed></div><h2><cr-embed name="steps_title">Как выбрать мотор за три шага</cr-embed></h2><div class="hb-steps"><article><span>01</span><h3><cr-embed name="step_title_1">Длина и масса лодки</cr-embed></h3><p><cr-embed name="step_text_1">Проверьте предельную длину судна в карточке конкретной модели.</cr-embed></p></article><article><span>02</span><h3><cr-embed name="step_title_2">Напряжение питания</cr-embed></h3><p><cr-embed name="step_text_2">P-001 — 12 В, P-002 — 24 В, P-003 — 36 В.</cr-embed></p></article><article><span>03</span><h3><cr-embed name="step_title_3">Высота носа</cr-embed></h3><p><cr-embed name="step_text_3">Выберите штангу 54, 60 или 72 дюйма под посадку мотора.</cr-embed></p></article></div></div></section>
+<section class="hb-page hb-section hb-section--pine" id="hb-warranty"><div class="hb-wrap hb-split"><div><div class="hb-eyebrow hb-eyebrow--light"><cr-embed name="war_kicker">Официальный дилер</cr-embed></div><h2><cr-embed name="war_title">Гарантия 2 года и сервис в России</cr-embed></h2><p class="hb-intro"><cr-embed name="war_intro">ООО «САНМАКС» помогает подобрать мотор, организует поставку и сервисное обслуживание.</cr-embed></p><a class="hb-button hb-button--lime" href="tel:88005053995"><cr-embed name="war_phone">8 800 505-39-95</cr-embed></a></div><div class="hb-warranty-info"><div><strong><cr-embed name="war_fact_1">2 года</cr-embed></strong><span><cr-embed name="war_text_1">Гарантия со дня продажи</cr-embed></span></div><div><strong><cr-embed name="war_fact_2">Россия</cr-embed></strong><span><cr-embed name="war_text_2">Сервис и поддержка дилера</cr-embed></span></div><div><strong><cr-embed name="war_fact_3">HAIBO</cr-embed></strong><span><cr-embed name="war_text_3">Оригинальное оборудование</cr-embed></span></div></div></div></section>
+<section class="hb-page hb-section hb-section--white" id="hb-faq"><div class="hb-wrap"><div class="hb-eyebrow"><cr-embed name="faq_kicker">Вопросы</cr-embed></div><h2><cr-embed name="faq_title">Коротко и по делу</cr-embed></h2><div class="hb-faq"><details><summary><cr-embed name="faq_q_1">Чем отличаются 12, 24 и 36 В?</cr-embed></summary><p><cr-embed name="faq_a_1">Это серии P-001, P-002 и P-003. Аккумулятор должен соответствовать напряжению мотора.</cr-embed></p></details><details><summary><cr-embed name="faq_q_2">Что такое электронный якорь?</cr-embed></summary><p><cr-embed name="faq_a_2">Мотор удерживает лодку в выбранной точке с помощью GPS, ГЛОНАСС и BeiDou.</cr-embed></p></details><details><summary><cr-embed name="faq_q_3">Подойдёт ли мотор для ПВХ?</cr-embed></summary><p><cr-embed name="faq_a_3">Да, для ПВХ-лодок есть носовая площадка. Совместимость конкретного крепежа проверяйте по карточке.</cr-embed></p></details><details><summary><cr-embed name="faq_q_4">Какой нужен аккумулятор?</cr-embed></summary><p><cr-embed name="faq_a_4">Для P-001 нужен 12 В, для P-002 — 24 В. В текущем каталоге нет 36-вольтового аккумулятора для P-003.</cr-embed></p></details><details><summary><cr-embed name="faq_q_5">Что входит в комплект?</cr-embed></summary><p><cr-embed name="faq_a_5">Состав различается по модели. Точный перечень смотрите в карточке товара.</cr-embed></p></details><details><summary><cr-embed name="faq_q_6">Какая гарантия?</cr-embed></summary><p><cr-embed name="faq_a_6">На моторы заявлена гарантия 2 года со дня продажи при личном использовании.</cr-embed></p></details></div></div></section>
+<section class="hb-page hb-section hb-section--cta" id="hb-contacts"><div class="hb-cta-photo"><cr-embed name="cta_photo" style='background-image:url("медиа/cta_bg_image.jpg")'></cr-embed></div><div class="hb-wrap hb-split hb-cta-content"><div><div class="hb-eyebrow hb-eyebrow--light"><cr-embed name="cta_kicker">Поможем выбрать</cr-embed></div><h2><cr-embed name="cta_title">Расскажите о лодке — подберём мотор</cr-embed></h2><p class="hb-intro"><cr-embed name="cta_intro">Напишите длину лодки и высоту носа. Подскажем модель, штангу, аккумулятор и крепёж.</cr-embed></p><a class="hb-cta-phone" href="tel:88005053995"><cr-embed name="cta_phone">8 800 505-39-95</cr-embed></a></div><div class="hb-cta-card"><h3><cr-embed name="cta_form_title">Заявка на подбор</cr-embed></h3><p><cr-embed name="cta_form_text">Оставьте номер телефона — специалист свяжется с вами.</cr-embed></p><cr-embed colorside="dark" name="cta_form"><a class="hb-button hb-button--lime" href="tel:88005053995">Связаться с дилером</a></cr-embed></div></div></section>
+<footer class="hb-page hb-footer" id="hb-footer"><div class="hb-wrap hb-footer__grid"><div><a class="hb-logo" href="#hb-top">HAIBO<span>.</span></a><p><cr-embed name="foot_about">Официальный дилер лодочных электромоторов в России.</cr-embed></p></div><div><h3><cr-embed name="foot_nav_title">Разделы</cr-embed></h3><a href="#hb-catalog">Каталог</a><a href="#hb-install">Установка</a><a href="#hb-warranty">Гарантия</a><a href="#hb-faq">Вопросы</a></div><div><h3><cr-embed name="foot_contact_title">Связаться</cr-embed></h3><a href="tel:88005053995"><cr-embed name="foot_phone">8 800 505-39-95</cr-embed></a><p><cr-embed name="foot_company">ООО «САНМАКС»</cr-embed></p></div></div><div class="hb-wrap hb-footer__bottom"><cr-embed name="foot_note">© HAIBO. Официальный дилер в России.</cr-embed></div></footer>
+<script>
+function hbPreviewScreen(){var w=window.innerWidth,b=document.body;b.classList.remove('screen-md','screen-sm','screen-xs');if(w<=480)b.classList.add('screen-xs');else if(w<=760)b.classList.add('screen-sm');else if(w<=1180)b.classList.add('screen-md')}
+window.addEventListener('resize',hbPreviewScreen);hbPreviewScreen();
+(function(){var el=document.querySelector('#hb-catalog').parentElement;/* Каталог уже находится в HTML. Этот JS только переключает готовые карточки. */
+(function () {
+  var root = el.querySelector('.hb-catalog');
+  if (!root) return;
+  var cards = Array.prototype.slice.call(root.querySelectorAll('.hb-product'));
+  var buttons = Array.prototype.slice.call(root.querySelectorAll('.hb-tabs [data-filter]'));
+  var status = root.querySelector('.hb-catalog__status');
+  if (!cards.length || !status) return;
+
+  function parts(value) {
+    return String(value || '').split('|').map(function (part) { return part.trim(); });
+  }
+
+  function matches(card, filter) {
+    if (filter === 'all') return true;
+    if (filter === 'motor' || filter === 'accessory') return card.dataset.type === filter;
+    if (card.dataset.type === 'motor') return card.dataset.voltage === filter;
+    var series = { '12': 'P001', '24': 'P002', '36': 'P003' }[filter];
+    var compatible = parts(card.dataset.compatibleVoltage);
+    var families = parts(card.dataset.compatibility);
+    return compatible.indexOf(filter) !== -1 || families.indexOf(series) !== -1 || families.indexOf('Universal') !== -1;
+  }
+
+  function render(filter) {
+    var count = 0;
+    cards.forEach(function (card) {
+      card.hidden = !matches(card, filter);
+      if (!card.hidden) count++;
+    });
+    buttons.forEach(function (button) {
+      var active = button.dataset.filter === filter;
+      button.classList.toggle('is-active', active);
+      button.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+    status.textContent = 'Показано ' + count + ' из ' + cards.length + ' товаров';
+  }
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () { render(button.dataset.filter); });
+  });
+  render('all');
+})();
+})();(function(){var el=document.querySelector('#hb-combo').parentElement;var data={rows:[{"id": "M-P001-54", "active": "1", "sort_order": "10", "product_type": "motor", "category": "Электромоторы", "subcategory": "GPS-электромоторы", "sku": "P001-12V-54", "title": "HAIBO P001 iPenguin 12V 54″", "series": "P001", "variant": "12V / 54″", "price": "132900", "old_price": "139800", "product_url": "https://haibo-official.ru/1000", "image_url": "медиа/моторы-карточки/M-P001-54.png", "voltage_v": "12", "compatible_voltage": "12", "compatibility_filter": "P001", "compatibility_note": "Мотор P001", "shaft_in": "54", "shaft_cm": "137", "boat_max_m": "5", "boat_max_kg": "", "thrust_lbs": "88", "thrust_kg": "40", "motor_weight_kg": "20", "power_w": "540", "capacity_ah": "", "battery_type": "", "current_a": "", "cable_length_m": "", "dimensions": "", "material": "", "gps": "1", "glonass": "1", "beidou": "1", "compass": "1", "short_description": "Носовой GPS-электромотор 12 В для лодок до 5 м.", "card_spec_1": "12 В", "card_spec_2": "Штанга 137 см", "card_spec_3": "Тяга 40 кг", "card_spec_4": "Лодка до 5 м", "data_confidence": "medium", "spec_conflict_note": "Тяга 40 кг и штанга 137 см совпадают на haibo-official.ru/1000 и у дилеров. 88 lbs — пересчёт 40 кг и таблица Профиснасти (88/40). Мощность 540 Вт есть на haiborussia.ru, на своём сайте ватт нет. Ток на своём сайте не указан. «До 400 кг» есть только в подзаголовке карточки, в блоке характеристик массы нет.", "primary_spec_source": "https://haibo-official.ru/", "secondary_spec_source": "https://haiborussia.ru/", "inventory_source": "https://haibo-official.ru/", "source_checked_date": "2026-09-24", "propeller": "3 лопасти", "mount": "носовое", "control": "дистанционный пульт", "battery_recommend": "", "kit_contents": "мотор, пульт, 2 винта, ключ, инструкция, быстросъёмная пластина; на сайте указан вес комплекта 25 кг", "cycles": "", "charger_a": "", "temp_range": "", "weight_kg": "", "peak_current_a": "", "show_in_catalog": "1", "public_card": "1", "combo_group": "motor", "show_in_combo": "1"}, {"id": "M-P001-72", "active": "1", "sort_order": "20", "product_type": "motor", "category": "Электромоторы", "subcategory": "GPS-электромоторы", "sku": "P001-12V-72", "title": "HAIBO P001 iPenguin 12V 72″", "series": "P001", "variant": "12V / 72″", "price": "139900", "old_price": "141900", "product_url": "https://haibo-official.ru/1001", "image_url": "медиа/моторы-карточки/M-P001-72.png", "voltage_v": "12", "compatible_voltage": "12", "compatibility_filter": "P001", "compatibility_note": "Мотор P001", "shaft_in": "72", "shaft_cm": "183", "boat_max_m": "5", "boat_max_kg": "", "thrust_lbs": "88", "thrust_kg": "40", "motor_weight_kg": "20", "power_w": "540", "capacity_ah": "", "battery_type": "", "current_a": "", "cable_length_m": "", "dimensions": "", "material": "", "gps": "1", "glonass": "1", "beidou": "1", "compass": "1", "short_description": "Носовой GPS-электромотор 12 В с длинной штангой 72″.", "card_spec_1": "12 В", "card_spec_2": "Штанга 183 см", "card_spec_3": "Тяга 40 кг", "card_spec_4": "Лодка до 5 м", "data_confidence": "medium", "spec_conflict_note": "Главная и haiborussia.ru дают ногу 183 см. В тексте haibo-official.ru/1001 ошибочно 153 см. Тяга 40 кг, вес 20 кг, мощность 540 Вт (haiborussia.ru). Ток на своём сайте не указан. «До 400 кг» только в подзаголовке.", "primary_spec_source": "https://haibo-official.ru/", "secondary_spec_source": "https://haiborussia.ru/", "inventory_source": "https://haibo-official.ru/", "source_checked_date": "2026-09-24", "propeller": "3 лопасти", "mount": "носовое", "control": "дистанционный пульт", "battery_recommend": "", "kit_contents": "мотор, пульт, 2 винта, ключ, инструкция, быстросъёмная пластина; вес комплекта на сайте 25 кг", "cycles": "", "charger_a": "", "temp_range": "", "weight_kg": "", "peak_current_a": "", "show_in_catalog": "1", "public_card": "1", "combo_group": "motor", "show_in_combo": "1"}, {"id": "M-P002-60", "active": "1", "sort_order": "30", "product_type": "motor", "category": "Электромоторы", "subcategory": "GPS-электромоторы", "sku": "P002-24V-60", "title": "HAIBO P002 iPenguin 24V 60″", "series": "P002", "variant": "24V / 60″", "price": "144900", "old_price": "149900", "product_url": "https://haibo-official.ru/1002", "image_url": "медиа/моторы-карточки/M-P002-60.png", "voltage_v": "24", "compatible_voltage": "24", "compatibility_filter": "P002", "compatibility_note": "Мотор P002", "shaft_in": "60", "shaft_cm": "152.4", "boat_max_m": "6", "boat_max_kg": "", "thrust_lbs": "", "thrust_kg": "", "motor_weight_kg": "25", "power_w": "1200", "capacity_ah": "", "battery_type": "", "current_a": "", "cable_length_m": "", "dimensions": "", "material": "", "gps": "1", "glonass": "1", "beidou": "1", "compass": "1", "short_description": "Носовой GPS-электромотор 24 В для лодок до 6 м.", "card_spec_1": "24 В", "card_spec_2": "Штанга 60″ / 152 см", "card_spec_3": "Мощность 1200 Вт", "card_spec_4": "Лодка до 6 м", "data_confidence": "conflict", "spec_conflict_note": "haiborussia.ru: 1200 Вт, стойка 152,4 см, вес 25 кг, лодка до 6 м, тяги нет. Главная haibo-official.ru: нога 153 см, лодка до 6 м и до 750 кг. Текст /1002 противоречит названию: нога 183 см, тяга 36 кг, вес 27 кг. Тягу в карточку не ставим. 750 кг только в подзаголовке.", "primary_spec_source": "https://haibo-official.ru/", "secondary_spec_source": "https://haiborussia.ru/", "inventory_source": "https://haibo-official.ru/", "source_checked_date": "2026-09-24", "propeller": "3 лопасти", "mount": "носовое", "control": "дистанционный пульт", "battery_recommend": "", "kit_contents": "по haiborussia.ru: мотор, беспроводной пульт, 1 пластиковый винт, инструкция", "cycles": "", "charger_a": "", "temp_range": "", "weight_kg": "", "peak_current_a": "", "show_in_catalog": "1", "public_card": "1", "combo_group": "motor", "show_in_combo": "1"}, {"id": "M-P002-72", "active": "1", "sort_order": "40", "product_type": "motor", "category": "Электромоторы", "subcategory": "GPS-электромоторы", "sku": "P002-24V-72", "title": "HAIBO P002 iPenguin 24V 72″", "series": "P002", "variant": "24V / 72″", "price": "149900", "old_price": "156000", "product_url": "https://haibo-official.ru/1003", "image_url": "медиа/моторы-карточки/M-P002-72.png", "voltage_v": "24", "compatible_voltage": "24", "compatibility_filter": "P002", "compatibility_note": "Мотор P002", "shaft_in": "72", "shaft_cm": "182.9", "boat_max_m": "6", "boat_max_kg": "", "thrust_lbs": "", "thrust_kg": "", "motor_weight_kg": "25", "power_w": "1200", "capacity_ah": "", "battery_type": "", "current_a": "", "cable_length_m": "", "dimensions": "", "material": "", "gps": "1", "glonass": "1", "beidou": "1", "compass": "1", "short_description": "Носовой GPS-электромотор 24 В с штангой 72″.", "card_spec_1": "24 В", "card_spec_2": "Штанга 72″ / 183 см", "card_spec_3": "Мощность 1200 Вт", "card_spec_4": "Лодка до 6 м", "data_confidence": "conflict", "spec_conflict_note": "haiborussia.ru: 1200 Вт, стойка 182,9 см, вес 25 кг, лодка до 6 м. Главная: нога 183 см, лодка до 6 м и 750 кг. Текст /1003: тяга 36 кг, вес 28 кг, лодка «до 5,5 / до 6 м». Тягу в карточку не ставим.", "primary_spec_source": "https://haibo-official.ru/", "secondary_spec_source": "https://haiborussia.ru/", "inventory_source": "https://haibo-official.ru/", "source_checked_date": "2026-09-24", "propeller": "3 лопасти", "mount": "носовое", "control": "дистанционный пульт", "battery_recommend": "", "kit_contents": "по haiborussia.ru: мотор, беспроводной пульт, 1 пластиковый винт, инструкция", "cycles": "", "charger_a": "", "temp_range": "", "weight_kg": "", "peak_current_a": "", "show_in_catalog": "1", "public_card": "1", "combo_group": "motor", "show_in_combo": "1"}, {"id": "M-P003-72", "active": "1", "sort_order": "50", "product_type": "motor", "category": "Электромоторы", "subcategory": "GPS-электромоторы", "sku": "P003-36V-72", "title": "HAIBO P003 iPenguin 36V 72″", "series": "P003", "variant": "36V / 72″", "price": "159900", "old_price": "178000", "product_url": "https://haibo-official.ru/1004", "image_url": "медиа/моторы-карточки/M-P003-72.png", "voltage_v": "36", "compatible_voltage": "36", "compatibility_filter": "P003", "compatibility_note": "Мотор P003", "shaft_in": "72", "shaft_cm": "183", "boat_max_m": "", "boat_max_kg": "", "thrust_lbs": "", "thrust_kg": "", "motor_weight_kg": "", "power_w": "", "capacity_ah": "", "battery_type": "", "current_a": "", "cable_length_m": "", "dimensions": "", "material": "", "gps": "1", "glonass": "1", "beidou": "1", "compass": "1", "short_description": "Флагманский носовой GPS-электромотор 36 В для крупных лодок и катеров.", "card_spec_1": "36 В", "card_spec_2": "Штанга 183 см", "card_spec_3": "GPS, ГЛОНАСС, BeiDou", "card_spec_4": "Носовое, пульт", "data_confidence": "conflict", "spec_conflict_note": "Свой сайт /1004: 1980 Вт, тяга 120 lb / 55 кг, ток 50 А, вес 28 кг, водоизмещение 800–1200 кг, обороты 2200, щёточный мотор. Подзаголовок той же страницы: лодка до 7,5 м и до 1500 кг. haiborussia.ru по другой цене 199 000 ₽: 1728 Вт, 125 lbs / 56,7 кг, вес 27,5 кг, лодка до 7 м, штанга 182 см. В карточку тягу, мощность и массу лодки не ставим.", "primary_spec_source": "https://haibo-official.ru/", "secondary_spec_source": "https://haiborussia.ru/", "inventory_source": "https://haibo-official.ru/", "source_checked_date": "2026-09-24", "propeller": "3 лопасти, ударопрочный пластик — так написано на /1004", "mount": "носовое", "control": "дистанционный пульт", "battery_recommend": "80–120 А·ч — так написано на /1004", "kit_contents": "на /1004: мотор, 1 винт, ключ, пульт, ремешок; вес комплекта 33 кг", "cycles": "", "charger_a": "", "temp_range": "", "weight_kg": "", "peak_current_a": "", "show_in_catalog": "1", "public_card": "1", "combo_group": "motor", "show_in_combo": "1"}, {"id": "A-NAV-P65", "active": "1", "sort_order": "110", "product_type": "accessory", "category": "Аксессуары", "subcategory": "Навигация", "sku": "NAV-SENSOR-P65", "title": "HAIBO NAV SENSOR — компас / курсоуказатель", "series": "", "variant": "", "price": "10900", "old_price": "", "product_url": "https://haibo-official.ru/1", "image_url": "https://img1.creatium.ru/41/df/c5/6e3c42900950a9278a48d590f234fcb0b5/6_photoroom_png_photoroom_min.png", "voltage_v": "", "compatible_voltage": "", "compatibility_filter": "P65", "compatibility_note": "На карточке товара и в описании заявлен для HAIBO P65; совместимость с P001/P002/P003 не подтверждена.", "shaft_in": "", "shaft_cm": "", "boat_max_m": "", "boat_max_kg": "", "thrust_lbs": "", "thrust_kg": "", "motor_weight_kg": "", "power_w": "", "capacity_ah": "", "battery_type": "", "current_a": "", "cable_length_m": "5", "dimensions": "", "material": "", "gps": "", "glonass": "", "beidou": "", "compass": "1", "short_description": "Дополнительный датчик курса для повышения точности навигации и режима электронного якоря.", "card_spec_1": "Для HAIBO P65", "card_spec_2": "Кабель 5 м", "card_spec_3": "Jog: шаг 1,5 м", "card_spec_4": "Навигация / якорь", "data_confidence": "high", "spec_conflict_note": "Совместимость указана только с P65 — не расширяем её автоматически на P-серию 2025.", "primary_spec_source": "https://haibo.ru/accsesprodacts", "secondary_spec_source": "https://haibo-official.ru/1", "inventory_source": "https://haibo-official.ru/", "source_checked_date": "2026-09-22", "propeller": "", "mount": "", "control": "", "battery_recommend": "", "kit_contents": "", "cycles": "", "charger_a": "", "temp_range": "", "weight_kg": "", "peak_current_a": "", "show_in_catalog": "1", "public_card": "1", "combo_group": "other", "show_in_combo": "0"}, {"id": "A-QR-STANDARD", "active": "1", "sort_order": "120", "product_type": "accessory", "category": "Аксессуары", "subcategory": "Крепление и монтаж", "sku": "QR-PLATE-STANDARD", "title": "HAIBO быстросъёмная алюминиевая пластина", "series": "", "variant": "", "price": "9900", "old_price": "", "product_url": "https://haibo-official.ru/2", "image_url": "https://img1.creatium.ru/33/d0/e6/34265c2d8f4047488a77d24e288301ada1/7.png", "voltage_v": "", "compatible_voltage": "", "compatibility_filter": "HAIBO|Universal", "compatibility_note": "Заявлена для HAIBO, MotorGuide Xi5/Xi3; точную посадку конкретной модели проверять перед продажей.", "shaft_in": "", "shaft_cm": "", "boat_max_m": "", "boat_max_kg": "", "thrust_lbs": "", "thrust_kg": "", "motor_weight_kg": "", "power_w": "", "capacity_ah": "", "battery_type": "", "current_a": "", "cable_length_m": "", "dimensions": "", "material": "Алюминий + нержавеющая сталь", "gps": "", "glonass": "", "beidou": "", "compass": "", "short_description": "Слайдер из двух частей для быстрого снятия и установки носового электромотора.", "card_spec_1": "Алюминий + нерж. сталь", "card_spec_2": "HAIBO / MotorGuide", "card_spec_3": "Слайдер из 2 частей", "card_spec_4": "Возможность замка", "data_confidence": "high", "spec_conflict_note": "", "primary_spec_source": "https://haibo.ru/accsesprodacts", "secondary_spec_source": "https://haibo-official.ru/2", "inventory_source": "https://haibo-official.ru/", "source_checked_date": "2026-09-22", "propeller": "", "mount": "", "control": "", "battery_recommend": "", "kit_contents": "", "cycles": "", "charger_a": "", "temp_range": "", "weight_kg": "", "peak_current_a": "", "show_in_catalog": "1", "public_card": "1", "combo_group": "mount", "show_in_combo": "1"}, {"id": "A-FUSE-60A", "active": "1", "sort_order": "130", "product_type": "accessory", "category": "Аксессуары", "subcategory": "Электрика и защита", "sku": "FUSE-60A", "title": "Автоматический предохранитель HAIBO 60A", "series": "", "variant": "", "price": "2500", "old_price": "", "product_url": "https://haibo-official.ru/3", "image_url": "https://img1.creatium.ru/a3/0c/5f/c8b2d16e094ae321165f95b9fa8fc4eb2f/8.png", "voltage_v": "", "compatible_voltage": "12|24|36", "compatibility_filter": "P001|P002|P003|Universal", "compatibility_note": "Предназначен для цепей 12/24/36 В; окончательный подбор защиты — по сечению кабеля и току установки.", "shaft_in": "", "shaft_cm": "", "boat_max_m": "", "boat_max_kg": "", "thrust_lbs": "", "thrust_kg": "", "motor_weight_kg": "", "power_w": "", "capacity_ah": "", "battery_type": "", "current_a": "60", "cable_length_m": "", "dimensions": "", "material": "", "gps": "", "glonass": "", "beidou": "", "compass": "", "short_description": "Автоматическая защита силовой цепи электромотора от перегрузки и короткого замыкания.", "card_spec_1": "60 А", "card_spec_2": "12 / 24 / 36 В", "card_spec_3": "Автоматический", "card_spec_4": "Защита цепи", "data_confidence": "high", "spec_conflict_note": "", "primary_spec_source": "https://haibo.ru/accsesprodacts", "secondary_spec_source": "https://haibo-official.ru/3", "inventory_source": "https://haibo-official.ru/", "source_checked_date": "2026-09-22", "propeller": "", "mount": "", "control": "", "battery_recommend": "", "kit_contents": "", "cycles": "", "charger_a": "", "temp_range": "", "weight_kg": "", "peak_current_a": "", "show_in_catalog": "1", "public_card": "1", "combo_group": "protection", "show_in_combo": "1"}, {"id": "A-RAM-P65", "active": "1", "sort_order": "140", "product_type": "accessory", "category": "Аксессуары", "subcategory": "Крепление и монтаж", "sku": "RAM-P65", "title": "RAM-крепление HAIBO", "series": "", "variant": "", "price": "3900", "old_price": "", "product_url": "https://haibo-official.ru/4", "image_url": "https://img1.creatium.ru/1d/1f/52/5d1cf10397a466674b0cf8a5dd9ffbd979/10.png", "voltage_v": "", "compatible_voltage": "", "compatibility_filter": "P65", "compatibility_note": "В текущих описаниях указано для HAIBO P65; совместимость с P001/P002/P003 не подтверждена.", "shaft_in": "", "shaft_cm": "", "boat_max_m": "", "boat_max_kg": "", "thrust_lbs": "", "thrust_kg": "", "motor_weight_kg": "", "power_w": "", "capacity_ah": "", "battery_type": "", "current_a": "", "cable_length_m": "", "dimensions": "", "material": "", "gps": "", "glonass": "", "beidou": "", "compass": "", "short_description": "Кронштейн-фиксатор штанги троллингового электромотора.", "card_spec_1": "Для HAIBO P65", "card_spec_2": "Фиксация штанги", "card_spec_3": "Регулируемый кронштейн", "card_spec_4": "Для жёсткого борта", "data_confidence": "high", "spec_conflict_note": "Не помечаем как совместимый с P001/P002/P003 без подтверждения.", "primary_spec_source": "https://haibo.ru/accsesprodacts", "secondary_spec_source": "https://haibo-official.ru/4", "inventory_source": "https://haibo-official.ru/", "source_checked_date": "2026-09-22", "propeller": "", "mount": "", "control": "", "battery_recommend": "", "kit_contents": "", "cycles": "", "charger_a": "", "temp_range": "", "weight_kg": "", "peak_current_a": "", "show_in_catalog": "1", "public_card": "1", "combo_group": "other", "show_in_combo": "0"}, {"id": "A-BAT-24-100", "active": "1", "sort_order": "150", "product_type": "accessory", "category": "Аксессуары", "subcategory": "Аккумуляторы", "sku": "LFP-24V-100AH", "title": "HAIBO LiFePO4 24V 100Ah", "series": "", "variant": "24V / 100Ah", "price": "70900", "old_price": "", "product_url": "https://haibo-official.ru/5", "image_url": "https://img1.creatium.ru/a4/db/35/27b6b483ea2868bf1b9e30c1e48ac0853a/1.png", "voltage_v": "24", "compatible_voltage": "24", "compatibility_filter": "P002", "compatibility_note": "По напряжению подходит к 24-вольтовой системе P002; схему, BMS и ток нагрузки проверять при подборе.", "shaft_in": "", "shaft_cm": "", "boat_max_m": "", "boat_max_kg": "", "thrust_lbs": "", "thrust_kg": "", "motor_weight_kg": "", "power_w": "", "capacity_ah": "100", "battery_type": "LiFePO4", "current_a": "", "cable_length_m": "", "dimensions": "370×430×300 мм — так на /5", "material": "", "gps": "", "glonass": "", "beidou": "", "compass": "", "short_description": "Тяговый LiFePO4-аккумулятор 24 В 100 А·ч для лодочного электрооборудования.", "card_spec_1": "24 В", "card_spec_2": "100 А·ч", "card_spec_3": "LiFePO4", "card_spec_4": "более 3500 циклов", "data_confidence": "conflict", "spec_conflict_note": "На /5 указаны 370×430×300 мм и 15,5 кг. У других российских карточек того же названия встречаются 270×380×120 мм / 15,5 кг и 270×330×250 мм / 22 кг. Габариты и массу в четыре строки карточки не выводим.", "primary_spec_source": "https://haibo.ru/accprodacts1", "secondary_spec_source": "https://haibo-official.ru/5", "inventory_source": "https://haibo-official.ru/", "source_checked_date": "2026-09-22", "propeller": "", "mount": "", "control": "", "battery_recommend": "", "kit_contents": "", "cycles": "более 3500", "charger_a": "5", "temp_range": "-20…+50 °C", "weight_kg": "15.5", "peak_current_a": "до 100 А", "show_in_catalog": "1", "public_card": "1", "combo_group": "battery", "show_in_combo": "1"}, {"id": "A-BAT-12-100", "active": "1", "sort_order": "160", "product_type": "accessory", "category": "Аксессуары", "subcategory": "Аккумуляторы", "sku": "LFP-12V-100AH", "title": "HAIBO LiFePO4 12V 100Ah", "series": "", "variant": "12V / 100Ah", "price": "38900", "old_price": "41400", "product_url": "https://haibo-official.ru/6", "image_url": "https://img1.creatium.ru/disk2/a3/32/75/b7e73dff323f44d59d79ebbc91baede26b/kreativ_bez_nazvaniya_1.png", "voltage_v": "12", "compatible_voltage": "12", "compatibility_filter": "P001", "compatibility_note": "По напряжению подходит к 12-вольтовой системе P001; ток BMS и конкретную нагрузку проверять при подборе.", "shaft_in": "", "shaft_cm": "", "boat_max_m": "", "boat_max_kg": "", "thrust_lbs": "", "thrust_kg": "", "motor_weight_kg": "", "power_w": "", "capacity_ah": "100", "battery_type": "LiFePO4", "current_a": "", "cable_length_m": "", "dimensions": "", "material": "", "gps": "", "glonass": "", "beidou": "", "compass": "", "short_description": "Тяговый LiFePO4-аккумулятор 12 В 100 А·ч.", "card_spec_1": "12 В", "card_spec_2": "100 А·ч", "card_spec_3": "LiFePO4", "card_spec_4": "более 3500 циклов", "data_confidence": "conflict", "spec_conflict_note": "Текст /6 повторяет габариты 24-вольтовой карточки: 370×430×300 мм и 15,5 кг. Это похоже на копипаст. Европейские карточки другого корпуса Haibo 12V 100Ah сходятся: 360×270×115 мм, 9,75 кг, 1200 Вт·ч, до 7000 циклов, ток до 80 А. В публичную карточку габариты и массу не ставим.", "primary_spec_source": "https://haibo.ru/accprodacts1", "secondary_spec_source": "https://www.rybashop.cz/en/haibo-battery-lifepo4-12v-100ah", "inventory_source": "https://haibo-official.ru/", "source_checked_date": "2026-09-22", "propeller": "", "mount": "", "control": "", "battery_recommend": "", "kit_contents": "", "cycles": "более 3500 на haibo-official.ru/6; европейские магазины пишут до 7000", "charger_a": "5", "temp_range": "-20…+50 °C на своём сайте", "weight_kg": "", "peak_current_a": "до 100 А на своём сайте", "show_in_catalog": "1", "public_card": "1", "combo_group": "battery", "show_in_combo": "1"}, {"id": "A-COVER-54", "active": "1", "sort_order": "170", "product_type": "accessory", "category": "Аксессуары", "subcategory": "Чехлы", "sku": "COVER-54", "title": "Чехол HAIBO для мотора 54″ / 137 см", "series": "", "variant": "54″ / 137 см", "price": "6900", "old_price": "", "product_url": "https://haibo-official.ru/7", "image_url": "https://img1.creatium.ru/disk2/e2/81/7b/e4e27f08352e5155d36704df298d39bfc6/img_0862_copy_1_4_11zon.jpg", "voltage_v": "", "compatible_voltage": "", "compatibility_filter": "P001|P65", "compatibility_note": "Подбор по длине штанги 54″; перед продажей проверить форму корпуса конкретной ревизии.", "shaft_in": "54", "shaft_cm": "137", "boat_max_m": "", "boat_max_kg": "", "thrust_lbs": "", "thrust_kg": "", "motor_weight_kg": "", "power_w": "", "capacity_ah": "", "battery_type": "", "current_a": "", "cable_length_m": "", "dimensions": "", "material": "Oxford 1680D + усиление ПВХ", "gps": "", "glonass": "", "beidou": "", "compass": "", "short_description": "Транспортировочный и стояночный чехол для GPS-электромотора со штангой 54″.", "card_spec_1": "54″ / 137 см", "card_spec_2": "Oxford 1680D", "card_spec_3": "Водоотталкивающий", "card_spec_4": "Усиление ПВХ", "data_confidence": "high", "spec_conflict_note": "Карточка на сайте содержит две длины в одном товаре; в БД разделены на два SKU из-за разной цены.", "primary_spec_source": "https://haibo.ru/accsesprodacts", "secondary_spec_source": "https://haibo-official.ru/7", "inventory_source": "https://haibo-official.ru/", "source_checked_date": "2026-09-22", "propeller": "", "mount": "", "control": "", "battery_recommend": "", "kit_contents": "", "cycles": "", "charger_a": "", "temp_range": "", "weight_kg": "", "peak_current_a": "", "show_in_catalog": "1", "public_card": "1", "combo_group": "other", "show_in_combo": "0"}, {"id": "A-COVER-72", "active": "1", "sort_order": "180", "product_type": "accessory", "category": "Аксессуары", "subcategory": "Чехлы", "sku": "COVER-72", "title": "Чехол HAIBO для мотора 72″ / 183 см", "series": "", "variant": "72″ / 183 см", "price": "7900", "old_price": "", "product_url": "https://haibo-official.ru/7", "image_url": "https://img1.creatium.ru/disk2/e2/81/7b/e4e27f08352e5155d36704df298d39bfc6/img_0862_copy_1_4_11zon.jpg", "voltage_v": "", "compatible_voltage": "", "compatibility_filter": "P001|P002|P003|P65", "compatibility_note": "Подбор по длине штанги 72″; перед продажей проверить форму корпуса конкретной ревизии.", "shaft_in": "72", "shaft_cm": "183", "boat_max_m": "", "boat_max_kg": "", "thrust_lbs": "", "thrust_kg": "", "motor_weight_kg": "", "power_w": "", "capacity_ah": "", "battery_type": "", "current_a": "", "cable_length_m": "", "dimensions": "", "material": "Oxford 1680D + усиление ПВХ", "gps": "", "glonass": "", "beidou": "", "compass": "", "short_description": "Транспортировочный и стояночный чехол для GPS-электромотора со штангой 72″.", "card_spec_1": "72″ / 183 см", "card_spec_2": "Oxford 1680D", "card_spec_3": "Водоотталкивающий", "card_spec_4": "Усиление ПВХ", "data_confidence": "high", "spec_conflict_note": "Карточка на сайте содержит две длины в одном товаре; в БД разделены на два SKU из-за разной цены.", "primary_spec_source": "https://haibo.ru/accsesprodacts", "secondary_spec_source": "https://haibo-official.ru/7", "inventory_source": "https://haibo-official.ru/", "source_checked_date": "2026-09-22", "propeller": "", "mount": "", "control": "", "battery_recommend": "", "kit_contents": "", "cycles": "", "charger_a": "", "temp_range": "", "weight_kg": "", "peak_current_a": "", "show_in_catalog": "1", "public_card": "1", "combo_group": "other", "show_in_combo": "0"}, {"id": "A-BOW-PVC", "active": "1", "sort_order": "190", "product_type": "accessory", "category": "Аксессуары", "subcategory": "Крепление и монтаж", "sku": "BOW-PLATFORM-PVC", "title": "Носовая площадка HAIBO для ПВХ-лодок", "series": "", "variant": "", "price": "7500", "old_price": "", "product_url": "https://haibo-official.ru/8", "image_url": "https://img1.creatium.ru/disk2/a9/23/fa/5828a4ed77c7528ab63730e53ee182ce85/img_6304_kopiya_4.jpg", "voltage_v": "", "compatible_voltage": "", "compatibility_filter": "Universal", "compatibility_note": "Площадка для установки электроякоря на ПВХ; совместимость зависит от геометрии лодки и нагрузки.", "shaft_in": "", "shaft_cm": "", "boat_max_m": "", "boat_max_kg": "", "thrust_lbs": "", "thrust_kg": "", "motor_weight_kg": "", "power_w": "", "capacity_ah": "", "battery_type": "", "current_a": "", "cable_length_m": "", "dimensions": "51 см × 72/30 см × 8 см", "material": "Алюминий 5 мм, порошковая окраска", "gps": "", "glonass": "", "beidou": "", "compass": "", "short_description": "Алюминиевая носовая площадка для монтажа электроякоря на ПВХ-лодку.", "card_spec_1": "Алюминий 5 мм", "card_spec_2": "51 × 72/30 × 8 см", "card_spec_3": "4 опоры Ø8,5 см", "card_spec_4": "Быстрый демонтаж", "data_confidence": "high", "spec_conflict_note": "", "primary_spec_source": "https://haibo.ru/accsesprodacts", "secondary_spec_source": "https://haibo-official.ru/8", "inventory_source": "https://haibo-official.ru/", "source_checked_date": "2026-09-22", "propeller": "", "mount": "", "control": "", "battery_recommend": "", "kit_contents": "", "cycles": "", "charger_a": "", "temp_range": "", "weight_kg": "", "peak_current_a": "", "show_in_catalog": "1", "public_card": "1", "combo_group": "mount", "show_in_combo": "1"}, {"id": "A-CONNECTOR-50A", "active": "1", "sort_order": "200", "product_type": "accessory", "category": "Аксессуары", "subcategory": "Электрика и защита", "sku": "ANDERSON-50A", "title": "Вилка-розетка HAIBO 50A", "series": "", "variant": "", "price": "1900", "old_price": "", "product_url": "https://haibo-official.ru/9", "image_url": "https://img1.creatium.ru/disk2/be/ae/98/348f2b3702334b36488e48195cb0f39167/photo_2023_11_07_14_15_05.jpg", "voltage_v": "", "compatible_voltage": "", "compatibility_filter": "Universal", "compatibility_note": "Силовой разъём 50 А; применять только после проверки рабочего тока мотора, кабеля и защиты.", "shaft_in": "", "shaft_cm": "", "boat_max_m": "", "boat_max_kg": "", "thrust_lbs": "", "thrust_kg": "", "motor_weight_kg": "", "power_w": "", "capacity_ah": "", "battery_type": "", "current_a": "50", "cable_length_m": "", "dimensions": "", "material": "", "gps": "", "glonass": "", "beidou": "", "compass": "", "short_description": "Силовой разъём Anderson 50 А для подключения электромотора.", "card_spec_1": "50 А", "card_spec_2": "Разъём Anderson", "card_spec_3": "Силовое подключение", "card_spec_4": "Подбор по току", "data_confidence": "high", "spec_conflict_note": "", "primary_spec_source": "https://haibo.ru/accsesprodacts", "secondary_spec_source": "https://haibo-official.ru/9", "inventory_source": "https://haibo-official.ru/", "source_checked_date": "2026-09-22", "propeller": "", "mount": "", "control": "", "battery_recommend": "", "kit_contents": "", "cycles": "", "charger_a": "", "temp_range": "", "weight_kg": "", "peak_current_a": "", "show_in_catalog": "1", "public_card": "1", "combo_group": "other", "show_in_combo": "0"}, {"id": "A-RAM-PVC-P65", "active": "1", "sort_order": "210", "product_type": "accessory", "category": "Аксессуары", "subcategory": "Крепление и монтаж", "sku": "RAM-PVC-P65", "title": "RAM-крепление HAIBO для ПВХ-лодок", "series": "", "variant": "", "price": "4500", "old_price": "", "product_url": "https://haibo-official.ru/10", "image_url": "https://img1.creatium.ru/disk2/02/95/f1/cf20ff2fef458142e23b110574c150a757/remove_bg_ai_1689089003855.png", "voltage_v": "", "compatible_voltage": "", "compatibility_filter": "P65", "compatibility_note": "Текущая карточка заявляет P65; для P001/P002/P003 совместимость не подтверждена.", "shaft_in": "", "shaft_cm": "", "boat_max_m": "", "boat_max_kg": "", "thrust_lbs": "", "thrust_kg": "", "motor_weight_kg": "", "power_w": "", "capacity_ah": "", "battery_type": "", "current_a": "", "cable_length_m": "", "dimensions": "", "material": "", "gps": "", "glonass": "", "beidou": "", "compass": "", "short_description": "Фиксатор штанги электромотора с опорой для установки на ПВХ-лодке.", "card_spec_1": "Для ПВХ-лодок", "card_spec_2": "Для HAIBO P65", "card_spec_3": "Фиксация штанги", "card_spec_4": "Опорная площадка", "data_confidence": "high", "spec_conflict_note": "Не помечаем как совместимый с P001/P002/P003 без подтверждения.", "primary_spec_source": "https://haibo.ru/accsesprodacts", "secondary_spec_source": "https://haibo-official.ru/10", "inventory_source": "https://haibo-official.ru/", "source_checked_date": "2026-09-22", "propeller": "", "mount": "", "control": "", "battery_recommend": "", "kit_contents": "", "cycles": "", "charger_a": "", "temp_range": "", "weight_kg": "", "peak_current_a": "", "show_in_catalog": "1", "public_card": "1", "combo_group": "other", "show_in_combo": "0"}, {"id": "A-QR-HD-P002-P003", "active": "1", "sort_order": "220", "product_type": "accessory", "category": "Аксессуары", "subcategory": "Крепление и монтаж", "sku": "QR-HD-P002-P003", "title": "Усиленная быстросъёмная площадка HAIBO", "series": "", "variant": "P002 / P003", "price": "16000", "old_price": "", "product_url": "https://haibo-official.ru/11", "image_url": "https://img1.creatium.ru/disk2/51/93/8d/7a20a4d464ad7db0155110699e97f62d1a/photo_2025_05_26_13_59_32.jpg", "voltage_v": "", "compatible_voltage": "24|36", "compatibility_filter": "P002|P003", "compatibility_note": "Прямо заявлена для HAIBO P002 и P003.", "shaft_in": "", "shaft_cm": "", "boat_max_m": "", "boat_max_kg": "", "thrust_lbs": "", "thrust_kg": "", "motor_weight_kg": "3.5", "power_w": "", "capacity_ah": "", "battery_type": "", "current_a": "", "cable_length_m": "", "dimensions": "", "material": "", "gps": "", "glonass": "", "beidou": "", "compass": "", "short_description": "Усиленная быстросъёмная площадка для более крупных P002/P003.", "card_spec_1": "P002 / P003", "card_spec_2": "Вес 3,5 кг", "card_spec_3": "Усиленная конструкция", "card_spec_4": "Повышенная нагрузка", "data_confidence": "high", "spec_conflict_note": "", "primary_spec_source": "https://haibo-official.ru/11", "secondary_spec_source": "https://haibo.ru/accsesprodacts", "inventory_source": "https://haibo-official.ru/", "source_checked_date": "2026-09-22", "propeller": "", "mount": "", "control": "", "battery_recommend": "", "kit_contents": "", "cycles": "", "charger_a": "", "temp_range": "", "weight_kg": "", "peak_current_a": "", "show_in_catalog": "1", "public_card": "1", "combo_group": "mount", "show_in_combo": "1"}]};var params={combo_discount:0};/* Creatium: та же таблица HaiboProducts, все поля, лимит 50; настройка combo_discount по умолчанию 0. */
+(function () {
+  var root = el.querySelector('#hb-combo');
+  if (!root) return;
+  var rows = typeof data !== 'undefined' && data && Array.isArray(data.rows) ? data.rows.filter(function(r){return String(r.active)==='1';}) : [];
+  var motor = root.querySelector('[data-combo="motor"]');
+  var battery = root.querySelector('[data-combo="battery"]');
+  var accessory = root.querySelector('[data-combo="accessory"]');
+  var total = root.querySelector('[data-combo="total"]');
+  var note = root.querySelector('[data-combo="note"]');
+  function txt(v){return v==null?'':String(v).trim();}
+  function n(v){var x=Number(txt(v).replace(/\s/g,'').replace(',','.'));return isFinite(x)?x:0;}
+  function money(v){return new Intl.NumberFormat('ru-RU').format(v)+' ₽';}
+  function split(v){return txt(v).split('|').map(function(x){return x.trim();});}
+  function addOption(select,row){var o=document.createElement('option');o.value=txt(row.id);o.textContent=txt(row.title)+' — '+money(n(row.price));select.appendChild(o);}
+  function none(select,label){var o=document.createElement('option');o.value='';o.textContent=label;select.appendChild(o);}
+  function find(id){return rows.find(function(r){return txt(r.id)===id;});}
+  function group(r){
+    if(txt(r.combo_group))return txt(r.combo_group);
+    if(txt(r.product_type)==='motor')return 'motor';
+    if(['A-BAT-12-100','A-BAT-24-100'].indexOf(txt(r.id))>=0)return 'battery';
+    if(['A-QR-STANDARD','A-BOW-PVC','A-QR-HD-P002-P003'].indexOf(txt(r.id))>=0)return 'mount';
+    if(txt(r.id)==='A-FUSE-60A')return 'protection';
+    return 'other';
+  }
+  function selectable(r){return txt(r.show_in_combo)==='1'||(!txt(r.show_in_combo)&&group(r)!=='other');}
+  function compatible(r,m){var series=txt(m.series),voltage=txt(m.voltage_v),keys=split(r.compatibility_filter),vs=split(r.compatible_voltage);return (keys.indexOf(series)>=0||keys.indexOf('Universal')>=0||keys.indexOf('HAIBO')>=0) && (!vs[0]||vs.indexOf(voltage)>=0);}
+  function fillExtras(){
+    var m=find(motor.value);battery.innerHTML='';accessory.innerHTML='';none(battery,'Без аккумулятора — 0 ₽');none(accessory,'Без аксессуара — 0 ₽');
+    if(!m){total.textContent='—';note.textContent='Подключите таблицу HaiboProducts.';return;}
+    rows.filter(function(r){return group(r)==='battery'&&selectable(r)&&compatible(r,m);}).forEach(function(r){addOption(battery,r);});
+    rows.filter(function(r){return (group(r)==='mount'||group(r)==='protection')&&selectable(r)&&compatible(r,m);}).forEach(function(r){addOption(accessory,r);});
+    if(battery.options.length>1)battery.selectedIndex=1;
+    calculate();
+  }
+  function calculate(){
+    var m=find(motor.value),b=find(battery.value),a=find(accessory.value);
+    if(!m)return;
+    var sum=n(m.price)+(b?n(b.price):0)+(a?n(a.price):0);
+    var discount=typeof params!=='undefined'&&params?Math.min(100,Math.max(0,n(params.combo_discount))):0;
+    total.textContent=money(Math.round(sum*(1-discount/100)));
+    var missing=txt(m.voltage_v)==='36'&&battery.options.length===1;
+    note.textContent=(discount?'Учтена скидка '+discount+'%. ':'')+(missing?'Аккумулятора 36 В в текущем каталоге нет. ':'')+'Сверьте состав и наличие с менеджером перед заказом.';
+  }
+  rows.filter(function(r){return group(r)==='motor'&&selectable(r);}).sort(function(a,b){return n(a.sort_order)-n(b.sort_order);}).forEach(function(r){addOption(motor,r);});
+  motor.addEventListener('change',fillExtras);battery.addEventListener('change',calculate);accessory.addEventListener('change',calculate);
+  fillExtras();
+})();
+})();</script></body></html>

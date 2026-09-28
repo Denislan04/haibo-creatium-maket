@@ -1,0 +1,38 @@
+/* 11_cta — вставить только в CSS-вкладку этого HTML-компонента. Правила ограничены #hb-contacts. */
+#hb-contacts.hb-page{--hb-pine:#0b201b;--hb-pine2:#173c2f;--hb-lime:#b7df69;--hb-cream:#f6f6f0;--hb-text:#182c24;--hb-muted:#52675b;--hb-line:#dfe5d7;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--hb-text);line-height:1.5;-webkit-font-smoothing:antialiased}
+#hb-contacts.hb-page *,#hb-contacts.hb-page *:before,#hb-contacts.hb-page *:after{box-sizing:border-box}
+#hb-contacts.hb-page h1,#hb-contacts.hb-page h2,#hb-contacts.hb-page h3,#hb-contacts.hb-page p,#hb-contacts.hb-page ul{margin:0}
+#hb-contacts.hb-page a{color:inherit}
+#hb-contacts.hb-page button,#hb-contacts.hb-page select{font:inherit}
+#hb-contacts .hb-wrap{width:min(1240px,calc(100% - 64px));margin-inline:auto}
+#hb-contacts.hb-page :is(a,button,select,summary):focus-visible{outline:3px solid #c8eb86;outline-offset:3px}
+#hb-contacts .hb-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 25px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:750;white-space:nowrap;transition:transform .22s ease,background .22s ease,border-color .22s ease}
+#hb-contacts .hb-button:hover{transform:translateY(-2px)}
+#hb-contacts .hb-button--lime{background:var(--hb-lime);color:#17301c!important}
+#hb-contacts .hb-button--lime:hover{background:#c9ec88}
+#hb-contacts .hb-button--outline{border:1px solid rgba(255,255,255,.48);background:rgba(255,255,255,.07);color:#fff!important}
+#hb-contacts .hb-button--outline:hover{background:rgba(255,255,255,.17)}
+#hb-contacts .hb-eyebrow{display:inline-block;margin-bottom:16px;color:#356c3c;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#hb-contacts .hb-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:#4c8b44;vertical-align:2px}
+#hb-contacts .hb-eyebrow--light{color:#d0eba9}
+#hb-contacts .hb-eyebrow--light:before{background:var(--hb-lime)}
+#hb-contacts.hb-section{padding:90px 0}
+#hb-contacts .hb-section--warm{background:var(--hb-cream)}
+#hb-contacts .hb-section--white{background:#fff}
+#hb-contacts .hb-section--pine{background:var(--hb-pine);color:#fff}
+#hb-contacts.hb-section h2{max-width:850px;margin-bottom:17px;font-size:clamp(34px,4vw,50px);font-weight:850;letter-spacing:-.04em;line-height:1.1}
+#hb-contacts .hb-intro{max-width:680px;margin-bottom:36px;color:var(--hb-muted);font-size:17px;line-height:1.6}
+#hb-contacts .hb-section--pine .hb-intro,#hb-contacts.hb-section--cta .hb-intro{color:#d4e1d7}
+#hb-contacts .hb-split{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:64px}
+#hb-contacts.hb-section--cta{position:relative;isolation:isolate;overflow:hidden;padding:95px 0;background:var(--hb-pine);color:#fff}
+#hb-contacts .hb-cta-photo{position:absolute;inset:0;z-index:-2}
+#hb-contacts .hb-cta-photo>cr-embed{display:block;width:100%;height:100%;background-size:cover;background-position:center}
+#hb-contacts.hb-section--cta:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#0b201bef,#0b201bc9 65%,#0b201ba1)}
+#hb-contacts .hb-cta-phone{color:#fff!important;text-decoration:none;font-size:26px;font-weight:850}
+#hb-contacts .hb-cta-card{padding:33px;border:1px solid #ffffff38;border-radius:20px;background:#0a2119ee;box-shadow:0 22px 50px #0005}
+#hb-contacts .hb-cta-card h3{margin-bottom:8px;font-size:23px}
+#hb-contacts .hb-cta-card p{margin-bottom:21px;color:#bed2c4;font-size:14px}
+.screen-sm #hb-contacts .hb-split,.screen-xs #hb-contacts .hb-split{grid-template-columns:1fr}
+.screen-xs #hb-contacts .hb-wrap{width:calc(100% - 36px)}
+.screen-xs #hb-contacts.hb-section,.screen-xs #hb-contacts.hb-section--cta{padding:68px 0}
+.screen-xs #hb-contacts.hb-section h2{font-size:34px}
